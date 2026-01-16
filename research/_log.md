@@ -898,6 +898,43 @@ Records all searches performed, results found, and excerpts created.
 ---
 
 
+### Policy - 2025 AI Regulation, Environmental Policy, Tech Sustainability Governance
+
+**OpenAlex Searches Performed:**
+1. "AI regulation environmental policy" (2025 filter) - 15 results, mostly healthcare/general AI papers
+2. "EU AI Act environment 2025" - 15 results, limited direct relevance
+3. "data center regulation policy" - 15 results, general papers
+4. "ESG disclosure mandatory 2025" - 15 results, **FOUND: mandatory vs voluntary paper, green procurement paper**
+5. "AI sustainability governance technology" - 15 results, general papers
+6. "corporate carbon emissions accountability disclosure" - 15 results, **FOUND: Jiang et al. 2025 Nature Climate Change**
+7. "digital infrastructure environmental regulation" - 15 results, general papers
+8. "mandatory ESG disclosure policy 2025" - 15 results, **FOUND: Triple Bottom Line paper**
+9. "AI governance regulation technology policy" - 20 results, **FOUND: Batool et al. 2025 systematic review (59 citations)**
+10. "corporate emissions target accountability" - 15 results, confirmed Jiang et al. findings
+
+**Key Findings (2025 Publications Only):**
+- Jiang, Kim & Lu (2025) in Nature Climate Change (23 citations): Of 1,041 emissions targets ending 2020, 9% failed, 31% "disappeared" - only 3 got media coverage. No market reaction, no ESG score decline, no shareholder consequences. Rewards for pledges, no penalties for failures.
+- Batool, Zowghi & Bano (2025) in AI and Ethics (59 citations): Systematic review of 28 AI governance articles. Environmental sustainability absent from formal governance frameworks. Focus remains on ethical risks (bias, privacy, safety).
+- Cui, Li, Xue & Zhang (2025) in J. International Money and Finance (10 citations): Mandatory ESG disclosure has measurably different "real effects" on corporate behavior vs voluntary disclosure.
+- Wang & Shen (2025) in J. Environmental Management (10 citations): Green public procurement improves corporate ESG performance - policy mechanism applicable to government AI contracts.
+
+**Excerpts Created:**
+- `/research/policy/011-jiang-2025-emissions-target-accountability.md` - Corporate emissions accountability gap
+- `/research/policy/012-batool-2025-ai-governance-systematic-review.md` - AI governance excludes environmental concerns
+- `/research/policy/013-cui-2025-mandatory-vs-voluntary-esg.md` - Mandatory disclosure effects
+- `/research/policy/014-wang-shen-2025-green-procurement-esg.md` - Green procurement as policy mechanism
+
+**Notes:**
+- 2025 literature confirms the accountability vacuum for corporate environmental pledges
+- AI governance is maturing as a field but systematically ignores environmental impacts
+- Mandatory disclosure and green public procurement emerge as promising policy pathways
+- No AI-specific environmental regulations found in 2025 academic literature
+- Gap: EU Energy Efficiency Directive data center provisions still not well-covered academically
+- Gap: California SB 1047 and other US state actions too recent for peer-reviewed analysis
+- Key theme: Policy attention on AI safety/privacy, not environmental sustainability
+
+---
+
 ### Narrative - Net Impact Analysis Research
 
 **OpenAlex Searches Performed:**

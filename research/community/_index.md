@@ -11,3 +11,6 @@
 | 007 | Kim et al., 2024 | Data center PUE varies 1.15-1.43 by climate zone - identical loads require 24% more grid power in suboptimal locations | [file](007-kim-2024-data-center-pue-tool.md) |
 | 008 | Dhiman et al., 2024 | "Sustainability of AI" vs "AI for Sustainability" tension - economic dimension of energy costs underexplored | [file](008-dhiman-2024-ai-sustainability-tension.md) |
 | 009 | Gajdzik et al., 2024 | Energy crisis pushed households into poverty while industrial demand grew - frames data center equity question | [file](009-gajdzik-2024-energy-crisis-efficiency.md) |
+| 010 | Obuseh et al., 2025 | Renewable energy barriers (grid infrastructure, social acceptance, regional disparities) apply to data center community impacts | [file](010-obuseh-2025-renewable-energy-barriers.md) |
+| 011 | Han et al., 2025 | G-20 tech innovation drives renewable adoption, but benefits require local policy alignment - addresses corporate claims vs community benefits gap | [file](011-han-2025-g20-tech-innovation-pollution.md) |
+| 012 | Li et al., 2025 | CACM peer-reviewed AI water footprint: GPT-3 training = 700K liters; ChatGPT = 10-25 mL/query; 4.2-6.6B m3 global AI water by 2027 | [file](012-li-2025-cacm-ai-water-thirsty.md) |
