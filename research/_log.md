@@ -4,7 +4,161 @@ Records all searches performed, results found, and excerpts created.
 
 ---
 
+## 2026-01-16 (Continued)
+
+### Narrative - 2025 AI for Climate Net Environmental Impact Research
+
+**OpenAlex Searches Performed:**
+1. "AI climate environmental benefit" (2025 filter) - 15 results, mostly agriculture/plant papers
+2. "AI sustainability net impact" (2025 filter) - 15 results, general sustainability papers
+3. "machine learning climate solution" (2025 filter) - 15 results, general papers
+4. "AI carbon footprint environmental impact" (2025 filter) - 15 results, **FOUND: Making AI Less Thirsty (31 citations)**
+5. "generative AI sustainability environmental" (2025 filter) - 15 results, general papers
+6. "AI decarbonization climate mitigation" (2025 filter) - 15 results, **FOUND: AI energy transition review (128 citations)**
+7. "LLM carbon emission environmental trade-off" (2025 filter) - 15 results, **FOUND: Energy costs of communicating with AI (4 citations), AI climate resilience systematic review (6 citations)**
+8. "AI IoT environmental monitoring" (2025 filter) - **FOUND: 77 citations paper**
+9. "AI wastewater treatment environmental" (2025 filter) - **FOUND: 26 citations paper**
+
+**Key Findings (2025 Publications Only):**
+- Dauner & Socher (2025) in Frontiers in Communication: Direct measurement of LLM accuracy-emissions trade-off; 14 models tested, larger reasoning models achieve 84.9% accuracy but "substantially higher emissions"
+- Frontiers in Climate (2025): Systematic review of 385 AI-climate papers; 64.4% focus on adaptation, only 16% on mitigation; Africa/South America underrepresented
+- Electronics (2025): AI+IoT for environmental monitoring; 77 citations; acknowledges benefits but also "substantial obstacles" including data quality, security, ethics
+- Water (2025): AI in wastewater "almost all applications involve predictive studies, often at small scale or with limited data"; significant barriers to real deployment
+
+**Excerpts Created:**
+- `/research/narrative/017-energy-costs-communicating-ai-2025.md` - LLM accuracy vs emissions trade-off (empirical study)
+- `/research/narrative/018-ai-climate-resilience-systematic-review-2025.md` - 385-paper review: adaptation dominates (64.4%), mitigation neglected (16%)
+- `/research/narrative/019-ai-iot-environmental-monitoring-2025.md` - AI+IoT potential with acknowledged obstacles
+- `/research/narrative/020-ai-wastewater-treatment-limits-2025.md` - Critical assessment of AI in wastewater; mostly studies, few deployments
+
+**Key 2025 Net Impact Insights:**
+1. **Trade-off is real and quantified** - Larger, more capable LLMs = substantially higher emissions (Dauner 2025)
+2. **AI climate research favors adaptation over mitigation** - 4:1 ratio; if AI helps us cope with climate change rather than prevent it, "AI will save the climate" narrative is misplaced
+3. **Regional disparities persist** - Africa, South America underrepresented in AI climate research despite being most vulnerable
+4. **Implementation gap** - AI environmental applications remain mostly "predictive studies," not real deployments (Water 2025)
+5. **Substantial barriers identified** - Data quality, interoperability, security, ethics, incentives
+
+**Notes:**
+- 2025 literature shows increasingly nuanced view of AI-for-climate claims
+- Empirical measurements of emissions trade-offs emerging
+- Systematic reviews reveal bias toward adaptation over mitigation
+- Critical assessments highlighting barriers to real-world AI environmental benefit
+- Gap: AI's own environmental footprint still rarely factored into benefit assessments
+- Gap: Rebound effects and opportunity costs remain unaddressed
+
+---
+
+### Greenwashing/ESG Reporting - 2025 Publications Focus
+
+**OpenAlex Searches Performed:**
+1. "greenwashing ESG disclosure" filter:2025 - 15 results, found AI for sustainability paper, disclosure fog paper, ESG greenwashing TISM paper
+2. "carbon neutral claims verification" filter:2025 - 15 results, mostly unrelated (materials science papers)
+3. "sustainability reporting quality" filter:2025 - 15 results, found green hydrogen gap paper
+4. "greenwashing corporate sustainability" filter:2025 - 15 results, **FOUND: Forliano et al. landscape paper (29 citations), Xu et al. market value paper (26 citations), Zervoudi case studies paper (24 citations)**
+5. "ESG reporting quality disclosure" filter:2025 - 15 results, **FOUND: Al Amosh accounting complexity paper (12 citations)**
+6. "climate disclosure corporate emissions" filter:2025 - 15 results, found Lancet 2025 report, confirmed Jiang et al. 2025 already captured
+7. "greenwashing detection AI NLP" filter:2025 - 10 results, **FOUND: ACL paper on robust ESG analysis (1 citation)**
+8. "ESG greenwashing verification audit" filter:2025 - 10 results, **FOUND: Sneideriene impression management gap paper (1 citation)**
+
+**Key Findings (2025 ONLY):**
+- Forliano et al. (2025) in Review of Managerial Science: Systematic review of 97 papers identifies 4 thematic clusters; macro-level theories (legitimacy, institutional, stakeholder) dominate - greenwashing is systemic response to institutional pressures, not individual misbehavior (29 citations)
+- Zhu, Fan & Zheng (2025) in IJFE: "Disclosure Fog" - institutional investors inadvertently facilitate greenwashing; pressure-sensitive investors most problematic; post-2016 Green Financial System guidance reduced this effect (10 citations)
+- Zervoudi, Moschos & Christopoulos (2025) in Sustainability: Comprehensive CSR-to-ESG-to-Greenwashing review with case studies (VW, Zara, Coca-Cola, BP) showing systemic patterns (24 citations)
+- Al Amosh (2025) in CSREM: Complex accounting structures enable selective ESG disclosure; 5,146 US firm-year observations show environmental disclosures most affected (12 citations)
+- Sneideriene & Legenzova (2025) in Sustainability: Novel textual analysis method detects greenwashing via "impression management gap" between sustainability and financial reports; regulatory pressure did NOT reduce gaps (1 citation)
+
+**Excerpts Created:**
+- `/research/washing/012-forliano-2025-greenwashing-landscape.md` - Multi-level theoretical framework for greenwashing
+- `/research/washing/013-zhu-2025-disclosure-fog-investors.md` - Institutional investors and greenwashing
+- `/research/washing/014-zervoudi-2025-greenwashing-case-studies.md` - Case studies of major corporate greenwashing
+- `/research/washing/015-alamosh-2025-accounting-complexity-esg.md` - Accounting complexity enables selective disclosure
+- `/research/washing/016-sneideriene-2025-greenwashing-textual-detection.md` - Textual analysis detection method
+
+**Notes:**
+- Strong 2025 academic literature on greenwashing mechanisms and detection
+- Limited 2025 papers specifically on AI/tech company environmental claims
+- Key theme: Greenwashing is systemic (institutional pressures) not individual (bad actors)
+- Key theme: Regulatory pressure alone insufficient to reduce greenwashing (Sneideriene finding)
+- Key theme: Complex corporate structures enable selective disclosure (Al Amosh finding)
+- Key theme: Investors with business relationships are unreliable watchdogs (Zhu finding)
+- Gap: No 2025 peer-reviewed papers specifically analyzing tech company carbon/water claims
+- Gap: AI/NLP greenwashing detection methods emerging but not yet applied to tech sector at scale
+
+---
+
 ## 2026-01-16
+
+### GHG Emissions - 2025 AI/LLM Carbon Emissions Research
+
+**OpenAlex Searches Performed:**
+1. "LLM energy consumption carbon" (2025 filter) - 15 results, **FOUND: Li 2025 CACM, Hardware accelerators survey, Energy-efficient transformer inference**
+2. "generative AI environmental impact" (2025 filter) - 15 results, general papers
+3. "deep learning energy efficiency" (2025 filter) - 15 results, general papers
+4. "neural network carbon footprint" (2025 filter) - 15 results, general papers
+5. "Luccioni AI emissions energy" (2025 filter) - 10 results, **FOUND: "Efficiency Is Not Enough" CACM paper, "Energy costs of communicating with AI", Understanding Environmental Impact GenAI**
+6. "AI carbon emissions sustainability" (2025 filter) - 15 results, general papers
+7. "sustainable AI computing green machine learning" (2025 filter) - 15 results, general papers
+8. "ChatGPT carbon footprint emissions" (2025 filter) - 10 results, general papers
+9. "data center power usage electricity AI" (2025 filter) - 15 results, general papers
+
+**Key Findings (2025 Publications Only):**
+- Wright, Igel & Samuel (2025) in Communications of the ACM: "Efficiency Is Not Enough" - argues efficiency-first approach is insufficient for sustainable AI; systemic factors may overwhelm efficiency gains
+- Dauner & Socher (2025) in Frontiers in Communication: Empirical measurement of 14 LLMs (7-72B parameters) on A100 GPU; quantifies accuracy-emissions trade-off; token output is major emissions driver
+- Rozycki, Solarska & Waligora (2025) in Energies: Review of energy-aware ML techniques; finds embodied emissions often eclipse operational; calls for dual strategy (operational + manufacturing)
+- Kachris (2025) in Applied Sciences: Hardware accelerator survey covering GPUs, FPGAs, custom ASICs for LLM energy efficiency
+- Berthelot et al. (2025): Already covered in previous search (006)
+
+**Excerpts Created:**
+- `/research/ghg/018-wright-2025-efficiency-not-enough.md` - Efficiency-first approach insufficient for sustainable AI
+- `/research/ghg/019-dauner-2025-energy-costs-communicating-ai.md` - Empirical LLM energy measurement (14 models, A100 GPU)
+- `/research/ghg/020-rozycki-2025-energy-aware-ml-models-review.md` - Embodied vs operational emissions, dual strategy
+- `/research/ghg/021-kachris-2025-hardware-accelerators-llm-survey.md` - Hardware accelerator energy efficiency survey
+
+**Key 2025 Insights:**
+1. **Efficiency alone is insufficient** - Wright et al. (2025) argues systemic factors (scale, rebound) overwhelm efficiency gains
+2. **Embodied emissions matter** - Rozycki et al. (2025) finds hardware manufacturing emissions can exceed operational emissions
+3. **Accuracy-emissions trade-off quantified** - Dauner & Socher (2025) measures 14 LLMs; larger reasoning models achieve 84.9% accuracy but at substantially higher emissions
+4. **Token output drives emissions** - More verbose AI responses = higher emissions (Dauner & Socher 2025)
+5. **Hardware selection critical** - Different accelerators (GPU vs FPGA vs ASIC) have different efficiency profiles (Kachris 2025)
+
+**Notes:**
+- 2025 literature shows maturing discourse on AI sustainability
+- Shift from efficiency-only focus to systemic and lifecycle perspectives
+- Empirical measurement studies emerging (Dauner & Socher provides actual A100 measurements)
+- Embodied emissions gaining attention alongside operational emissions
+- Gap: Still limited per-query emissions data for production AI services
+
+---
+
+### Data Centers - 2025 Publications Search (Energy & Sustainability)
+
+**OpenAlex Searches Performed:**
+1. "data center energy efficiency sustainability" (2025 filter) - 15 results, mostly unrelated (batteries, catalysts)
+2. "hyperscale data center power" (2025 filter) - 15 results, **FOUND: Lei et al. CBECS, Rollinson off-grid, Lord HPC waste, Setyo thermal review**
+3. "AI data center infrastructure" (2025 filter) - 15 results, mostly general AI/healthcare papers
+4. "data center cooling energy consumption" (2025 filter) - 15 results, mostly unrelated
+5. "AI training energy carbon data center" (2025 filter) - 15 results, **FOUND: Li 2025 "Making AI Less Thirsty" already captured**
+
+**Key Findings:**
+- Lei et al. (2025): CBECS data shows US small/midsize DCs declining (1.764M to 1.398M), but identifies PUE-WUE tradeoff - more energy-efficient facilities are more water-intensive due to water-cooled chillers
+- Rollinson et al. (2025): Off-grid hybrid renewable/gas microgrids for hyperscale DCs beat grid equivalents on BOTH cost and emissions across European hotspots (Frankfurt, London, Amsterdam, Paris, Dublin)
+- Lord et al. (2025): CHI paper documenting how academic institutions (conferences, funders, universities) "reinforce and embed, rather than challenge, expectations of growth and waste" in HPC
+- Setyo et al. (2025): Literature review finds average PUE of 2.23 across studies - significantly worse than hyperscaler claims of 1.1-1.4; average IT power only 44.8% of total
+
+**Excerpts Created:**
+- `/research/datacenters/012-lei-2025-us-small-midsize-dc-cbecs.md` - CBECS survey on US data centers, PUE-WUE tradeoff
+- `/research/datacenters/013-rollinson-2025-offgrid-hyperscale-feasibility.md` - Off-grid renewable feasibility study
+- `/research/datacenters/014-lord-2025-hpc-waste-academia.md` - Critical analysis of institutional growth drivers
+- `/research/datacenters/015-setyo-2025-dc-energy-efficiency-thermal-review.md` - PUE measurement literature review
+
+**Notes:**
+- 2025 literature on data center energy is still emerging (few citations on most papers)
+- Most high-citation 2025 papers from OpenAlex are unrelated to data centers (chemistry, batteries, health)
+- Commins & Irion 2025 (EU policy) already captured in previous search
+- Key insight from Setyo: Self-reported hyperscaler PUE (1.1-1.4) may not be representative of actual industry average (2.23)
+- Lord et al. provides rare sociological analysis of WHY compute demand keeps growing despite efficiency gains
+
+---
 
 ### Water Consumption Numbers Compilation (Quantitative Data Focus)
 
@@ -994,6 +1148,48 @@ Current literature measures first two terms imperfectly; largely ignores last tw
 - Gap: Opportunity cost analysis of AI infrastructure investment
 - Gap: Environmental justice - who bears data center impacts?
 - Key theme: Benefits are theoretical/projected, costs are measured/current
+
+---
+
+### Community Impact - 2025 Data Center Grid/Community Research
+
+**OpenAlex Searches Performed:**
+1. "data center electricity grid community" (2025) - 15 results, found Li et al. water paper (31 citations)
+2. "AI infrastructure local impact" (2025) - 15 results, mostly healthcare/education papers
+3. "data center environmental justice" (2025) - 15 results, limited direct relevance
+4. "data center power demand grid reliability" (2025) - 15 results, battery/cybersecurity papers
+5. "hyperscale data center energy growth" (2025) - 15 results, found Planet Proof Computing paper
+6. "AI electricity demand energy consumption" (2025) - 15 results, found G-20 tech innovation paper
+7. "generative AI carbon footprint environmental" (2025) - 15 results, limited direct hits
+8. "sustainable computing infrastructure environmental impact" (2025) - 15 results, general papers
+9. "AI computational resources environmental sustainability" (2025) - 15 results, general papers
+10. "electricity load growth artificial intelligence demand" (2025) - 15 results, general papers
+11. "computing waste sustainability academic" (2025) - 15 results, **FOUND: Lord et al. HPC waste paper**
+12. "large language model energy carbon environmental" (2025) - 20 results, general papers
+13. "AI sustainable higher education ethics efficiency" (2025) - 10 results, **FOUND: Khan et al. paper**
+14. "digital infrastructure sustainability carbon energy" (2025) - 15 results, general papers
+15. "cloud computing carbon footprint sustainability energy" (2025) - 15 results, general papers
+16. "AI digital economy carbon emissions" (2025) - 15 results, general papers
+17. "digital sustainability environmental governance policy" (2025) - 15 results, general papers
+
+**Key Findings (2025 Publications Only):**
+- Lord et al. (2025) in CHI Conference: Academic/research institutions "reinforce and embed, rather than challenge, expectations of growth and waste" in HPC - generative AI and larger models "multiplying" demand
+- Achuthan et al. (2025) in Discover Sustainability: Cybersecurity demands resource-intensive computing, creating fundamental tension with sustainability for data centers
+- Khan et al. (2025) in Discover Sustainability: University AI deployment creates institutional infrastructure demands - addresses digital divide and equity concerns
+
+**Excerpts Created:**
+- `/research/community/013-lord-2025-hpc-computing-waste-growth.md` - Academic computing waste and growth culture
+- `/research/community/014-achuthan-2025-cybersecurity-sustainability-integration.md` - Cybersecurity vs sustainability tension
+- `/research/community/015-khan-2025-ai-sustainable-higher-education.md` - University AI infrastructure demands
+
+**Notes:**
+- Limited 2025 peer-reviewed papers specifically on local community impacts of data centers
+- Most papers focus on efficiency/sustainability frameworks rather than community-level impacts
+- Gap: Electricity rate impacts on residential customers from data center demand still underdocumented
+- Gap: Environmental justice dimension (who bears data center costs vs benefits) largely absent from 2025 literature
+- Gap: Specific regional case studies (Virginia, Texas, Georgia grid strain) remain in news media, not academic literature
+- Key finding: Academic/research computing is a significant and growing demand driver with cultural barriers to reduction
+- The cybersecurity-sustainability tension reveals an inherent conflict: more security = more computing = more energy
 
 ---
 

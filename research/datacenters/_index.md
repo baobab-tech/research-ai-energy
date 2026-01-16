@@ -18,3 +18,7 @@
 | 009 | Xie et al., 2024 | China EWCRT: 8 data center hubs + 10 clusters; potential 2,125-9,500 Mt CO2 reduction by 2050 | [file](009-xie-2024-china-ewcrt-infrastructure.md) |
 | 010 | Mohammed et al., 2024 | 95%+ cooling load from IT equipment heat; economizers most effective year-round | [file](010-mohammed-2024-dc-cooling-energy-review.md) |
 | 011 | Commins & Irion, 2025 | EU targeting climate-neutral data centers by 2030; reporting may become binding | [file](011-commins-2025-eu-dc-sustainability-policy.md) |
+| 012 | Lei et al., 2025 | US small/midsize DCs declining; PUE-WUE tradeoff - energy-efficient = water-intensive | [file](012-lei-2025-us-small-midsize-dc-cbecs.md) |
+| 013 | Rollinson et al., 2025 | Off-grid hybrid renewables can beat grid on cost AND emissions for hyperscale DCs | [file](013-rollinson-2025-offgrid-hyperscale-feasibility.md) |
+| 014 | Lord et al., 2025 | Academic HPC "reinforces growth and waste" - call to de-escalate compute demand | [file](014-lord-2025-hpc-waste-academia.md) |
+| 015 | Setyo et al., 2025 | Review finds average PUE 2.23 - much worse than hyperscaler claims of 1.1-1.4 | [file](015-setyo-2025-dc-energy-efficiency-thermal-review.md) |

@@ -13,6 +13,10 @@
 | 005 | Wang et al., 2024 | AI reduces ecological footprints at macro level, but industrial structure moderates benefits | [file](005-wang-2024-ai-ecological-footprint-67-countries.md) |
 | 005 | Yenduri et al., 2024 | GPT comprehensive review covering training procedures and enabling technologies | [file](005-yenduri-2024-gpt-challenges.md) |
 | 006 | Berthelot et al., 2025 | First systematic study of environmental impact of deployed generative AI services (inference) | [file](006-berthelot-2025-environmental-impact-genai-services.md) |
+| 018 | Wright, Igel & Samuel, 2025 | "Efficiency is not enough" - argues efficiency-first approach insufficient for sustainable AI | [file](018-wright-2025-efficiency-not-enough.md) |
+| 019 | Dauner & Socher, 2025 | Empirical LLM energy measurement: 14 models tested, accuracy-emissions trade-off quantified | [file](019-dauner-2025-energy-costs-communicating-ai.md) |
+| 020 | Rozycki et al., 2025 | Review finds embodied emissions often eclipse operational - dual strategy needed | [file](020-rozycki-2025-energy-aware-ml-models-review.md) |
+| 021 | Kachris, 2025 | Hardware accelerator survey: GPUs, FPGAs, custom ASICs for LLM energy efficiency | [file](021-kachris-2025-hardware-accelerators-llm-survey.md) |
 
 ## Lifecycle & Embodied Emissions
 | # | Source | Insight | Link |
