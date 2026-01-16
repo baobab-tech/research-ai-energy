@@ -1,137 +1,86 @@
 # AI Environmental Impact Research
 
-Critical investigation into the environmental footprint of AI systems: greenhouse gas emissions, water consumption, and the gap between corporate claims and reality.
+A critical investigation into the environmental footprint of AI systems: greenhouse gas emissions, water consumption, and the gap between corporate claims and reality.
 
-## Research Process
+## Why This Matters
 
-### How It Works
+The AI industry is growing rapidly, but its environmental costs are often hidden or downplayed:
 
-1. **Search** - Query OpenAlex, arXiv, or Serper for a specific topic
-2. **Find** - Identify relevant papers, articles, reports
-3. **Extract** - Write an insight (not just the abstract - how does it relate to the topic?)
-4. **Store** - Save as individual excerpt file with source URL
-5. **Aggregate** - Later, combine excerpts into topic summaries
+- **Scale**: AI's 2025 GHG footprint is estimated at ~80 million tonnes CO2e (comparable to New York City)
+- **Water**: GPT-3 training consumed ~700,000 liters; ChatGPT uses 10-25ml per query
+- **Growth**: Global AI water demand projected at 4.2-6.6 billion m³ by 2027
+- **Greenwashing**: "100% renewable" and "water positive" claims often don't match reality
 
-### Capturing Insights
+## Research Areas
 
-When you find something relevant:
+| Topic | Focus | Excerpts |
+|-------|-------|----------|
+| [GHG Emissions](research/ghg/) | Training, inference, and lifecycle carbon footprint | 21 |
+| [Water Consumption](research/water/) | Cooling systems, per-query estimates, regional impacts | 26 |
+| [Data Centers](research/datacenters/) | Infrastructure growth, power sources, efficiency | 15 |
+| [Greenwashing](research/washing/) | Corporate claims vs reality, reporting gaps | 16 |
+| [Policy](research/policy/) | Regulation, disclosure requirements, carbon pricing | 14 |
+| [Frugal AI](research/frugal/) | Efficient architectures, hardware, when NOT to use AI | 16 |
+| [Community Impact](research/community/) | Local opposition, grid strain, environmental justice | 15 |
+| [AI-for-Climate Narrative](research/narrative/) | Scrutinizing "AI will save the planet" claims | 20 |
 
-**Don't just copy the abstract.** Write an insight that explains:
-- What does this source tell us about the specific question?
-- What's the key number, claim, or finding?
-- How does it relate to our research topic?
+## Key Findings
 
-If you need more details, fetch the page for abstract/metadata.
+**On emissions:**
+- Efficiency gains are real (50-115% energy savings possible) but overwhelmed by demand growth
+- "Efficiency is not enough" - Jevons paradox applies to AI
+- Inference now dominates operational footprint as GenAI scales
 
-### Excerpt Format
+**On water:**
+- Google claims 0.26ml/prompt; independent research estimates 10-25ml/query (40-100x gap)
+- High-power AI chips physically require liquid cooling - water use is structural
+- 40% of servers remain in small/midsize data centers with worse efficiency
 
-Each finding gets saved as a small markdown file:
+**On greenwashing:**
+- Greenwashing is systemic (institutional pressures), not individual bad behavior
+- 9% of corporate emissions targets fail, 31% quietly disappear - only 3 get media coverage
+- Voluntary disclosure associated with MORE greenwashing, not less
 
-```markdown
-# [Brief descriptive title]
+**On the "AI for climate" narrative:**
+- AI climate research focuses 4:1 on adaptation over mitigation
+- Most "AI for environment" applications remain studies, not deployments
+- Benefits are projected; costs are measured
 
-**Topic:** [which research area this relates to]
-**Source:** [Author/Org, Year]
-**URL:** [full URL - REQUIRED]
+## Critical Stance
 
-## Insight
+This research applies scrutiny to all claims:
+- **Who funded the study?** Industry-funded research is flagged
+- **What's the methodology?** Especially for emissions estimates
+- **What's missing?** Corporate reports often omit inconvenient data
+- **Self-reported vs independent?** Google's water numbers vs Li et al.
 
-[2-4 sentences explaining what this source tells us about the topic. Not a summary of the paper - an insight relevant to our research question.]
+## Sources
 
-## Key Data
+Primary sources are peer-reviewed academic papers (2023-2025) via:
+- OpenAlex (240M+ academic papers)
+- arXiv preprints
+- Select news/reports for current events
 
-[Any specific numbers, with context]
-- Stat 1
-- Stat 2
-
-## Quote (optional)
-
-> "Relevant quote from the source"
+Every excerpt includes a source URL.
 
 ---
-Retrieved: [date]
-```
 
-### File Organization
+## How It Works
+
+This repository collects research excerpts - each one a single insight from a single source, saved as a markdown file with full citation.
 
 ```
 /research/
   /ghg/
-    _index.md                          # Summary index for this folder
-    001-strubell-2019-training-costs.md
-    002-patterson-2021-carbon-emissions.md
+    _index.md              # Quick-reference index
+    001-author-year-topic.md
+    002-author-year-topic.md
     ...
   /water/
-    _index.md
-    001-li-2023-water-footprint.md
-    ...
   /washing/
-    _index.md
-    001-greenpeace-2024-tech-claims.md
-    ...
+  ...
 ```
 
-Files are numbered for ordering. Use descriptive names: `NNN-author-year-topic.md`
+Each topic folder has an `_index.md` summarizing all excerpts. Browse by topic or search across all findings.
 
-### Index Files
-
-Each research folder has an `_index.md` with a quick-reference summary of all excerpts. Update it when adding new excerpts.
-
-**Format:**
-```markdown
-# [Topic] Index
-
-| # | Source | Insight | Link |
-|---|--------|---------|------|
-| 001 | Author, Year | One-sentence key finding | [file](001-file.md) |
-| 002 | Author, Year | One-sentence key finding | [file](002-file.md) |
-```
-
-This makes it easy to scan what's been captured without opening each file.
-
-### Search Tools
-
-See `/skills/` for curl commands:
-- `openalex.md` - Academic papers (primary)
-- `arxiv.md` - Preprints
-- `serper.md` - Web, news, Google Scholar
-- `archive.md` - Internet Archive, Wayback
-
-### Example Workflow
-
-```bash
-# 1. Search OpenAlex for training emissions papers
-curl -s "https://api.openalex.org/works?search=LLM+training+energy+emissions&filter=publication_year:2024-2025&sort=cited_by_count:desc&per_page=10" | jq '.results[] | {title, year: .publication_year, citations: .cited_by_count, doi}'
-
-# 2. Find interesting result, fetch more details if needed
-curl -s "https://api.openalex.org/works/doi:10.xxxx/xxxxx" | jq '{title, abstract_inverted_index, authorships}'
-
-# 3. Write excerpt file with insight + URL
-# 4. Save to /research/ghg/001-author-year-topic.md
-```
-
-## What We're Researching
-
-See `RESEARCH_PLAN.md` for:
-- Full list of research areas and sub-topics
-- Key search terms
-- Sub-agent task definitions
-- Progress tracking
-
-## Critical Stance
-
-Every excerpt should consider:
-- **Source credibility**: Who wrote this? Who funded it?
-- **Methodology**: How did they get these numbers?
-- **Conflicts of interest**: Industry-funded? Self-reported data?
-- **What's missing**: What don't they say?
-
-Flag any concerns in the excerpt.
-
-## Rules
-
-1. **Every fact needs a URL** - No exceptions
-2. **Insights, not summaries** - How does it relate to our question?
-3. **Note methodology** - Especially for numbers/estimates
-4. **Flag COI** - Note if industry-funded or self-reported
-5. **Date everything** - Research landscape changes fast
+See [RESEARCH_PLAN.md](RESEARCH_PLAN.md) for the full research framework and methodology.
