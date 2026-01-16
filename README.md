@@ -57,18 +57,37 @@ Retrieved: [date]
 ```
 /research/
   /ghg/
+    _index.md                          # Summary index for this folder
     001-strubell-2019-training-costs.md
     002-patterson-2021-carbon-emissions.md
     ...
   /water/
+    _index.md
     001-li-2023-water-footprint.md
     ...
   /washing/
+    _index.md
     001-greenpeace-2024-tech-claims.md
     ...
 ```
 
 Files are numbered for ordering. Use descriptive names: `NNN-author-year-topic.md`
+
+### Index Files
+
+Each research folder has an `_index.md` with a quick-reference summary of all excerpts. Update it when adding new excerpts.
+
+**Format:**
+```markdown
+# [Topic] Index
+
+| # | Source | Insight | Link |
+|---|--------|---------|------|
+| 001 | Author, Year | One-sentence key finding | [file](001-file.md) |
+| 002 | Author, Year | One-sentence key finding | [file](002-file.md) |
+```
+
+This makes it easy to scan what's been captured without opening each file.
 
 ### Search Tools
 
