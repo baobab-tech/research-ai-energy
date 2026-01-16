@@ -5,11 +5,11 @@ Last updated: 2026-01-16
 ## In Progress
 
 - [~] ghg-training - Training emissions estimates and comparison (agent running)
-- [~] ghg-inference - Per-query emissions analysis (agent running)
-- [~] water-direct - Direct water consumption data (agent running)
-- [~] washing-claims - Document greenwashing/bluewashing (agent running)
-- [~] datacenter-power - Power source claims vs reality (agent running)
-- [~] community-opposition - Local resistance documentation (agent running)
+- [x] ghg-inference - Per-query emissions analysis (6 excerpts)
+- [x] water-direct - Direct water consumption data (6 excerpts)
+- [x] washing-claims - Document greenwashing/bluewashing (7 excerpts)
+- [x] datacenter-power - Power source claims vs reality (6 excerpts)
+- [x] community-opposition - Local resistance documentation (5 excerpts)
 
 ## Pending
 
