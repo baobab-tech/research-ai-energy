@@ -6,6 +6,56 @@ Records all searches performed, results found, and excerpts created.
 
 ## 2026-01-16
 
+### Water Consumption Numbers Compilation (Quantitative Data Focus)
+
+**OpenAlex Searches Performed:**
+1. "AI water consumption liters gallons" - 15 results, mostly biofuel/general papers
+2. "ChatGPT water footprint per query" - 15 results, found ChatGPT failures paper (401 citations)
+3. "data center water usage WUE" - 15 results, general environmental papers
+4. "machine learning water consumption" - 15 results, general ML papers
+5. "GPT training water evaporated" - 15 results, **FOUND: Li et al. 2023 (138 citations), Li 2025 CACM (31 citations)**
+6. "large language model environmental impact carbon water" - 15 results, general papers
+7. "generative AI water footprint environmental" - 15 results, general papers
+8. "data center cooling water efficiency PUE" - 15 results, **FOUND: liquid cooling paper (118 citations)**
+9. "Microsoft Google data center sustainability water" - 15 results, general papers
+10. "power usage effectiveness data center water cooling" - 15 results, general papers
+11. "evaporative cooling water server consumption" - 15 results, **FOUND: liquid cooling necessity paper**
+12. "GPT-4 BLOOM Llama carbon water environmental cost" - 10 results, **FOUND: Li 2025 CACM**
+13. "LLM energy consumption watt joule inference" - 15 results, **FOUND: Google 2025 AI environmental impact paper**
+14. "Luccioni emissions AI energy" - 10 results, **FOUND: Green AI systematic review (205 citations)**
+15. "Reducing carbon impact generative AI inference" - 10 results, **FOUND: Chien et al. 2023 (106 citations)**
+16. "Green AI energy efficiency systematic review" - 10 results, **FOUND: Verdecchia et al. 2023 (205 citations)**
+17. "Environmental equity AI geographical load balancing" - 10 results, **FOUND: Li et al. 2023 equity paper**
+
+**Key Findings:**
+- Li et al. (2023/2025): Seminal paper - GPT-3 training evaporates ~700,000 liters; ChatGPT 500mL per 20-50 queries (10-25mL/query); 4.2-6.6B m3 global AI by 2027
+- Elsworth et al. (2025 - Google): First production measurement - Gemini Apps 0.26 mL water per prompt, 0.24 Wh energy - CONTESTED vs Li estimates
+- Li et al. (2023): Environmental inequity - AI footprint disproportionately higher in certain regions
+- Chien et al. (2023): ChatGPT carbon/energy projections to 2035, request routing strategies
+- Verdecchia et al. (2023): Green AI systematic review - 98 papers, energy savings up to 115%
+
+**Excerpts Created:**
+- `/research/water/017-google-2025-gemini-water-measurements.md` - Google's first production measurement (0.26 mL/prompt)
+- `/research/water/018-li-2025-cacm-ai-water-projections.md` - Key water consumption numbers (CACM peer-reviewed)
+- `/research/water/019-li-2023-environmental-equity-regional-water.md` - Regional disparities in water footprint
+- `/research/water/020-chien-2023-genai-inference-carbon-projections.md` - ChatGPT carbon/energy projections
+- `/research/water/021-verdecchia-2023-green-ai-systematic-review.md` - Green AI review (115% energy savings)
+
+**Critical Finding: Contested Estimates:**
+- Li et al. 2023/2025: 10-25 mL per ChatGPT query
+- Google 2025: 0.26 mL per Gemini prompt (40-100x lower)
+- Discrepancy requires independent verification
+- Google has obvious conflict of interest in reporting lower numbers
+
+**Notes:**
+- Google paper (Elsworth et al. 2025) is first production-environment measurement of AI serving water
+- Li et al. work upgraded from arXiv to Communications of the ACM (peer-reviewed)
+- Environmental inequity dimension added by Li et al. 2023 equity paper
+- Green AI energy savings (up to 115%) translate to proportional water savings
+- Gap: Still no independent verification of corporate claims
+
+---
+
 ### Water Consumption - Reuse/Recycling Research (Data Center Water Reuse Practices)
 
 **OpenAlex Searches Performed:**
@@ -745,6 +795,168 @@ Records all searches performed, results found, and excerpts created.
 - Gap: EU Energy Efficiency Directive data center provisions not well-covered in academic literature
 - Gap: Limited academic analysis of voluntary commitments becoming mandatory
 - Key theme: Current AI policy focuses on socioeconomic impacts; environmental regulation relies on general ESG frameworks, not AI-specific rules
+
+---
+
+### GHG Numbers Compilation (Quantitative Carbon/Energy Data)
+
+**OpenAlex Searches Performed:**
+1. "GPT carbon footprint tonnes CO2" - 12 results, limited direct hits
+2. "LLM training energy kWh MWh" - 13 results, found timeshifting strategies paper
+3. "ChatGPT emissions per query" - 15 results, found Reducing Carbon Impact GenAI paper
+4. "AI inference energy consumption watts" - 15 results, found TPU v4 paper
+5. "machine learning carbon emissions measurement" - 20 results, general papers
+6. "large language model carbon footprint training" - 20 results, general LLM papers
+7. "generative AI energy carbon emissions" - 20 results, found Green AI systematic review
+8. "deep learning environmental impact carbon" - 20 results, general papers
+9. "making AI less thirsty water" - 10 results, **FOUND: Li et al. 2023 (138 citations)**
+10. "CodeCarbon ML CO2 track" - 10 results, found BERT fine-tuning paper
+11. "sustainable AI green machine learning" - 15 results, general papers
+12. "Power Hungry Processing Watts generative AI" - 10 results, found GenAI environmental impact paper
+13. "Strubell energy emissions NLP training" - 10 results, general papers
+14. "image generation AI energy CO2" - 10 results, general papers
+
+**Key Findings (Quantitative Numbers):**
+- Li et al. (2023): GPT-3 training = 700,000 liters water; ChatGPT = 500ml per 20-50 queries; 4.2-6.6B m3 AI water by 2027 (138 citations)
+- Tomlinson et al. (2024): AI emits 130-1500x less CO2 per page than humans; 310-2900x less per image (43 citations)
+- Chien et al. (2023): CarbonMin routing strategy reduces GenAI inference carbon (106 citations)
+- Jouppi et al. (2023): TPU v4 uses 2-6x less energy, 20x less CO2e than on-premise DSAs (351 citations)
+- Verdecchia et al. (2023): Green AI achieves energy savings up to 115%, >50% common (205 citations)
+- Wang et al. (2023): BERT fine-tuning energy varies across tasks/hardware/methods (10 citations)
+
+**Excerpts Created:**
+- `/research/ghg/012-li-2023-making-ai-less-thirsty-water-numbers.md` - GPT-3 700K liters water, ChatGPT 500ml per 20-50 queries
+- `/research/ghg/013-tomlinson-2024-ai-vs-human-emissions-comparison.md` - AI 130-2900x less CO2 than humans per task
+- `/research/ghg/014-chien-2023-genai-inference-carbon-reduction.md` - CarbonMin routing for inference emissions
+- `/research/ghg/015-tpu-v4-energy-efficiency-numbers.md` - TPU v4 2-6x less energy, 20x less CO2e
+- `/research/ghg/016-verdecchia-2023-green-ai-systematic-review-savings.md` - Green AI savings up to 115%
+- `/research/ghg/017-wang-2023-bert-finetuning-energy-carbon.md` - BERT fine-tuning energy study
+
+**Notes:**
+- Most quantitative data comes from specific hardware/system measurements rather than standardized methodology
+- Water consumption (Li et al.) and efficiency comparisons (TPU v4) provide most concrete numbers
+- AI vs human comparison (Tomlinson) includes critical caveat about rebound effects
+- Green AI systematic review shows efficiency improvements are achievable (>50% savings common)
+- Gap: Limited standardized methodology for measuring per-query emissions across different providers
+- Gap: Specific training emissions (kWh, tCO2e) for GPT-4, Claude, Gemini not publicly available
+- Most papers note significant variation by location (grid carbon intensity), time (renewable availability), and hardware
+
+---
+
+### Community Impact - Grid/Ratepayer Research
+
+**OpenAlex Searches Performed:**
+1. "data center electricity grid strain" - 10 results, general energy papers
+2. "AI electricity demand residential rates" - 10 results, general papers
+3. "data center grid infrastructure costs" - 10 results, general papers
+4. "electricity price data center impact" - 10 results, general papers
+5. "power grid reliability data center" - 10 results, general papers
+6. "data center electricity consumption growth" - 10 results, general papers
+7. "data center energy demand utility" - 10 results, general papers
+8. "AI computing power infrastructure" - 10 results, general AI papers
+9. "hyperscale data center power" - 10 results, **FOUND: AI hype paper, Green Cloud Continuum, China EWCRT**
+10. "data center sustainability environmental impact" - 15 results, general papers
+11. "electricity load growth forecast data centers" - 10 results, **FOUND: Modern Computing paper**
+12. "generative AI energy consumption" - 10 results, general LLM papers
+13. "power demand growth artificial intelligence" - 10 results, general papers
+14. "computing sustainability carbon footprint" - 10 results, general papers
+15. "IEA data center electricity" - 10 results, general papers
+16. "power hungry processing AI training" - 10 results, general papers
+17. "smart grid load management data center" - 10 results, general papers
+18. "data center power demand forecast" - 10 results, general papers
+19. "GPU energy consumption AI" - 10 results, general papers
+20. "carbon footprint machine learning training" - 10 results, general papers
+21. "sustainable computing environmental AI" - 10 results, general papers
+22. "AI environmental impact energy" - 15 results, general papers
+23. "utility electricity rate increase demand growth" - 10 results, general papers
+24. "grid reliability electricity load increase" - 10 results, general papers
+25. "transmission interconnection queue delay" - 10 results, general papers
+
+**Key Findings:**
+- Xie et al. (2024): China's EWCRT Project - 8 hubs, 10 clusters, potential 2,125-9,500 Mt CO2 reduction by 2050, illustrates scale of infrastructure planning
+- Kim et al. (2024): Data center PUE varies 1.15-1.43 by climate zone - 24% efficiency difference between locations
+- Dhiman et al. (2024): "Sustainability of AI" vs "AI for Sustainability" tension - economic dimension underexplored
+- Gajdzik et al. (2024): Global energy crisis context - households pushed into poverty while energy demand grew
+
+**Excerpts Created:**
+- `/research/community/006-xie-2024-china-computing-transmission.md`
+- `/research/community/007-kim-2024-data-center-pue-tool.md`
+- `/research/community/008-dhiman-2024-ai-sustainability-tension.md`
+- `/research/community/009-gajdzik-2024-energy-crisis-efficiency.md`
+
+**Notes:**
+- Limited peer-reviewed papers specifically on data center impacts on residential electricity rates
+- Academic literature focuses on data center efficiency (PUE) rather than ratepayer cost distribution
+- Gap: Few papers on utility infrastructure cost allocation for data center interconnection
+- Gap: Limited academic coverage of specific regional cases (Virginia, Texas, Georgia grid strain)
+- Gap: "Who pays" question largely absent from peer-reviewed literature
+- China's EWCRT provides only documented case of coordinated national data center grid planning
+- Energy crisis papers provide macroeconomic context but don't isolate data center contribution
+- PJM/ERCOT load growth projections mainly in industry reports, not academic literature
+- Most academic research on grid reliability doesn't specifically address data center loads
+
+---
+
+
+### Narrative - Net Impact Analysis Research
+
+**OpenAlex Searches Performed:**
+1. "AI net environmental impact" - 10 results, mostly unrelated (ADMET, nanoparticles, image processing)
+2. "AI climate benefits vs costs" - 10 results, general healthcare/energy papers
+3. "machine learning lifecycle assessment" - 10 results, general LCA papers
+4. "AI environmental tradeoffs" - 10 results, general AI papers
+5. "digital technology sustainability net effect" - 10 results, general health/disease burden papers
+6. "AI sustainability benefits costs tradeoff" - 15 results, general AI papers
+7. "artificial intelligence environmental benefit cost analysis" - 15 results, general papers
+8. "AI for sustainability vs AI sustainability" - 15 results, healthcare/nanoparticle papers
+9. "rebound effect digital technology energy" - 15 results, **FOUND: ICT GHG enablement paper, circular economy paper**
+10. "green AI sustainable computing environmental impact" - 15 results, **FOUND: Green sustainable AI thematic paper (81 citations)**
+11. "AI carbon footprint climate mitigation" - 15 results, **FOUND: AI digital twin smart cities (143 citations)**
+12. "digital technology Jevons paradox rebound" - 15 results, **FOUND: Bieser GHG enablement critique**
+13. "ICT digitalization net carbon emissions" - 15 results, **FOUND: Modern computing paper (139 citations)**
+14. "AI ecological footprint reduction countries panel" - 10 results, **FOUND: Wang et al. 2024 (174 citations)**
+15. "Tomlinson AI emissions human comparison" - 10 results, **FOUND: Tomlinson et al. 2024 (43 citations)**
+16. "AI sustainability review" - 10 results, **FOUND: Dhiman et al. 2024 (24 citations)**
+17. "Green artificial intelligence initiatives" - 15 results, **FOUND: Alzoubi & Mishra 2024 (112 citations)**
+18. "AI climate mitigation decarbonization" - 10 results, **FOUND: Wang et al. 2025 energy transition (128 citations)**
+
+**Key Findings:**
+- Wang, Li & Li (2024): Panel data from 67 countries shows AI significantly reduces ecological footprints and carbon emissions, but benefits are context-dependent (industrial composition, trade openness, development level). 174 citations.
+- Tomlinson et al. (2024) in Nature Scientific Reports: AI emits 130-1500x less CO2e per page than humans for writing, 310-2900x less per image for illustration. Authors explicitly caveat that rebound effects not included. 43 citations.
+- Dhiman et al. (2024): Critical framework distinguishing "Sustainability OF AI" vs "AI FOR Sustainability" - net impact depends on balancing both. Identifies socio-economic dimensions as under-researched.
+- Alzoubi & Mishra (2024) in Journal of Cleaner Production: 55 green AI initiatives identified, but most lack empirical validation. "Research discussing these initiatives remains scarce." 112 citations.
+- Wang, Li & Li (2025) in Energy Strategy Reviews: Positions AI as "transformative catalyst" for energy transition, but acknowledges scalability and interoperability challenges. 128 citations.
+- Raman et al. (2024): Three major Green AI research themes identified (algorithmic efficiency, hardware innovations, carbon footprinting). Major gap: socio-economic dimensions ignored.
+
+**Excerpts Created:**
+- `/research/narrative/007-wang-2024-ai-ecological-footprints-67-countries.md` - Macro-level empirical study of AI net positive impact (with critical caveats)
+- `/research/narrative/008-tomlinson-2024-ai-vs-human-emissions-comparison.md` - Per-task emissions comparison (with rebound effect caveat)
+- `/research/narrative/009-dhiman-2024-sustainability-of-ai-vs-ai-for-sustainability.md` - Framework for net impact analysis
+- `/research/narrative/010-alzoubi-2024-green-ai-initiatives-validation-gap.md` - 55 initiatives lack empirical validation
+- `/research/narrative/011-wang-2025-ai-energy-transition-catalyst.md` - AI as catalyst with opportunity cost question
+- `/research/narrative/012-raman-2024-green-sustainable-ai-thematic-analysis.md` - Three themes, one major gap (socio-economic)
+
+**Key Net Impact Insights:**
+1. **Macro studies show AI can be net positive** - Wang et al. (2024) finds significant ecological footprint reduction across 67 countries
+2. **Per-task studies show AI is more efficient** - Tomlinson et al. (2024) finds 130-2900x less emissions per output
+3. **BUT rebound effects are systematically ignored** - Every paper acknowledging benefits also caveats that rebound effects not studied
+4. **55 "green AI" initiatives lack validation** - Claims of sustainable AI not backed by empirical evidence
+5. **Socio-economic dimensions neglected** - WHO bears costs vs WHO gets benefits is not being studied
+6. **Opportunity cost unasked** - Could AI investment dollars deliver more climate benefit elsewhere?
+
+**Net Impact Formula (Dhiman Framework):**
+NET = (Benefits from "AI FOR Sustainability") - (Costs from "Sustainability OF AI") - (Rebound Effects) - (Opportunity Costs)
+
+Current literature measures first two terms imperfectly; largely ignores last two.
+
+**Notes:**
+- No paper found that comprehensively quantifies net impact including all four terms
+- Macro-level positive findings may reflect correlation (wealthy countries do both AI and sustainability) rather than causation
+- The "AI vs human" comparison (Tomlinson) is provocative but narrow framing
+- Gap: Rebound effects from AI efficiency gains at societal scale
+- Gap: Opportunity cost analysis of AI infrastructure investment
+- Gap: Environmental justice - who bears data center impacts?
+- Key theme: Benefits are theoretical/projected, costs are measured/current
 
 ---
 

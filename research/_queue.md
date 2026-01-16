@@ -20,15 +20,15 @@ Last updated: 2026-01-16
 - [x] narrative-claims - "AI for climate" scrutiny (6 excerpts)
 - [x] datacenter-growth - Infrastructure expansion (5 excerpts)
 
-## In Progress (Batch 3)
+## Completed (Batch 3)
 
-- [~] ghg-numbers - Collect ALL published estimates (agent running)
-- [~] water-reuse - Reuse/recycling practices (agent running)
-- [~] water-numbers - Collect ALL water estimates (agent running)
-- [~] washing-gaps - Identify reporting gaps (agent running)
-- [~] policy-proposed - Upcoming policy proposals (agent running)
-- [~] frugal-when-not - When AI is overkill (agent running)
-- [~] narrative-net - Net impact analysis (agent running)
-- [~] community-grid - Grid and ratepayer impacts (agent running)
+- [x] ghg-numbers - GHG estimates compilation (6 excerpts)
+- [x] water-reuse - Water reuse practices (5 excerpts)
+- [x] water-numbers - Water estimates compilation (5 excerpts)
+- [x] washing-gaps - Reporting gaps (4 excerpts)
+- [x] policy-proposed - Proposed policies (5 excerpts)
+- [x] frugal-when-not - When NOT to use AI (5 excerpts)
+- [x] narrative-net - Net impact analysis (6 excerpts)
+- [x] community-grid - Grid/ratepayer impacts (4 excerpts)
 
-## TOTAL: 67 excerpts
+## ALL TASKS COMPLETE
