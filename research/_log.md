@@ -214,6 +214,52 @@ Records all searches performed, results found, and excerpts created.
 
 ---
 
+### Narrative Claims Research (AI-for-Climate Critical Analysis)
+
+**OpenAlex Searches Performed:**
+1. "AI climate change solution criticism" - 10 results, found green AI papers
+2. "AI sustainability benefits rebound effect" - 10 results, mixed relevance
+3. "AI environmental efficiency claims" - 10 results, general AI papers
+4. "machine learning climate mitigation" - 10 results, general ML papers
+5. "Jevons paradox AI" - 10 results, **FOUND: ICT GHG enablement paper, Net Zero dashboards paper**
+6. "artificial intelligence carbon footprint environmental cost" - 10 results, general papers
+7. "AI energy consumption data center climate" - 10 results, general papers
+8. "green AI sustainable computing environmental" - 10 results, general AI papers
+9. "ICT GHG enablement emissions reduction" - 10 results, found GHG enablement paper
+10. "generative AI environmental impact energy" - 10 results, general papers
+11. "large language models energy sustainability" - 10 results, general papers
+12. "net zero digital technology emissions" - 10 results, found Global polycrisis paper
+13. "AI decarbonization greenwashing" - 10 results, ESG finance papers
+14. "ChatGPT GPT environmental footprint emissions" - 10 results, **FOUND: AI hype paper, AI vs human emissions paper**
+
+**Key Findings:**
+- Bieser et al. (2024) in Journal of Industrial Ecology: Critical review of telecom industry's GHG "enablement" claims - methodological flaws include cherry-picking beneficial services, ignoring rebound effects
+- Markelius et al. (2024): AI hype "historically unmatched" in planetary/social costs, identifies mechanisms fueling overconsumption
+- Tomlinson et al. (2024) in Nature Scientific Reports: AI vs human emissions comparison - but explicitly notes it ignores rebound effects
+- Gregg & Strengers (2024): Critiques IT sector Net Zero dashboards as creating false sense of progress
+- Samuel et al. (2024): Carbon accounting in digital industry requires decision-making under uncertainty - calls for "more data" can delay action
+- Moyano-Fernandez et al. (2024): AI-health "honeymoon" should become lasting marriage via environmental justice lens
+
+**Excerpts Created:**
+- `/research/narrative/001-bieser-2024-ict-ghg-enablement-critique.md` - ICT industry's flawed GHG enablement claims
+- `/research/narrative/002-markelius-2024-ai-hype-planetary-costs.md` - AI hype mechanisms and costs
+- `/research/narrative/003-tomlinson-2024-ai-emissions-vs-humans.md` - AI vs human emissions (with rebound effect caveat)
+- `/research/narrative/004-gregg-2024-net-zero-dashboards.md` - Critique of IT Net Zero dashboards
+- `/research/narrative/005-samuel-2024-carbon-accounting-uncertainty.md` - Carbon accounting uncertainty in digital sector
+- `/research/narrative/006-moyano-2024-ai-health-sustainability-honeymoon.md` - AI sustainability and environmental justice
+
+**Notes:**
+- Bieser et al. (2024) is key paper for understanding how industry inflates "AI for climate" claims
+- The GHG "enablement factor" methodology is widely used but systematically flawed
+- Rebound effects (Jevons paradox) explicitly acknowledged as limitation in Tomlinson paper
+- Limited academic critique specifically of "AI will save X tonnes CO2" claims - most critique is broader
+- Gap: Few papers analyze WHO funds AI-for-climate research (conflict of interest analysis)
+- Gap: Limited peer-reviewed analysis of specific tech company claims (Google, Microsoft, etc.)
+- The "AI hype" critique (Markelius) connects planetary costs to socio-economic inequality
+- Carbon accounting uncertainty paper reveals how calls for "more data" can delay climate action
+
+---
+
 ### GHG Training Emissions Research (Additional - Training Focus)
 
 **OpenAlex Searches Performed:**
@@ -271,4 +317,56 @@ Records all searches performed, results found, and excerpts created.
 - Many searches returned general LLM review papers rather than energy-specific research
 - OpenAlex academic papers prioritize model capability over environmental analysis
 - Note: Some overlap with GHG Inference excerpts (same papers relevant to both topics)
+
+---
+
+### Policy - Current Regulation Landscape for AI Environmental Impact
+
+**OpenAlex Searches Performed:**
+1. "AI regulation environmental" - 10 results, general AI papers
+2. "data center regulation policy" - 10 results, general papers
+3. "EU AI Act environment" - 10 results, general papers
+4. "tech emissions disclosure requirements" - 10 results, general tech papers
+5. "AI sustainability policy" - 10 results, general health/AI papers
+6. "sustainable artificial intelligence carbon footprint" - 10 results, found ecological footprint paper
+7. "green AI energy consumption" - 10 results, found green AI review
+8. "data center carbon emissions sustainability" - 10 results, general papers
+9. "AI governance environmental impact" - 10 results, general papers
+10. "machine learning carbon emissions environmental" - 10 results, general papers
+11. "digital sustainability disclosure reporting" - 15 results, found ESG reporting papers
+12. "corporate carbon disclosure technology" - 15 results, found ESG/climate papers
+13. "AI ethics sustainability framework" - 15 results, found AI policy papers
+14. "EU AI Act sustainability" - 15 results, general papers
+15. "technology company emissions reporting disclosure" - 15 results, found ESG challenges paper
+16. "responsible AI governance framework" - 15 results, found AI regulatory papers
+17. "AI policy framework government" - 15 results, general AI papers
+18. "climate disclosure mandatory regulation" - 15 results, found ESG regulation papers
+19. "SEC climate disclosure rule" - 10 results, **FOUND: IMF AI regulation paper, Climate ESG regulation paper**
+
+**Key Findings:**
+- Capraro et al. (2024) in PNAS Nexus (205 citations): Interdisciplinary analysis of EU, US, UK AI policy frameworks - environmental impact not central to any major framework
+- Comunale (2024) in IMF Working Paper (42 citations): AI regulation differs widely across countries; environmental regulation absent from major policy focus areas
+- Oliver Yebenes (2024): CSRD pushing mandatory ESG disclosure in EU; tech companies subject to sustainability reporting
+- Chopra et al. (2024) in Sustainability (132 citations): ESG reporting quality concerns; standardization gaps for sustainability metrics
+- Martinsson et al. (2024) in Review of Financial Studies (79 citations): Swedish carbon tax evidence shows ~30% emission reduction effectiveness
+
+**Excerpts Created:**
+- `/research/policy/001-capraro-2024-genai-policy-inequalities.md`
+- `/research/policy/002-comunale-2024-imf-ai-regulation-review.md`
+- `/research/policy/003-oliver-2024-esg-climate-regulation.md`
+- `/research/policy/004-chopra-2024-esg-reporting-challenges.md`
+- `/research/policy/005-martinsson-2024-carbon-pricing-effects.md`
+
+**Notes:**
+- Major gap: No dedicated AI environmental impact regulations found in academic literature
+- EU AI Act focuses on safety, privacy, bias - not environmental sustainability
+- US approach fragmented without federal comprehensive AI environmental law
+- ESG/CSRD frameworks could capture AI environmental impacts but not AI-specific
+- Carbon pricing exists (Sweden, EU ETS) but not specifically targeting AI/data centers
+- Academic literature on AI policy focuses on economic/social impacts, not environmental
+- SB 1047 (California) and other US state actions too recent for peer-reviewed coverage
+- Tech company voluntary disclosures dominate rather than mandatory requirements
+- Gap between policy attention (safety, privacy) and environmental concerns (energy, water, carbon)
+
+---
 
