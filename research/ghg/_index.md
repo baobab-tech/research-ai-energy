@@ -28,3 +28,13 @@
 | 011 | Psarommatis & May, 2024 | Digital Product Passport for tracking computing hardware lifecycle/circularity | [file](011-psarommatis-2024-digital-product-passport-circularity.md) |
 
 **Key Gap**: No specific GPU/chip manufacturing emissions data in 2024-2025 literature.
+
+## Numbers Compilation
+| # | Source | Insight | Link |
+|---|--------|---------|------|
+| 012 | Li et al., 2023 | GPT-3 training: 700K liters water; ChatGPT: 500ml per 20-50 queries; 4.2-6.6B m³ global AI water by 2027 | [file](012-li-2023-making-ai-less-thirsty-water-numbers.md) |
+| 013 | Tomlinson et al., 2024 | AI text generation 130-1500x less CO2e per page than humans; illustration 310-2900x less - with rebound effect caveats | [file](013-tomlinson-2024-ai-vs-human-emissions-comparison.md) |
+| 014 | Chien et al., 2023 | CarbonMin request routing strategy can reduce inference emissions; 106 citations on carbon-aware scheduling | [file](014-chien-2023-genai-inference-carbon-reduction.md) |
+| 015 | Jouppi et al. (Google), 2023 | TPU v4: 2-6x less energy, ~20x less CO2e than on-premise DSAs; 351 citations | [file](015-tpu-v4-energy-efficiency-numbers.md) |
+| 016 | Verdecchia et al., 2023 | Green AI systematic review: energy savings up to 115%, 50%+ common; 205 citations | [file](016-verdecchia-2023-green-ai-systematic-review-savings.md) |
+| 017 | Wang et al., 2023 | BERT fine-tuning energy varies by task, dataset, hardware; aggregate fine-tuning may rival pre-training | [file](017-wang-2023-bert-finetuning-energy-carbon.md) |
