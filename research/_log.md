@@ -1193,3 +1193,101 @@ Current literature measures first two terms imperfectly; largely ignores last tw
 
 ---
 
+### Frugal AI - Efficient AI and Green Machine Learning (2025 Papers)
+
+**OpenAlex Searches Performed:**
+1. "efficient AI green machine learning" (2025 filter) - 15 results, mostly unrelated (plant disease, food safety)
+2. "small language models" (2025 filter) - 15 results, found DeepSeek-R1 (141 citations), TabPFN (307 citations)
+3. "model compression efficiency" (2025 filter) - 15 results, found TabPFN again
+4. "sustainable AI computing" (2025 filter) - 15 results, general papers
+5. "energy efficient deep learning" (2025 filter) - 15 results, **FOUND: photonic accelerator (79 citations), DeepSeek-R1**
+6. "LLM efficiency inference" (2025 filter) - 15 results, **FOUND: DynamoLLM (26 citations), Making AI Less Thirsty (31 citations)**
+7. "carbon footprint machine learning" (2025 filter) - 15 results, general papers
+8. "quantization pruning neural network" (2025 filter) - 15 results, **FOUND: TabPFN, edge deep learning survey**
+9. "neuromorphic computing energy" (2025 filter) - 15 results, **FOUND: photonic accelerator, synaptic silicon transistor (45 citations), memristor development (31 citations)**
+10. "edge AI inference efficiency" (2025 filter) - 15 results, general papers
+11. "spiking neural network energy efficient" (2025 filter) - 15 results, general papers
+12. "AI environmental impact energy consumption" (2025 filter) - 15 results, general papers
+13. "DeepSeek efficient" (2025 filter) - 10 results, **FOUND: DeepSeek-V3 insights (10 citations)**
+14. "knowledge distillation large language model" (2025 filter) - 15 results, general surveys
+15. "speculative decoding LLM efficient" (2025 filter) - 10 results, **FOUND: hardware accelerators survey (13 citations), LLM environmental impacts paper**
+16. "green AI sustainability" (2025 filter) - 15 results, mostly unrelated
+
+**Key Findings (2025 Publications Only):**
+- Stojkovic et al. (2025) at HPCA: DynamoLLM - Energy-efficient LLM inference cluster design from Microsoft Research/UIUC (26 citations)
+- Hua, Shen et al. (2025) in Nature: Large-scale photonic accelerator with 16,000+ components, 1 GHz, 3 ns latency (79 citations)
+- Pazos, Lanza et al. (2025) in Nature: Standard silicon transistor exhibits neural/synaptic behaviors - 2-transistor cell vs 24+ in current designs (45 citations)
+- Lee et al. (2025) in Advanced Materials: Reconfigurable memristors for low-power neuromorphic systems (31 citations)
+- Kachris (2025) in Applied Sciences: Survey of hardware accelerators for LLMs covering GPUs, FPGAs, custom architectures with energy focus (13 citations)
+
+**Excerpts Created:**
+- `/research/frugal/012-stojkovic-2025-dynamollm-energy-efficient-inference.md` - DynamoLLM for production-scale energy savings
+- `/research/frugal/013-hua-2025-photonic-accelerator-ultralow-latency.md` - Photonic computing at scale (Nature)
+- `/research/frugal/014-pazos-2025-silicon-transistor-neuromorphic.md` - 2-transistor neuromorphic cell (Nature)
+- `/research/frugal/015-lee-2025-memristor-low-power-neuromorphic.md` - Memristor review for neuromorphic systems
+- `/research/frugal/016-kachris-2025-hardware-accelerators-llm-survey.md` - LLM hardware accelerator survey
+
+**Key Themes from 2025 Literature:**
+1. **LLM Inference Efficiency** - Focus shifting from training to inference optimization (DynamoLLM)
+2. **Alternative Computing Paradigms** - Photonics and neuromorphic approaches maturing rapidly
+3. **Standard CMOS Innovation** - Significant efficiency gains possible without exotic materials (silicon transistor paper)
+4. **Hardware-Software Co-Design** - Emerging as key strategy (DeepSeek-V3 architecture insights)
+
+**Notes:**
+- 2025 literature shows hardware efficiency research maturing beyond benchmarks to production systems
+- Nature published two major neuromorphic/photonic papers in early 2025 - indicates field significance
+- Limited papers on algorithmic efficiency (small language models, model compression) with high citations in 2025 so far
+- Gap: Direct energy/carbon measurements of new hardware approaches vs GPUs not well-documented
+- Gap: Production deployment data for photonic and neuromorphic systems still limited
+- Most 2025 papers focus on feasibility demonstration rather than environmental impact quantification
+
+---
+
+### Water Consumption - 2025 Papers on AI/Data Center Water (Targeted Search)
+
+**OpenAlex Searches Performed:**
+1. "data center water cooling efficiency" (2025 filter) - 15 results, mostly unrelated (solar cells, batteries)
+2. "AI infrastructure water" (2025 filter) - 15 results, mostly agriculture/food papers
+3. "evaporative cooling data center" (2025 filter) - 15 results, mostly unrelated
+4. "data center water consumption" (2025 filter) - 15 results, general chemistry papers
+5. "AI water footprint" (2025 filter) - 15 results, **FOUND: Li et al. 2025 CACM (31 citations)**
+6. "liquid cooling server data center" (2025 filter) - 15 results, **FOUND: Li & Zhu 2025 (13 citations), Kim et al. 2025 immersion (17 citations)**
+7. "WUE water usage effectiveness data center" (2025 filter) - 15 results, **FOUND: Lei et al. 2025 (3 citations)**
+8. "ChatGPT environmental sustainability carbon water" (2025 filter) - 15 results, **FOUND: Berthelot et al. 2025 (10 citations)**
+9. "LLM sustainability carbon water" (2025 filter) - 15 results, **FOUND: "Efficiency Is Not Enough" Wright et al. (6 citations)**
+10. "immersion cooling data center server" (2025 filter) - 15 results, confirmed Kim et al. 2025
+
+**Key 2025 Findings:**
+- Wright et al. (2025) CACM: "Efficiency Is Not Enough" - efficiency gains overwhelmed by demand growth (Jevons paradox)
+- Berthelot et al. (2025) CACM: GenAI services environmental impact - inference now dominates operational footprint
+- Li & Zhu et al. (2025) Energies: Liquid cooling review - chip power density makes water-based cooling necessary
+- Kim et al. (2025) Applied Thermal Eng: Immersion cooling - potential waterless DC cooling solution (17 citations)
+- Lei et al. (2025) Energy & Buildings: US small/midsize DCs more water-intensive despite energy efficiency gains
+
+**Papers Already Documented (not duplicated):**
+- 017: Google Gemini water measurements (Elsworth 2025)
+- 018: Li et al. 2025 CACM - AI water projections
+- 022: Lei et al. 2025 - US midsize data centers WUE
+
+**New Excerpts Created:**
+- `/research/water/023-wright-2025-efficiency-not-enough-sustainable-ai.md` - Jevons paradox in AI sustainability
+- `/research/water/024-berthelot-2025-genai-environmental-impact-services.md` - GenAI infrastructure environmental analysis
+- `/research/water/025-li-zhu-2025-data-center-liquid-cooling-review.md` - Technical necessity of liquid cooling
+- `/research/water/026-kim-2025-immersion-cooling-high-density-servers.md` - Waterless cooling alternative
+
+**Key 2025 Research Themes Identified:**
+1. Efficiency paradox: Better WUE doesn't mean less total water if AI demand grows faster
+2. Inference dominance: Serving billions of queries now exceeds training water footprint
+3. Technical lock-in: AI chip power density physically requires liquid (water-based) cooling
+4. Emerging solutions: Immersion cooling offers waterless path but limited deployment
+5. Hidden burden: 40% of servers in small/midsize DCs with worse WUE than hyperscale
+
+**Notes:**
+- 2025 CACM published three related papers: Li et al., Wright et al., Berthelot et al. - signals academic establishment concern
+- Limited 2025 papers with specific new water consumption NUMBERS - most cite Li et al. 2023/2025
+- Immersion cooling (Kim 2025) is main technical alternative to evaporative cooling
+- No 2025 papers found specifically assessing corporate "water positive" pledge methodologies
+- Gap persists: Independent verification of Google's 0.26 mL/prompt claim
+
+---
+
