@@ -7,3 +7,7 @@
 | 003 | Markelius et al., 2024 | AI hype redistributes costs to local communities while benefits flow to tech companies | [file](003-markelius-2024-ai-hype-costs.md) |
 | 004 | Dhiman et al., 2024 | "Sustainability of AI" vs "AI for Sustainability" reveals tension between promise and impact | [file](004-dhiman-2024-ai-sustainability-review.md) |
 | 005 | Energies, 2024 | Global energy crisis creates tension between data center demand and residential ratepayers | [file](005-global-energy-crisis-2024-efficiency.md) |
+| 006 | Xie et al., 2024 | China's EWCRT Project shows massive infrastructure scale (8 hubs, 10 clusters) and cross-regional transmission cost distribution | [file](006-xie-2024-china-computing-transmission.md) |
+| 007 | Kim et al., 2024 | Data center PUE varies 1.15-1.43 by climate zone - identical loads require 24% more grid power in suboptimal locations | [file](007-kim-2024-data-center-pue-tool.md) |
+| 008 | Dhiman et al., 2024 | "Sustainability of AI" vs "AI for Sustainability" tension - economic dimension of energy costs underexplored | [file](008-dhiman-2024-ai-sustainability-tension.md) |
+| 009 | Gajdzik et al., 2024 | Energy crisis pushed households into poverty while industrial demand grew - frames data center equity question | [file](009-gajdzik-2024-energy-crisis-efficiency.md) |

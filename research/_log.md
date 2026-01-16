@@ -6,6 +6,51 @@ Records all searches performed, results found, and excerpts created.
 
 ## 2026-01-16
 
+### Water Consumption - Reuse/Recycling Research (Data Center Water Reuse Practices)
+
+**OpenAlex Searches Performed:**
+1. "data center water recycling" - 10 results, mostly unrelated general papers
+2. "cooling water reuse data center" - 10 results, general papers
+3. "wastewater treatment data center" - 10 results, general environmental papers
+4. "water efficiency data center WUE" - 10 results, agriculture/plant papers dominated
+5. "greywater recycling industrial cooling" - 10 results, **FOUND: sustainable wastewater reuse, recycled water systems**
+6. "data center water consumption cooling" - 15 results, general papers
+7. "AI water consumption data center" - 15 results, general AI papers
+8. "sustainable data center cooling" - 15 results, general papers
+9. "holistic sustainable computing" - 10 results, found ESC framework paper
+10. "making AI less thirsty" - 5 results, **FOUND: Li et al. 2025**
+11. "water reuse comprehensive review" - 10 results, **FOUND: Florides et al. 2024**
+12. "recycled water systems building" - 10 results, **FOUND: Chen et al. 2024**
+13. "cooling tower blowdown water reuse" - 10 results, **FOUND: Muller et al. 2024, Biedunkova et al. 2024**
+14. "industrial water reuse zero liquid discharge" - 10 results, general papers
+15. "membrane bioreactor wastewater reclamation" - 10 results, **FOUND: Kim et al. 2024**
+
+**Key Findings:**
+- Florides et al. (2024): Comprehensive water reuse review - covers legislative frameworks, recovery methods, public perception
+- Chen et al. (2024): Recycled water in buildings - greywater recycling technologies, 12-14% efficiency gains, membrane filtration
+- Muller et al. (2024): Cooling tower blowdown reuse achieves 13% water savings - directly applicable to data centers
+- Biedunkova et al. (2024): Operating power plant achieves 25% blending of treated CTBD with make-up water
+- Kim et al. (2024): Hybrid MBR systems for wastewater reclamation - FO/MD for low-energy water recycling
+
+**Excerpts Created:**
+- `/research/water/012-florides-2024-water-reuse-comprehensive.md` - Comprehensive water reuse review
+- `/research/water/013-chen-2024-recycled-water-buildings.md` - Recycled water systems for buildings
+- `/research/water/014-muller-2024-cooling-tower-blowdown.md` - Cooling tower blowdown reuse (13% savings)
+- `/research/water/015-biedunkova-2024-cooling-water-reuse-power-plant.md` - Power plant water reuse (25% blending)
+- `/research/water/016-kim-2024-membrane-bioreactor-wastewater.md` - Membrane bioreactor technologies
+
+**Notes:**
+- Limited peer-reviewed papers specifically on data center water reuse/recycling practices
+- Most relevant papers address industrial cooling (power plants) rather than data centers specifically
+- Cooling tower blowdown reuse most directly applicable to data center evaporative cooling
+- Key technologies: lime softening, membrane filtration, reverse osmosis, forward osmosis, membrane distillation
+- Achievable water savings: 13-25% through blowdown reuse and treatment
+- Gap: No peer-reviewed papers on specific tech company (Google, Microsoft, Meta) water recycling programs
+- Gap: Limited data center-specific WUE (Water Usage Effectiveness) measurement standards
+- Gap: On-site treatment vs. municipal water source trade-offs not well-studied for data centers
+
+---
+
 ### Washing Claims Research (Greenwashing/Bluewashing in Tech/AI)
 
 **OpenAlex Searches Performed:**
@@ -40,6 +85,45 @@ Records all searches performed, results found, and excerpts created.
 - Limited direct papers on tech-specific "100% renewable" claims or "water positive" pledges
 - Most academic research focuses on general corporate greenwashing rather than tech-specific cases
 - Carbon offset criticism was the strongest area of academic coverage
+
+---
+
+### Washing Gaps Research - Corporate Environmental Disclosure Gaps
+
+**OpenAlex Searches Performed:**
+1. "corporate environmental disclosure gaps" - 10 results, found ESG papers
+2. "sustainability reporting limitations tech" - 10 results, general papers
+3. "Scope 3 emissions disclosure challenges" - 10 results, found ESG challenges paper
+4. "ESG reporting transparency gaps" - 10 results, found greenwashing papers
+5. "carbon accounting limitations" - 10 results, general papers
+6. "greenwashing corporate disclosure" - 10 results, found cheap talk paper, offset paper
+7. "carbon footprint reporting incomplete" - 10 results, general papers
+8. "climate disclosure cheap talk" - 10 results, **FOUND: Bingler et al. 2024 ClimateBert paper**
+9. "carbon offset quality low" - 10 results, **FOUND: Trencher et al. 2024 low-quality offsets**
+10. "ESG rating divergence inconsistency" - 10 results, found ESG regulation papers
+11. "Limited accountability emissions targets" - 10 results, **FOUND: Jiang et al. 2025 Nature Climate Change**
+12. "greenwashing incidents detection" - 10 results, **FOUND: Kereszturi et al. 2024 incident-based**
+
+**Key Findings:**
+- Bingler et al. (2024) in J. Banking & Finance: "Cheap talk" in climate disclosures - voluntary disclosure associated with MORE greenwashing, not less
+- Jiang et al. (2025) in Nature Climate Change: 9% of emissions targets failed, 31% "disappeared" - only 3 failures got media coverage
+- Chopra et al. (2024) in Sustainability: ESG reporting quality concerns - lack of standardization, company-centric bias
+- Kereszturi et al. (2024) in CSR & Env. Management: Incident-based greenwashing detection - 7% of MSCI World companies engaged in greenwashing
+
+**Excerpts Created:**
+- `/research/washing/008-bingler-2024-climate-cheap-talk.md` - Climate disclosure cheap talk vs real action
+- `/research/washing/009-jiang-2025-emissions-target-accountability.md` - Limited accountability for failed emissions targets
+- `/research/washing/010-chopra-2024-esg-reporting-gaps.md` - ESG reporting systemic gaps
+- `/research/washing/011-kereszturi-2024-greenwashing-incidents.md` - Incident-based greenwashing detection
+
+**Notes:**
+- Strong academic evidence that voluntary disclosure enables greenwashing rather than preventing it
+- Target accountability vacuum: companies rewarded for announcements but not penalized for failures
+- ESG scores can improve even while environmental damage occurs
+- Incident-based methodology reveals what self-reported ESG data misses
+- Gap: Per-query costs and water consumption per AI inference never disclosed by companies
+- Gap: Limited academic papers on AI/tech-specific disclosure gaps (focus is on general corporate ESG)
+- Key theme: The gap between disclosure quality and quantity is a systemic feature
 
 ---
 
@@ -421,6 +505,45 @@ Records all searches performed, results found, and excerpts created.
 - SB 1047 (California) and other US state actions too recent for peer-reviewed coverage
 - Tech company voluntary disclosures dominate rather than mandatory requirements
 - Gap between policy attention (safety, privacy) and environmental concerns (energy, water, carbon)
+
+---
+
+### Frugal AI - When NOT to Use AI (Continued Research)
+
+**OpenAlex Searches Performed:**
+1. "AI overuse unnecessary machine learning" - 10 results, found AI hype papers
+2. "simple models vs deep learning" - 10 results, found foundation model papers
+3. "when not to use AI" - 10 results, found over-reliance systematic review
+4. "traditional algorithms vs neural networks" - 10 results, found healthcare AI papers
+5. "AI hype overclaiming" - 2 results, limited direct hits
+6. "linear regression vs neural network comparison" - 10 results, found TabPFN paper, TRIPOD+AI
+7. "model complexity appropriate machine learning" - 10 results, general papers
+8. "tabular data simple models deep learning" - 10 results, found TabPFN paper
+9. "XGBoost deep learning comparison benchmark" - 10 results, confirmed gradient boosting dominance
+10. "tree boosting neural network tabular" - 10 results, confirmed tree-based method superiority
+
+**Key Findings:**
+- Markelius et al. (2024): AI hype is "historically unmatched" - overuse driven by FOMO, fake experts, anthropomorphism
+- Humphreys et al. (2024): AI hype creates cybersecurity risks - over-reliance and over-trust as distinct ethical problems
+- Zhai et al. (2024): Over-reliance on AI degrades cognitive abilities - 578 citations, systematic review
+- Hollmann et al. (2025) in Nature: Gradient-boosted trees dominated tabular data for 20 years; deep learning hasn't changed this
+- Collins et al. (2024) in BMJ: TRIPOD+AI guideline treats regression and ML as equivalent - choice should be task-based, not hype-driven
+
+**Excerpts Created:**
+- `/research/frugal/007-markelius-2024-ai-hype-planetary-costs.md` - AI hype mechanisms and when NOT to use AI
+- `/research/frugal/008-humphreys-2024-ai-hype-cyber-risk.md` - AI hype as cybersecurity risk, over-reliance dangers
+- `/research/frugal/009-zhai-2024-ai-overreliance-cognitive.md` - AI over-reliance degrading cognitive abilities
+- `/research/frugal/010-hollmann-2025-tabpfn-tabular-data.md` - Gradient boosting still beats deep learning on tabular data
+- `/research/frugal/011-collins-2024-tripod-ai-reporting.md` - TRIPOD+AI: when regression is equivalent to ML
+
+**Notes:**
+- Strong academic literature on WHY AI gets overused (hype mechanisms)
+- Over-reliance and over-trust identified as distinct problems
+- Tabular data is key domain where simple methods (XGBoost) consistently beat neural networks
+- Clinical prediction guidelines explicitly treat regression as equivalent to AI/ML
+- Gap: Limited papers quantifying carbon cost of unnecessary AI adoption
+- Gap: Few direct comparisons of energy consumption between traditional and AI methods for equivalent tasks
+- Key insight: The term "AI" is being misappropriated to systems that don't warrant it
 
 ---
 

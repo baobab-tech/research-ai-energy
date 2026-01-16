@@ -10,6 +10,15 @@
 | 005 | Chang et al., 2024 | Air vs liquid cooling systems - cooling design directly determines water consumption | [file](005-chang-2024-data-center-cooling-optimization.md) |
 | 006 | Bolon-Canedo et al., 2024 | Green AI reduces computational cost, which directly reduces both energy and water consumption | [file](006-bolon-canedo-2024-green-ai-review.md) |
 
+## Specific Water Consumption Numbers
+| # | Source | Insight | Link |
+|---|--------|---------|------|
+| 012 | Elsworth et al., 2025 (Google) | Gemini Apps: 0.26 mL water per text prompt (5 drops) - contested vs Li et al. estimates | [file](012-google-2025-gemini-water-measurements.md) |
+| 013 | Li et al., 2025 (CACM) | GPT-3: 700K liters training; ChatGPT: 10-25mL/query; 4.2-6.6B m3 global AI by 2027 | [file](013-li-2025-cacm-ai-water-projections.md) |
+| 014 | Li et al., 2023 | Environmental inequity: regional water footprint disparities across 10 data centers | [file](014-li-2023-environmental-equity-regional-water.md) |
+| 015 | Chien et al., 2023 | ChatGPT carbon/energy projections to 2035; request routing affects footprint | [file](015-chien-2023-genai-inference-carbon-projections.md) |
+| 016 | Verdecchia et al., 2023 | Green AI review: energy savings up to 115% = proportional water savings | [file](016-verdecchia-2023-green-ai-systematic-review.md) |
+
 ## "Water Positive" Claims Scrutiny
 | # | Source | Insight | Link |
 |---|--------|---------|------|
@@ -18,5 +27,17 @@
 | 009 | Bai et al., 2024 | Gap between corporate water accounting (global) and watershed-specific planetary boundaries | [file](009-bai-2024-earth-system-boundaries.md) |
 | 010 | Freitas Netto et al., 2024 | Greenwashing as systemic feature of green capitalism - framework for "water positive" analysis | [file](010-freitas-netto-2024-greenwashing-capitalism.md) |
 | 011 | Silva et al., 2024 | CSR water supply review - gaps in corporate water accountability and disclosure | [file](011-silva-2024-csr-water-supply.md) |
+
+## Key Numbers Summary
+
+| System | Metric | Value | Source |
+|--------|--------|-------|--------|
+| GPT-3 | Training water | ~700,000 liters | Li et al. 2023/2025 |
+| ChatGPT | Per query | 10-25 mL | Li et al. 2023/2025 |
+| Gemini | Per prompt | 0.26 mL | Google 2025 (self-reported) |
+| Global AI | 2027 projection | 4.2-6.6 billion m3 | Li et al. 2023/2025 |
+| Green AI | Energy savings | Up to 115% | Verdecchia 2023 |
+
+**Contested Estimates**: Google's 0.26 mL/prompt is 40-100x lower than Li et al.'s 10-25 mL/query. Independent verification needed.
 
 **Key Gap**: No peer-reviewed papers assess Microsoft/Google/Meta "water positive" methodologies.
