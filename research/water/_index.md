@@ -13,11 +13,11 @@
 ## Specific Water Consumption Numbers
 | # | Source | Insight | Link |
 |---|--------|---------|------|
-| 012 | Elsworth et al., 2025 (Google) | Gemini Apps: 0.26 mL water per text prompt (5 drops) - contested vs Li et al. estimates | [file](012-google-2025-gemini-water-measurements.md) |
-| 013 | Li et al., 2025 (CACM) | GPT-3: 700K liters training; ChatGPT: 10-25mL/query; 4.2-6.6B m3 global AI by 2027 | [file](013-li-2025-cacm-ai-water-projections.md) |
-| 014 | Li et al., 2023 | Environmental inequity: regional water footprint disparities across 10 data centers | [file](014-li-2023-environmental-equity-regional-water.md) |
-| 015 | Chien et al., 2023 | ChatGPT carbon/energy projections to 2035; request routing affects footprint | [file](015-chien-2023-genai-inference-carbon-projections.md) |
-| 016 | Verdecchia et al., 2023 | Green AI review: energy savings up to 115% = proportional water savings | [file](016-verdecchia-2023-green-ai-systematic-review.md) |
+| 017 | Elsworth et al., 2025 (Google) | Gemini Apps: 0.26 mL water per text prompt (5 drops) - contested vs Li et al. estimates | [file](017-google-2025-gemini-water-measurements.md) |
+| 018 | Li et al., 2025 (CACM) | GPT-3: 700K liters training; ChatGPT: 10-25mL/query; 4.2-6.6B m3 global AI by 2027 | [file](018-li-2025-cacm-ai-water-projections.md) |
+| 019 | Li et al., 2023 | Environmental inequity: regional water footprint disparities across 10 data centers | [file](019-li-2023-environmental-equity-regional-water.md) |
+| 020 | Chien et al., 2023 | ChatGPT carbon/energy projections to 2035; request routing affects footprint | [file](020-chien-2023-genai-inference-carbon-projections.md) |
+| 021 | Verdecchia et al., 2023 | Green AI review: energy savings up to 115% = proportional water savings | [file](021-verdecchia-2023-green-ai-systematic-review.md) |
 
 ## "Water Positive" Claims Scrutiny
 | # | Source | Insight | Link |
