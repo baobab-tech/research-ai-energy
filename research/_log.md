@@ -695,3 +695,56 @@ Records all searches performed, results found, and excerpts created.
 
 ---
 
+### Policy - Proposed Regulation for AI Environmental Impact
+
+**OpenAlex Searches Performed:**
+1. "AI regulation proposed environmental" - 10 results, general LLM/AI papers
+2. "data center energy efficiency standards" - 10 results, general papers
+3. "mandatory climate disclosure technology" - 10 results, found ESG papers
+4. "carbon pricing digital services" - 10 results, general papers
+5. "EU energy efficiency directive data center" - 10 results, general papers
+6. "EU AI Act sustainability environment" - 15 results, general AI papers
+7. "digital sustainability policy regulation" - 15 results, general papers
+8. "data center sustainability regulation policy" - 15 results, general papers
+9. "California SB AI regulation" - 10 results, limited direct hits
+10. "CSRD corporate sustainability reporting directive" - 15 results, **FOUND: Double materiality, BSC framework papers**
+11. "energy efficiency directive recast 2023" - 15 results, general building papers
+12. "AI governance environmental sustainability" - 15 results, general AI papers
+13. "green AI policy framework proposal" - 15 results, general papers
+14. "sustainable computing regulation proposal" - 15 results, general papers
+15. "SEC climate disclosure rule technology" - 15 results, **FOUND: IMF AI regulation paper**
+16. "proposed mandatory AI carbon disclosure" - 10 results, limited direct hits
+17. "EU data center sustainability binding targets" - 10 results, general papers
+18. "carbon border adjustment digital" - 10 results, general papers
+19. "AI transparency energy reporting" - 10 results, general papers
+20. "sustainable AI policy recommendation framework" - 15 results, general papers
+21. "generative AI regulation sustainability framework" - 15 results, general AI papers
+22. "AI Act EU sustainability energy" - 15 results, general AI papers
+
+**Key Findings:**
+- Hristov & Searcy (2024) in Management Decision (48 citations): CSRD implementation framework through Sustainability Balanced Scorecard - four-step process for mandatory ESG reporting
+- Dragomir et al. (2024) in Accounting in Europe (39 citations): Double materiality disclosure under CSRD 2022/2464 - dual-perspective analysis starting 2024
+- Walter (2024) in Discover AI (87 citations): Proposes "dynamic laws" regulatory model for adaptive AI governance
+- Capraro et al. (2024) in PNAS Nexus (205 citations): Comparative analysis of EU, US, UK AI policy frameworks - finds no major framework addresses environmental sustainability adequately
+- Oliver Yebenes (2024) in Eurasian Economic Review (52 citations): CSRD pushing ESG indicators from voluntary to mandatory
+
+**Excerpts Created:**
+- `/research/policy/006-hristov-2024-csrd-balanced-scorecard.md` - CSRD implementation framework
+- `/research/policy/007-dragomir-2024-double-materiality-csrd.md` - Double materiality assessment requirements
+- `/research/policy/008-walter-2024-dynamic-laws-ai-governance.md` - Proposed adaptive "dynamic laws" model
+- `/research/policy/009-capraro-2024-genai-policy-frameworks.md` - EU/US/UK policy framework comparison
+- `/research/policy/010-oliver-2024-csrd-esg-regulation.md` - CSRD mandatory ESG disclosure
+
+**Notes:**
+- CSRD (Corporate Sustainability Reporting Directive) is the primary binding framework that will capture tech company environmental impacts
+- Double materiality requires companies to disclose both environmental impacts AND how sustainability risks affect them financially
+- No AI-specific environmental regulation found in academic literature
+- EU AI Act focuses on safety, transparency, and human oversight - not environmental sustainability
+- The "dynamic laws" concept is proposed to address gap between rapid AI advancement and slow regulatory processes
+- Gap: California SB 1047 and other US state-level actions too recent for peer-reviewed coverage
+- Gap: EU Energy Efficiency Directive data center provisions not well-covered in academic literature
+- Gap: Limited academic analysis of voluntary commitments becoming mandatory
+- Key theme: Current AI policy focuses on socioeconomic impacts; environmental regulation relies on general ESG frameworks, not AI-specific rules
+
+---
+
