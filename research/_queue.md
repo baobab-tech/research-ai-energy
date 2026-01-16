@@ -11,14 +11,14 @@ Last updated: 2026-01-16
 - [x] datacenter-power - Power sources (6 excerpts)
 - [x] community-opposition - Community impact (5 excerpts)
 
-## In Progress (Batch 2)
+## Completed (Batch 2) - 32 excerpts
 
-- [~] ghg-lifecycle - Embodied emissions and hardware (agent running)
-- [~] water-claims - Scrutinize "water positive" claims (agent running)
-- [~] frugal-architectures - Efficient AI approaches (agent running)
-- [~] policy-current - Current regulation landscape (agent running)
-- [~] narrative-claims - Scrutinize "AI for climate" claims (agent running)
-- [~] datacenter-growth - Infrastructure expansion (agent running)
+- [x] ghg-lifecycle - Embodied emissions (5 excerpts)
+- [x] water-claims - "Water positive" scrutiny (5 excerpts)
+- [x] frugal-architectures - Efficient AI (6 excerpts)
+- [x] policy-current - Current regulation (5 excerpts)
+- [x] narrative-claims - "AI for climate" scrutiny (6 excerpts)
+- [x] datacenter-growth - Infrastructure expansion (5 excerpts)
 
 ## Pending (Batch 3)
 
@@ -30,3 +30,5 @@ Last updated: 2026-01-16
 - [ ] frugal-when-not - When AI is overkill
 - [ ] narrative-net - Net impact analysis
 - [ ] community-grid - Grid and ratepayer impacts
+
+## TOTAL: 67 excerpts

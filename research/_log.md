@@ -260,6 +260,60 @@ Records all searches performed, results found, and excerpts created.
 
 ---
 
+### GHG Emissions - Lifecycle/Embodied (Hardware Lifecycle Analysis)
+
+**OpenAlex Searches Performed:**
+1. "GPU manufacturing carbon footprint" - 10 results, general computing papers
+2. "AI hardware embodied emissions" - 10 results, general AI papers
+3. "server lifecycle emissions" - 10 results, general LLM papers
+4. "data center e-waste" - 10 results, unrelated (medical, biology)
+5. "semiconductor manufacturing environmental impact" - 10 results, general materials papers
+6. "embodied carbon computing hardware" - 15 results, general computing papers
+7. "life cycle assessment data center" - 15 results, general LCA papers
+8. "chip manufacturing carbon footprint" - 15 results, general materials papers
+9. "electronic waste circular economy computing" - 15 results, found recycling papers
+10. "server hardware embodied carbon" - 15 results, found Green AI survey
+11. "rare earth electronics supply chain environmental" - 15 results, found mineral commodities paper
+12. "ICT equipment environmental footprint" - 15 results, found Modern Computing paper
+13. "computer hardware sustainability lifecycle" - 15 results, found Industry 5.0 papers
+14. "LCA life cycle assessment server computing" - 15 results, **FOUND: Digital content sustainability paper**
+15. "carbon footprint machine learning hardware" - 15 results, general papers
+16. "AI infrastructure environmental impact manufacturing" - 15 results, general AI papers
+17. "sustainable AI computing emissions hardware lifecycle" - 15 results, found Green AI thematic paper
+18. "WEEE electronic waste critical materials" - 10 results, found Li-ion battery recycling paper
+19. "embodied operational carbon computing" - 10 results, found sustainability papers
+20. "generative AI sustainable infrastructure" - 10 results, found Gen AI papers
+21. "IT equipment circular economy sustainability" - 15 results, found recycling papers
+22. "manufacturing supply chain critical minerals electronics" - 15 results, found material papers
+
+**Key Findings:**
+- Istrate et al. (2024) in Nature Communications (59 citations): Environmental sustainability of digital content consumption - includes embodied and operational emissions analysis
+- Barbierato & Gatti (2024) in IEEE Access (28 citations): Green AI methodological survey - explicitly addresses hardware innovations as factor in environmental footprint
+- Raman et al. (2024) in Journal of Big Data (81 citations): Green/Sustainable AI thematic analysis - emphasizes "AI development lifecycle" integration of sustainability
+- Zanoletti et al. (2024) in Batteries (152 citations): Li-ion battery recycling - critical for data center energy storage sustainability
+- Psarommatis & May (2024) in Sustainability (56 citations): Digital Product Passport for circularity - applicable to computing hardware lifecycle tracking
+
+**Excerpts Created:**
+- `/research/ghg/007-istrate-2024-digital-content-environmental-sustainability.md`
+- `/research/ghg/008-barbierato-2024-green-ai-methodological-survey.md`
+- `/research/ghg/009-raman-2024-green-sustainable-ai-thematic-analysis.md`
+- `/research/ghg/010-zanoletti-2024-lithium-ion-battery-recycling.md`
+- `/research/ghg/011-psarommatis-2024-digital-product-passport-circularity.md`
+
+**Notes:**
+- Major gap: Limited 2024-2025 peer-reviewed papers specifically quantifying GPU/chip manufacturing embodied emissions
+- Academic literature on "Green AI" acknowledges hardware as factor but focuses more on algorithmic efficiency
+- "Red AI vs Green AI" framework (Barbierato) gaining traction - includes hardware considerations
+- Lifecycle thinking (cradle-to-grave) emphasized but specific data on AI hardware rare
+- Battery recycling research applicable to data center UPS/BESS systems
+- Digital Product Passport (EU-driven) could enable hardware lifecycle tracking
+- Gap: Ratio of embodied vs operational emissions for AI hardware not well-documented in 2024-2025 literature
+- Gap: E-waste impacts from AI infrastructure upgrade cycles not specifically studied
+- Gap: Rare earth mining impacts for AI hardware not separated from general electronics
+- Foundational embodied emissions work (Patterson 2021, Gupta 2022) predates 2024-2025 filter
+
+---
+
 ### GHG Training Emissions Research (Additional - Training Focus)
 
 **OpenAlex Searches Performed:**
@@ -367,6 +421,154 @@ Records all searches performed, results found, and excerpts created.
 - SB 1047 (California) and other US state actions too recent for peer-reviewed coverage
 - Tech company voluntary disclosures dominate rather than mandatory requirements
 - Gap between policy attention (safety, privacy) and environmental concerns (energy, water, carbon)
+
+---
+
+### Frugal AI / Efficient Architectures Research
+
+**OpenAlex Searches Performed:**
+1. "green AI efficient machine learning" - 10 results, general papers
+2. "small language models efficiency" - 10 results, medical/LLM reviews
+3. "model compression energy" - 10 results, general papers
+4. "frugal AI sustainable" - 10 results, found TinyML survey
+5. "carbon-aware computing AI" - 10 results, general LLM papers
+6. "model distillation environmental" - 10 results, general papers
+7. "energy efficient neural network training" - 10 results, general papers
+8. "sustainable artificial intelligence carbon footprint" - 10 results, **FOUND: AI ecological footprints paper**
+9. "TinyML edge computing efficiency" - 10 results, **FOUND: TinyML survey**
+10. "knowledge distillation efficient models" - 10 results, general papers
+11. "quantization pruning deep learning" - 10 results, **FOUND: FlightLLM FPGA paper**
+12. "mixture of experts sparse models" - 10 results, general papers
+13. "FlightLLM FPGA inference" - 5 results, **FOUND: FlightLLM paper details**
+14. "Tiny Machine Learning survey" - 5 results, **FOUND: TinyML comprehensive survey**
+15. "AI ecological footprint carbon emissions" - 10 results, **FOUND: Wang 2024 67 countries**
+16. "memristor neural network energy efficient" - 5 results, **FOUND: Memristor neuromorphic chips**
+
+**Key Findings:**
+- Barbierato & Gatti (2024): "Red AI" vs "Green AI" framework - fundamental tension between performance and sustainability
+- Capogrosso et al. (2024): TinyML comprehensive survey - ML on milliwatt-scale edge devices
+- Zeng et al. (2024): FlightLLM achieves 6x energy efficiency improvement over GPUs using FPGAs
+- Duan et al. (2024): Memristor-based neuromorphic chips as paradigm shift for energy-efficient AI
+- Wang et al. (2024): AI reduces ecological footprints in 67 countries, but context matters (industrial sector, trade openness)
+- Weilenmann et al. (2024): Single memristor emulates multiple synaptic mechanisms for efficient neural networks
+
+**Excerpts Created:**
+- `/research/frugal/001-barbierato-2024-green-ai-survey.md` - Red AI vs Green AI framework
+- `/research/frugal/002-capogrosso-2024-tinyml-survey.md` - TinyML comprehensive survey
+- `/research/frugal/003-zeng-2024-flightllm-fpga.md` - FPGA-based efficient LLM inference
+- `/research/frugal/004-duan-2024-memristor-neuromorphic.md` - Memristor neuromorphic chips
+- `/research/frugal/005-wang-2024-ai-ecological-transitions.md` - AI impact on ecological footprints (67 countries)
+- `/research/frugal/006-weilenmann-2024-memristor-synaptic.md` - Single memristor multiple synaptic mechanisms
+
+**Notes:**
+- Three main approaches to frugal AI: (1) Algorithmic (TinyML, compression), (2) Hardware (FPGA, memristors), (3) Systemic (policy, deployment context)
+- FlightLLM demonstrates that specialized hardware can dramatically outperform GPUs for energy efficiency
+- Neuromorphic computing (memristors) represents paradigm shift from von Neumann architecture
+- Macro-level studies (Wang 2024) show AI can reduce emissions overall, but industrial context matters
+- Gap: Limited papers on carbon-aware scheduling and workload shifting
+- Gap: Few papers comparing small language models (SLMs) to LLMs on equivalent tasks
+- TinyML enables edge inference, eliminating data transmission energy costs
+- Hardware-software co-design is emerging as key strategy for sustainable AI
+
+---
+
+### Water Consumption - Claims Scrutiny (Water Positive Pledges)
+
+**OpenAlex Searches Performed:**
+1. "water positive corporate claims" - 10 results, general environmental papers
+2. "water stewardship data center" - 10 results, unrelated medical/health papers
+3. "water offset criticism" - 10 results, limited direct relevance
+4. "bluewashing water claims" - 10 results, found greenwashing/capitalism paper
+5. "corporate water neutrality" - 10 results, general sustainability papers
+6. "data center water consumption AI" - 10 results, general AI papers
+7. "corporate water replenishment offset" - 10 results, found CSR water supply paper
+8. "water footprint technology companies" - 10 results, general papers
+9. "greenwashing ESG reporting verification" - 10 results, found ESG challenges paper
+10. "cloud computing environmental impact water" - 10 results, limited relevance
+11. "microsoft google water positive" - 10 results, general papers
+12. "translating earth system boundaries cities businesses" - 5 results, **FOUND: Bai et al. 2024**
+13. "greenwashing ESG" - 10 results, **FOUND: Zhang 2024, Long et al. 2024**
+14. "sustainability pledges commitments verification" - 10 results, **FOUND: low-quality offsets paper**
+15. "net zero corporate claims verification" - 10 results, found offset quality issues
+
+**Key Findings:**
+- Trencher et al. (2024) in Nature Communications: Major companies purchase low-quality carbon offsets - methodology applicable to water claims
+- Chopra et al. (2024): ESG reporting lacks standardization, verification - same gaps apply to water disclosure
+- Bai et al. (2024) in Nature Sustainability: Earth system boundaries framework exposes gap between corporate claims and watershed impacts
+- de Freitas Netto et al. (2024): Critical theory of greenwashing as systemic feature of green capitalism
+- Silva Rodriguez (2024): CSR water supply review identifies gaps in corporate water accountability
+
+**Excerpts Created:**
+- `/research/water/007-trencher-2024-offset-quality-implications.md` - Low-quality offsets as analogy for water claims
+- `/research/water/008-chopra-2024-esg-reporting-challenges.md` - ESG verification gaps
+- `/research/water/009-bai-2024-earth-system-boundaries.md` - Planetary boundaries vs corporate accounting
+- `/research/water/010-freitas-netto-2024-greenwashing-capitalism.md` - Critical theory of greenwashing
+- `/research/water/011-silva-2024-csr-water-supply.md` - CSR water stewardship gaps
+
+**Notes:**
+- Limited direct academic papers on "water positive" claims by tech companies specifically
+- Carbon offset criticism literature provides strong analogy for water offset scrutiny
+- ESG reporting challenges papers reveal systemic verification gaps
+- Greenwashing theory provides framework for skeptical analysis
+- Key issues identified: watershed-specific impacts vs global aggregates, temporal mismatches, third-party verification gaps
+- Gap: No peer-reviewed assessment of Microsoft/Google/Meta water positive pledge methodologies
+- Gap: Academic papers on water credit quality standards and verification lacking
+
+---
+
+### Data Center Growth and Infrastructure Expansion Research
+
+**OpenAlex Searches Performed:**
+1. "data center growth projections" - 10 results, mostly unrelated (event-study designs, MRI, etc.)
+2. "AI infrastructure expansion" - 10 results, general AI papers
+3. "hyperscale data center construction" - 10 results, found PUE paper, China computing project paper
+4. "data center electricity demand forecast" - 10 results, general energy papers
+5. "AI compute demand growth" - 10 results, general AI papers
+6. "data center energy consumption" - 15 results, general papers
+7. "AI energy consumption training" - 15 results, general AI papers
+8. "electricity demand artificial intelligence" - 15 results, general papers
+9. "datacenter power grid" - 15 results, found GaN/SiC power devices paper
+10. "computing carbon footprint" - 15 results, found MEGA12 green computing paper
+11. "AI sustainability environmental impact" - 15 results, general papers
+12. "sustainable data center" - 20 results, general sustainability papers
+13. "power usage effectiveness PUE" - 20 results, **FOUND: Data center cooling review, PUE tool paper**
+14. "GPU energy machine learning" - 20 results, general ML papers
+15. "large language model energy carbon" - 15 results, general LLM papers
+16. "generative AI energy consumption" - 15 results, general papers
+17. "cloud computing sustainability" - 15 results, general cloud papers
+18. "ChatGPT energy carbon emissions" - 15 results, **FOUND: Jiang et al. 2024 LLM lifecycle paper**
+19. "global data center electricity consumption" - 15 results, general papers
+20. "IEA data center electricity" - 10 results, general papers
+21. "hyperscale cloud infrastructure" - 10 results, **FOUND: AI hype paper, Compute North vs South**
+22. "data center waste heat recovery" - 10 results, general papers
+23. "immersion cooling data center" - 10 results, **FOUND: Immersion cooling study, chip-scale thermal management**
+24. "AI water consumption" - 15 results, general papers
+25. "renewable energy data center" - 15 results, general papers
+
+**Key Findings:**
+- Li et al. (2025): "Making AI Less Thirsty" - projects 4.2-6.6 billion cubic meters AI water demand by 2027 (31 citations)
+- Jiang et al. (2024): LLM lifecycle carbon footprint warning - 8 phases of emissions, "feverish" industry development (57 citations)
+- Xie et al. (2024): China's EWCRT Project - 8 hubs, 10 clusters, potential 2125-9500 Mt CO2 reduction by 2050 (14 citations)
+- Mohammed et al. (2024): Data center cooling critical review - 95% of cooling load from IT equipment (81 citations)
+- Commins & Irion (2025): EU policy for "planet proof computing" by 2030 - reporting to become binding targets (3 citations)
+
+**Excerpts Created:**
+- `/research/datacenters/007-li-2025-ai-water-growth-projections.md` - AI water demand projections to 2027
+- `/research/datacenters/008-jiang-2024-llm-lifecycle-infrastructure.md` - LLM lifecycle carbon footprint warning
+- `/research/datacenters/009-xie-2024-china-ewcrt-infrastructure.md` - China's East-West Computing Resources Transmission Project
+- `/research/datacenters/010-mohammed-2024-dc-cooling-energy-review.md` - Data center cooling critical review
+- `/research/datacenters/011-commins-2025-eu-dc-sustainability-policy.md` - EU data center sustainability policy
+
+**Notes:**
+- OpenAlex academic literature on data center GROWTH specifically is limited
+- Most papers focus on efficiency/sustainability rather than expansion rates
+- Gap: Limited peer-reviewed papers with specific MW or GW capacity projections
+- Gap: Few academic papers tracking new construction pipeline or geographic distribution
+- Gap: Investment trends (billions in DC investment) mainly in industry reports, not academic literature
+- Gap: AI-specific vs general data center growth differentiation underdeveloped
+- China's EWCRT is unique case study of coordinated national infrastructure planning
+- EU policy paper provides regulatory perspective on containing data center growth
+- Li et al. water projections provide quantified growth implications
 
 ---
 
