@@ -156,6 +156,8 @@ Keep it to what a reader needs before opening any excerpt. It summarises; it doe
 | File | Holds |
 |------|-------|
 | `skills/openalex.md`, `skills/arxiv.md` | academic search, no key needed |
+| `skills/openalex-api-reference.md`, `skills/arxiv-api-reference.md` | full API field and filter references |
+| `skills/jina.md` | fetch a URL as clean markdown; reaches ACM, MDPI and state agency PDFs |
 | `skills/serper.md` | web, news and scholar search; key in `.env` (gitignored) |
 | `skills/archive.md` | Wayback Machine, for revised or removed corporate pages |
 | `skills/primary-sources.md` | agency, grid-operator and corporate documents; PDF extraction; publisher blocks |

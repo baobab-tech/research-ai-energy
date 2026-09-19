@@ -3,7 +3,8 @@
 **Topic:** GHG emissions — accelerator and data-centre efficiency claims, and what drives them
 **Source:** Norman P. Jouppi, George Kurian, Sheng Li, Peter Ma, Rahul Nagarajan, Lifeng Nai, Nishant Patil, Suvinay Subramanian, Andy Swing, Brian Towles, Cliff Young, Xiang Zhou et al. — Google, 2023
 **Type:** peer-reviewed (industrial product track, ISCA 2023)
-**URL:** https://doi.org/10.1145/3579371.3589350 (open preprint: https://arxiv.org/abs/2304.01433)
+**URL:** https://doi.org/10.1145/3579371.3589350
+**Source note:** open preprint: https://arxiv.org/abs/2304.01433
 **Published:** 2023-06
 
 ## Finding

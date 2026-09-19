@@ -235,28 +235,11 @@ Evidence for each item is in the topic folder named. Claims that could not be so
 - "AI regulation environment", "data center regulation"
 - "AI disclosure requirements", "tech emissions reporting"
 
-## Sub-Agent Tasks
+## Running a pass
 
-1. **ghg-training** - Training emissions estimates and comparison
-2. **ghg-inference** - Per-query emissions analysis
-3. **ghg-lifecycle** - Embodied emissions and hardware
-4. **ghg-numbers** - Collect ALL published estimates
-5. **water-direct** - Direct water consumption data
-6. **water-reuse** - Reuse/recycling practices
-7. **water-claims** - Scrutinize "water positive" claims
-8. **water-numbers** - Collect ALL water estimates
-9. **datacenter-growth** - Infrastructure expansion tracking
-10. **datacenter-power** - Power source claims vs reality
-11. **washing-claims** - Document greenwashing/bluewashing
-12. **washing-gaps** - Identify reporting gaps
-13. **policy-current** - Current regulation landscape
-14. **policy-proposed** - Upcoming policy proposals
-15. **community-opposition** - Local resistance documentation
-16. **community-grid** - Grid and ratepayer impacts
-17. **frugal-architectures** - Efficient AI approaches
-18. **frugal-when-not** - When AI is overkill
-19. **narrative-claims** - Scrutinize "AI for climate" claims
-20. **narrative-net** - Net impact analysis
+METHOD.md holds the procedure: audit, ask, search, verify, prune, rebuild, check, commit. One
+agent per topic folder with exclusive ownership, or one agent per source where a source spans
+folders. Agents do not edit indexes or summaries; those are rebuilt from the final file state.
 
 ## Open Questions
 

@@ -3,8 +3,9 @@
 A sourced corpus on the environmental footprint of AI systems: energy, emissions, water, grid
 effects, and the distance between corporate environmental claims and the data underlying them.
 
-126 excerpts, one file per finding, every one verified against the source itself. Each excerpt records one source, its numbers, the system
-boundary those numbers were computed on, and what the source omits.
+126 excerpts, one file per finding, every one verified against the source itself. Each records
+one source, its numbers, the system boundary those numbers were computed on, and what the
+source omits.
 
 Last refresh: 2026-09-19.
 

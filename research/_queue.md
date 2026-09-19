@@ -4,17 +4,18 @@ Last updated: 2026-09-19
 
 ## State
 
-125 excerpts, one file per source. Every excerpt has been read against its source, carries a
+126 excerpts, one file per finding. Every excerpt has been read against its source, carries a
 stated system boundary, and records funding and affiliation.
 
 ## Complete
 
 **2026 refresh.** Eight parallel searches across GHG, water, data centres, grid and community,
-policy, greenwashing, frugal AI and the AI-for-climate narrative. 82 excerpts added from agency
-reports, grid-operator data, regulatory filings and corporate disclosures.
+policy, greenwashing, frugal AI and the AI-for-climate narrative. 84 excerpts now in the corpus
+come from that pass and the work after it, drawing on agency reports, grid-operator data,
+regulatory filings and corporate disclosures.
 
-**Verification.** All 148 pre-existing excerpts were re-pulled against full text. 43 survived and
-were rewritten; the rest were removed. Removals fell into five groups: sources with no AI or
+**Verification.** All 148 pre-existing excerpts were re-pulled against full text. 42 survived
+and were rewritten; the rest were removed. Removals fell into five groups: sources with no AI or
 data-centre content whose relevance had been asserted by the excerpt, duplicate write-ups of one
 source, files whose headline claims were not in the cited paper, one file citing the wrong paper
 entirely, and files whose claims inverted what the source states.

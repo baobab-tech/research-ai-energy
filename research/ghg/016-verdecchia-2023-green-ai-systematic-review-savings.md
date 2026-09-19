@@ -3,7 +3,8 @@
 **Topic:** GHG emissions — how much energy Green AI techniques actually save
 **Source:** Roberto Verdecchia (University of Florence), June Sallou and Luís Cruz (TU Delft), 2023
 **Type:** peer-reviewed
-**URL:** https://doi.org/10.1002/widm.1507 (open preprint: https://arxiv.org/abs/2301.11047)
+**URL:** https://doi.org/10.1002/widm.1507
+**Source note:** open preprint: https://arxiv.org/abs/2301.11047
 **Published:** 2023-06
 
 ## Finding
