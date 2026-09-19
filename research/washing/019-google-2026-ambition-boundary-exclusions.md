@@ -38,7 +38,7 @@ Self-reported and self-defined. The exclusions are Google's own boundary choices
 
 ## Relation to existing corpus
 
-No direct overlap. Addresses the Scope 3 boundary question directly with company figures; the folder previously carried only general arguments about selective disclosure (`research/washing/010-chopra-2024-esg-reporting-gaps.md`, `research/washing/015-alamosh-2025-accounting-complexity-esg.md`).
+No direct overlap. Addresses the Scope 3 boundary question directly with company figures. The same report is read from the Scope 2 angle in `research/washing/018-google-2026-market-vs-location-based-gap.md` and as an emissions inventory in `research/ghg/028-google-2026-environmental-report-accounting-gap.md`.
 
 ---
 Retrieved: 2026-09-19

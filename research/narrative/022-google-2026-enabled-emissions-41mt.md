@@ -46,7 +46,7 @@ For contrast, Microsoft's *2026 Environmental Sustainability Report* (published 
 
 ## Relation to existing corpus
 
-No direct overlap. Supplies the corporate primary source for the enablement claim analysed generically in `narrative/001-bieser-2024-ict-ghg-enablement-critique.md`, and is the concrete instance of the methodological fragmentation documented in `narrative/023-okeeffe-brander-2026-avoided-emissions-methodology-comparison.md`.
+No direct overlap. Supplies the corporate primary source for the enablement claim, and is the concrete instance of the methodological fragmentation documented in `narrative/023-okeeffe-brander-2026-avoided-emissions-methodology-comparison.md`.
 
 ---
 Retrieved: 2026-09-19

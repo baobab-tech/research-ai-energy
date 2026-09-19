@@ -3,7 +3,7 @@
 A sourced corpus on the environmental footprint of AI systems: energy, emissions, water, grid
 effects, and the distance between corporate environmental claims and the data underlying them.
 
-182 excerpts, one file per source. Each excerpt records one source, its numbers, the system
+125 excerpts, one file per source, every one verified against the source itself. Each excerpt records one source, its numbers, the system
 boundary those numbers were computed on, and what the source omits.
 
 Last refresh: 2026-09-19.
@@ -12,14 +12,14 @@ Last refresh: 2026-09-19.
 
 | Topic | Focus | Excerpts |
 |-------|-------|---------:|
-| [GHG emissions](research/ghg/) | Training, inference, embodied, and aggregate figures | 30 |
-| [Water](research/water/) | Per-request figures, boundaries, cooling, disclosure | 26 |
-| [Data centres](research/datacenters/) | Buildout, interconnection, power sourcing, efficiency metrics | 22 |
-| [Greenwashing](research/washing/) | Claims against underlying disclosure, by named company | 12 |
-| [Policy](research/policy/) | AI Act, EED Article 12, US state and federal instruments | 21 |
-| [Frugal AI](research/frugal/) | Energy measurements of efficiency techniques | 25 |
-| [Grid and community](research/community/) | Prices, cost allocation, siting, environmental justice | 20 |
-| [AI-for-climate narrative](research/narrative/) | Avoided-emissions claims and their counterfactuals | 26 |
+| [GHG emissions](research/ghg/) | Training, inference, embodied, and aggregate figures | 21 |
+| [Water](research/water/) | Per-request figures, boundaries, cooling, disclosure | 16 |
+| [Data centres](research/datacenters/) | Buildout, interconnection, power sourcing, efficiency metrics | 17 |
+| [Greenwashing](research/washing/) | Claims against underlying disclosure, by named company | 11 |
+| [Policy](research/policy/) | AI Act, EED Article 12, US state and federal instruments | 13 |
+| [Frugal AI](research/frugal/) | Energy measurements of efficiency techniques | 18 |
+| [Grid and community](research/community/) | Prices, cost allocation, siting, environmental justice | 12 |
+| [AI-for-climate narrative](research/narrative/) | Avoided-emissions claims and their counterfactuals | 17 |
 
 ## Findings
 
@@ -124,6 +124,12 @@ reliably reduce energy
 - Speculative decoding ranged from 2.51x saving to 1.6x penalty depending on dataset
 - MoE with 1.3B active parameters used 2.1x the energy per token of a dense 1B model on Jetson
 
+Model and task choice move energy further than any technique. Image generation draws 2.907 kWh
+per 1,000 inferences against 0.002 kWh for text classification, a spread above 1,450x, and on
+extractive question answering a task-specific model emits 0.3 gCO2e against 10 g for a
+multi-purpose one
+([Luccioni et al. 2024](research/frugal/027-luccioni-2024-power-hungry-processing.md)).
+
 Reasoning post-training cost 17x the instruction variant of the same base model on the same
 cluster, 87% of it RL rollout generation. Development runs were 82.2% of total compute, so a
 training figure citing only the final run understates by about 5x
@@ -220,22 +226,24 @@ Each topic folder opens on its own summary. Start there:
 ## Stance
 
 Claims are checked against the documents underlying them, including claims whose conclusions
-support the corpus's critical framing. Four examples, all from sources held here:
+support the corpus's critical framing. Every excerpt here was read against its source in
+September 2026. What that found:
 
-- The "10 to 25 mL per ChatGPT query" figure appears in no version of Li et al. The paper's
-  scope-1 figure is 2.200 mL, and the comparison against Google's 0.26 mL is a factor of 8.5.
+- The "10 to 25 mL per ChatGPT query" figure appears in no version of Li et al. Its scope-1
+  figure is 2.200 mL, making the comparison against Google's 0.26 mL a factor of 8.5.
+- One source cited for AI's water burden states that data-centre water "is miniscule in
+  comparison to other areas where water is used".
+- One review cited as evidence that environmental sustainability is absent from AI governance
+  excluded environmental governance from its corpus by protocol.
+- A survey cited for "AI emits far less than humans" charges the human a pro-rata share of their
+  entire annual national footprint across all 8,760 hours of the year
+  ([Tomlinson et al. 2024](research/ghg/013-tomlinson-2024-ai-vs-human-emissions-comparison.md)).
 - "Data-centre cancellations quadrupled in 2025" traces to an unpublished equity-research note
   with no stated methodology
-  ([file](research/community/021-data-center-watch-2026-opposition-tracking.md)).
-- The claim that embodied emissions exceed operational inherits a figure comparing manufacturing
-  of all computing equipment worldwide against ML training alone. Google's first-party TPU data
-  puts operational at 70 to 90% of lifetime
-  ([Schneider et al. 2025](research/ghg/027-schneider-2025-tpu-lifecycle-embodied-emissions.md)).
-- Ratios of AI against human emissions charge the human a pro-rata share of their entire annual
-  national footprint across all 8,760 hours of the year
-  ([Tomlinson et al. 2024](research/ghg/013-tomlinson-2024-ai-vs-human-emissions-comparison.md)).
+  ([Data Center Watch 2026](research/community/021-data-center-watch-2026-opposition-tracking.md)).
 
-Where a company's position has merit, the excerpt records it beside the critique.
+Sources whose claims did not survive that check were removed. Where a company's position has
+merit, the excerpt records it beside the critique.
 
 See [RESEARCH_PLAN.md](RESEARCH_PLAN.md) for open questions and [CLAUDE.md](CLAUDE.md) for the
 rules excerpts are written under.

@@ -1,6 +1,6 @@
 # Greenwashing and Bluewashing
 
-12 excerpts. Documented discrepancies between a named company's environmental claim and its own
+11 excerpts, every one verified against its source. Documented discrepancies between a named company's environmental claim and its own
 underlying data, plus academic work on AI sustainability claims.
 
 [Full index](_index.md)

@@ -1,8 +1,7 @@
 # Policy and Regulation
 
-21 excerpts on instruments that bind AI and data-centre environmental reporting or operation.
-Files 015 onward are primary legal texts and official guidance. Files 001 to 014 are general
-ESG and governance literature retained as background.
+13 excerpts, every one verified against its source. Instruments that bind AI and data-centre
+environmental reporting or operation, plus two studies on how such duties perform.
 
 [Full index](_index.md)
 
@@ -64,6 +63,17 @@ CARB setting 10 August 2026 for first Scope 1 and 2 filings
 
 Ireland's CRU ended the de facto Dublin moratorium in December 2025, conditioning connection on
 matching on-site generation or storage ([025](025-cru-2025-ireland-data-centre-connection-policy.md)).
+
+## How these duties perform
+
+An IMF review of AI regulation through early 2024 enumerates six rationales for regulating AI,
+none of them environmental ([002](002-comunale-2024-imf-ai-regulation-review.md)). That is the
+corpus's evidence that environment sat outside the AI regulatory debate, and it is the authors'
+reading of that debate, not a tally over a coded population of instruments.
+
+Voluntary targets go unenforced. Of 1,041 firms with emissions targets expiring in 2020, 88
+failed and 320 stopped reporting the target; three of the failures drew media coverage and none
+of the 320 did ([011](011-jiang-2025-emissions-target-accountability.md)).
 
 ## Gaps
 

@@ -37,7 +37,7 @@ Self-reported. Neither change is concealed: both appear in the companies' publis
 
 ## Relation to existing corpus
 
-Confirms and instantiates `research/washing/009-jiang-2025-emissions-target-accountability.md`, which found 31% of corporate emissions targets "disappeared" without acknowledgement and only 3 failures received media coverage. These are two named cases of metric retirement rather than target abandonment, which Jiang et al.'s disappearance category would not capture.
+Confirms and instantiates `research/policy/011-jiang-2025-emissions-target-accountability.md`, which found 31% of corporate emissions targets "disappeared" without acknowledgement and only 3 failures received media coverage. These are two named cases of metric retirement rather than target abandonment, which Jiang et al.'s disappearance category would not capture.
 
 ---
 Retrieved: 2026-09-19

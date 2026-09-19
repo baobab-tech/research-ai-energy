@@ -31,8 +31,8 @@ the paper's.
 One file named an author's first name as the lead surname, producing an author list that matches
 no publication.
 
-**Check:** confirm the author list against Crossref or the publisher record, not against the
-existing excerpt.
+**Check:** confirm the author list against Crossref, not against the existing excerpt. One call,
+in `skills/metadata.md`. A wrong DOI returns a different paper entirely, which is the signal.
 
 ### Back-computed figures attributed to a source
 
@@ -116,7 +116,9 @@ GPUs, so any "Nx more efficient" claim needs a duty cycle to mean anything.
 dated before the paper's publication was found twice), and say nothing about whether a claim is
 correct.
 
-**Check:** do not use citation counts as evidence. If a count is recorded, date it.
+**Check:** do not use citation counts as evidence. If a count is recorded, date it and name the
+index. Verified here: an excerpt claiming "578 citations, exceptionally high" against a current
+Crossref figure of 1,361.
 
 ```bash
 # impossible counts: publication year later than the "as of" year
@@ -165,7 +167,10 @@ grep -rh --include="[0-9]*.md" "^\*\*URL:\*\*" research/ | sed 's/^\*\*URL:\*\* 
     case "$c" in 200|301|302|202|403) ;; *) echo "FAIL $c $u";; esac
   done
 
-# 7. One file per source
+# 7. Sources held in more than one file. Not automatically wrong: a large agency or corporate
+#    report can support distinct findings in distinct folders. Each hit needs a human judgment
+#    that the findings genuinely differ, and each file should name the other in its
+#    "Relation to existing corpus" section.
 grep -rh --include="[0-9]*.md" "^\*\*URL:\*\*" research/ | sed 's/^\*\*URL:\*\* *//' | \
   sort | uniq -c | awk '$1>1'
 

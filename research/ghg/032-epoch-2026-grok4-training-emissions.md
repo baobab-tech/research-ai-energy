@@ -36,7 +36,7 @@ Neither figure is from the model developer; xAI has disclosed nothing. Stanford'
 
 ## Relation to existing corpus
 
-No direct overlap; the corpus has no post-2024 training-run figures. Extends the training-cost line running from `research/ghg/001-jiang-2024-llm-lifecycle-footprint.md`. The dispersion here is the counterpoint to 026: per-query inference estimates are converging within an IQR, while training-run estimates for undisclosed runs still differ by 2x.
+No direct overlap; the corpus has no post-2024 training-run figures. Extends the training-cost line running from `research/ghg/001-jiang-2024-llm-chatbot-lifecycle-footprint.md`. The dispersion here is the counterpoint to 026: per-query inference estimates are converging within an IQR, while training-run estimates for undisclosed runs still differ by 2x.
 
 ---
 Retrieved: 2026-09-19

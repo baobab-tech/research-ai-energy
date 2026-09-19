@@ -78,7 +78,7 @@ efficiency can still deliver. Neither should be cited without the other.
 
 Otherwise no overlap. This is the first excerpt in the frugal folder covering test-time compute energy,
 and the first production-serving per-query energy model. It contradicts the boundary of the per-prompt figures
-used elsewhere in the corpus (e.g. /research/community/001-luccioni-2024-power-hungry-ai.md), whose
+used elsewhere in the corpus (e.g. /research/frugal/027-luccioni-2024-power-hungry-processing.md), whose
 unbatched measurement conditions are exactly what this paper argues against. It also complements
 /research/frugal/012-stojkovic-2025-dynamollm-energy-efficient-inference.md, which shares a co-author
 (Choukse) and the same Microsoft Azure research group.

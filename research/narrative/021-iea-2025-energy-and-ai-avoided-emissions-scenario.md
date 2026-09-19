@@ -33,7 +33,7 @@ The IEA is an intergovernmental body whose membership is largely OECD energy min
 
 ## Relation to existing corpus
 
-No direct overlap. The IEA *Energy and AI* report was absent from the repository entirely despite being the single most-cited source in this debate. It supplies the agency-side version of the enablement claim that `narrative/001-bieser-2024-ict-ghg-enablement-critique.md` criticises in the telecom sector.
+No direct overlap. The IEA *Energy and AI* report was absent from the repository entirely despite being the single most-cited source in this debate. It is the agency-side version of the enablement claim whose guidance documents `narrative/023-okeeffe-brander-2026-avoided-emissions-methodology-comparison.md` finds mutually inconsistent.
 
 ---
 Retrieved: 2026-09-19

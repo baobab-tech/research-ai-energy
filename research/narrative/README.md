@@ -1,6 +1,6 @@
 # The "AI for Climate" Narrative
 
-26 excerpts examining claims that AI reduces emissions: the figures published, the counterfactuals
+17 excerpts, every one verified against its source, examining claims that AI reduces emissions: the figures published, the counterfactuals
 they rest on, and the deployment evidence behind them.
 
 [Full index](_index.md)
@@ -46,8 +46,10 @@ counterfactual energy would not have been matched with clean energy
 ([024](024-google-2026-frozen-2008-pue-baseline-and-deepmind-claim.md)).
 
 **HVAC, one of the five IEA mechanisms.** Of 66 LLM-for-HVAC studies, 4 reach pilot-level
-evidence and none reports sustained operational deployment; 63 are research-only
-([025](025-neubauer-2026-llm-hvac-no-sustained-deployment.md)).
+evidence and none reports sustained operational deployment
+([025](025-neubauer-2026-llm-hvac-no-sustained-deployment.md)). In wastewater treatment, almost
+all applications are predictive studies at small scale, with two full-scale operational digital
+twins identified ([020](020-ai-wastewater-treatment-limits-2025.md)).
 
 ## The net effect may be negative
 
@@ -71,12 +73,16 @@ long-run rise in the renewable share of final energy across the G-20 over 1995 t
 ([016](016-han-2025-technological-innovation-renewable-energy-g20.md)). No AI, computing or
 data-centre variable appears in the paper.
 
-AI, proxied by per-capita operational stock of industrial robots, associates with lower ecological
-footprints across 67 countries over 1993 to 2019
-([007](007-wang-2024-ai-ecological-footprints-67-countries.md)). The coefficients are -0.0018 on
-ecological footprint and -0.0013 on carbon, against +0.1673 on the energy-use control in the same
-regression, roughly 90x larger. The panel ends before generative AI, and system-GMM with internal
-instruments is not a causal design.
+AI, proxied by per-capita stock of industrial robots, associates with a 0.0018% fall in
+ecological footprint per 1% rise, across 67 countries over 1993 to 2019
+([007](007-wang-2024-ai-ecological-footprints-67-countries.md)). The energy-use control in the
+same regression is roughly 90x larger. The panel ends before generative AI, and system-GMM with
+internal instruments is not a causal design.
+
+The most-cited peer-reviewed statement that AI is a "transformative catalyst" for the energy
+transition reports no synthesis method, no adoption pathway and no netting of AI's own load
+([011](011-wang-2025-ai-energy-transition-catalyst.md)). It is held as the canonical instance of
+the claim, not as evidence for it.
 
 The distinction that decides these claims is between a measured deployment and a modelled
 association.
@@ -88,3 +94,6 @@ association.
   2000 to 2020 capacity operational) but does not speak to displacement.
 - No 2026 systematic review assessing net AI climate impact end to end with the AI footprint
   netted off.
+- The 4:1 adaptation-over-mitigation ratio ([018](018-ai-climate-resilience-systematic-review-2025.md))
+  holds within its corpus (385 studies, one denominator, p < 0.0001), but the search string
+  requires resilience terms, so it measures the composition of resilience-framed literature.

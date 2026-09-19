@@ -38,7 +38,7 @@ Preprint, not peer reviewed. The chain — occupational AI-exposure index → ta
 
 ## Relation to existing corpus
 
-No direct overlap with the narrative folder. Supplies quantitative rebound evidence of the kind that `narrative/003-tomlinson-2024-ai-emissions-vs-humans.md` and `narrative/008-tomlinson-2024-ai-vs-human-emissions-comparison.md` flag as a caveat but do not quantify, and contradicts the direction of `narrative/007-wang-2024-ai-ecological-footprints-67-countries.md` and `narrative/011-wang-2025-ai-energy-transition-catalyst.md`.
+No direct overlap with the narrative folder. Supplies quantitative rebound evidence of the kind that `ghg/013-tomlinson-2024-ai-vs-human-emissions-comparison.md` flags as a caveat but does not quantify, and contradicts the direction of `narrative/007-wang-2024-ai-ecological-footprints-67-countries.md` and `narrative/011-wang-2025-ai-energy-transition-catalyst.md`.
 
 ---
 Retrieved: 2026-09-19

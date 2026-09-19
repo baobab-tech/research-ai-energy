@@ -36,7 +36,7 @@ Self-reported by the emitter, with limited assurance only, using a bespoke headl
 
 ## Relation to existing corpus
 
-First corporate primary GHG disclosure in `research/ghg/`. Confirms the mechanism described in `research/washing/012-forliano-2025-greenwashing-landscape.md` with numbers rather than theory. Supplies the Google-side counterpart to the water claims examined in `research/water/017-google-2025-gemini-water-measurements.md`. Parallel to 029 (Microsoft FY2025), where the same market-vs-location gap appears at similar scale. The same disclosure is examined from the greenwashing angle at `research/washing/018-google-2026-market-vs-location-based-gap.md` and `research/washing/019-google-2026-ambition-boundary-exclusions.md`; this file is the emissions-inventory reading of it.
+First corporate primary GHG disclosure in `research/ghg/`. The accounting mechanism that produces the gap is quantified across 206 companies in `research/washing/025-bjorn-2025-stricter-scope2-rules.md`. Supplies the Google-side counterpart to the water claims examined in `research/water/017-google-2025-gemini-water-measurements.md`. Parallel to 029 (Microsoft FY2025), where the same market-vs-location gap appears at similar scale. The same disclosure is examined from the greenwashing angle at `research/washing/018-google-2026-market-vs-location-based-gap.md` and `research/washing/019-google-2026-ambition-boundary-exclusions.md`; this file is the emissions-inventory reading of it.
 
 ---
 Retrieved: 2026-09-19

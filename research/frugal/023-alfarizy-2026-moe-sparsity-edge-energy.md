@@ -50,9 +50,7 @@ disclosed.
 
 No direct overlap. It is the corpus's first measured test of an efficiency claim made on FLOP grounds,
 and it fits the pattern established by /research/frugal/021 and /research/frugal/022: efficiency
-techniques validated on a proxy metric (FLOPs, latency) do not reliably transfer to joules. It also
-qualifies the TinyML optimism of /research/frugal/002-capogrosso-2024-tinyml-survey.md — edge deployment
-is exactly where the sparse-activation advantage vanished.
+techniques validated on a proxy metric (FLOPs, latency) do not reliably transfer to joules.
 
 ---
 Retrieved: 2026-09-19

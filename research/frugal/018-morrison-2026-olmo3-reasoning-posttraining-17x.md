@@ -65,7 +65,7 @@ is not a stable constant and should not be transplanted to other labs' reasoning
 No direct overlap; the repo has no Olmo, no post-training, and no RL-rollout energy accounting. It
 extends /research/ghg/017-wang-2023-bert-finetuning-energy-carbon.md (fine-tuning energy) by three orders
 of magnitude and a generation of method. Strubell also appears as an author in
-/research/community/001-luccioni-2024-power-hungry-ai.md.
+/research/frugal/027-luccioni-2024-power-hungry-processing.md.
 
 The development-overhead finding (82.2%) is the strongest available rebuttal to per-model training-energy
 figures quoted anywhere in the corpus: any figure for "the cost of training model X" that counts only the

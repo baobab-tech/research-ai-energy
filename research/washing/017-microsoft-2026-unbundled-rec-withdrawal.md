@@ -38,7 +38,7 @@ Self-reported and self-defined. Microsoft's FY2025 figures were subject to third
 
 ## Relation to existing corpus
 
-No direct overlap. The folder's existing 16 files are general greenwashing theory and non-tech case studies (VW, Zara, BP). This is the first tech-specific, quantified accounting discrepancy in the folder. It gives a concrete mechanism behind the disclosure-quality arguments in `research/washing/008-bingler-2024-climate-cheap-talk.md` and `research/washing/001-trencher-2024-carbon-offsets.md`.
+No direct overlap. The folder's existing 16 files are general greenwashing theory and non-tech case studies (VW, Zara, BP). This is the first tech-specific, quantified accounting discrepancy in the folder. It gives a concrete mechanism behind the disclosure-quality argument in `research/washing/027-trencher-2024-offset-quality-base-rate.md`.
 
 ---
 Retrieved: 2026-09-19

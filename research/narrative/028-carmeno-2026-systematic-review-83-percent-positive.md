@@ -35,7 +35,7 @@ Preprint, not peer reviewed. Counting study valence is sensitive to the coding s
 
 ## Relation to existing corpus
 
-No direct overlap. Supersedes in scope `narrative/018-ai-climate-resilience-systematic-review-2025.md` (which found AI climate research focused on adaptation over mitigation) and `narrative/012-raman-2024-green-sustainable-ai-thematic-analysis.md`, both of which map the same literature at smaller n and without valence coding. Provides the evidence-base-level explanation for why the sources catalogued in `narrative/010-alzoubi-2024-green-ai-initiatives-validation-gap.md` report benefits while lacking validation.
+No direct overlap. Supersedes in scope `narrative/018-ai-climate-resilience-systematic-review-2025.md`, which found AI climate research focused on adaptation over mitigation and maps the same literature at smaller n and without valence coding. Provides the evidence-base-level explanation for why the sources catalogued in `narrative/010-alzoubi-2024-green-ai-initiatives-validation-gap.md` report benefits while lacking validation.
 
 ---
 Retrieved: 2026-09-19

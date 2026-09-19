@@ -123,7 +123,7 @@ What worked:
 - **Ask for errors in the report, not in the files.** The agent's final message is the right
   place for "this number was wrong"; the file gets the corrected version.
 - **Tell agents what is already known.** Give them the verified findings that bear on their area
-  so they cross-check instead of rediscovering.
+  so they can cross-check what is already established.
 
 What to watch: agents working concurrently on related sources will sometimes reach the same
 conclusion independently. That agreement is evidence. Two agents independently recovering the

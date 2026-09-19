@@ -1,6 +1,6 @@
 # Data Centres
 
-22 excerpts on infrastructure: buildout and interconnection, power sourcing, cooling, and
+17 excerpts, every one verified against its source, on infrastructure: buildout and interconnection, power sourcing, cooling, and
 efficiency metrics.
 
 [Full index](_index.md)

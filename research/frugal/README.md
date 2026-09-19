@@ -1,7 +1,7 @@
 # Frugal AI
 
-25 excerpts on efficiency: what reduces energy in deployed systems, what does not, and the limits
-of efficiency as a strategy.
+18 excerpts, every one verified against its source. What reduces energy in deployed systems,
+what does not, and the limits of efficiency as a strategy.
 
 [Full index](_index.md)
 
@@ -53,12 +53,25 @@ claims held in this folder:
 
 | Claim | What it rests on |
 |---|---|
-| FPGA at 6x a V100S ([003](003-zeng-2024-flightllm-fpga.md)) | batch size 1, against a naive PyTorch baseline; 5.5x against vLLM, 3.8x against an A100, 2.9x against gpt-fast. Advantage falls monotonically to batch 64. Runs a sparsified 3.5-bit model at worse perplexity |
-| Photonic accelerator ([013](013-hua-2025-photonic-accelerator-ultralow-latency.md)) | 4.21 TOPS/W excluding lasers, 2.38 including them, comparable to or below a contemporary GPU. Minimum working latency 5 ns, not 3. Workload is Ising max-cut, not inference |
-| Silicon neuron ([014](014-pazos-2025-silicon-transistor-neuromorphic.md)) | 415 pJ per micrometre of channel width on 180 and 500 nm nodes, two decades behind current logic. Efficiency is comparative against other neuron-mimicking devices |
-| Survey range 3.1x to 10,000x ([016](016-kachris-2025-hardware-accelerators-llm-survey.md)) | 27 accelerators, each against a different baseline; none of the ASIC schemes was fabricated, all are simulation at 40 to 55 nm against GPUs at 12 to 16 nm |
+| FPGA at 6.0x a V100S ([003](003-zeng-2024-flightllm-fpga.md)) | batch size 1, against a naive PyTorch baseline; 5.5x against vLLM, 3.8x against an A100, 2.9x against gpt-fast. Margin falls monotonically to batch 64. Runs a sparsified 3.5-bit model at worse perplexity |
+| Photonic accelerator ([013](013-hua-2025-photonic-accelerator-ultralow-latency.md)) | 2.38 TOPS/W including lasers, no better than a contemporary GPU. Minimum working latency 5 ns. Workload is Ising max-cut, not inference |
+| Silicon neuron ([014](014-pazos-2025-silicon-transistor-neuromorphic.md)) | two 180 nm transistors against 24 in CMOS, two decades behind current logic. Efficiency is comparative against other neuron-mimicking devices |
+| Memristive synapse ([006](006-weilenmann-2024-memristor-synaptic.md)) | 36 mJ against 3,464 mJ for a well-utilised A100, a 96x estimate. The 966x headline compares against an under-utilised A100 and is an artefact. No crossbar array was built; the neuron stays on GPU |
+| Survey range 3.1x to 10,000x ([016](016-kachris-2025-hardware-accelerators-llm-survey.md)) | 27 accelerators, each against a different baseline; none of the ASIC schemes was fabricated, all simulation at 40 to 55 nm against GPUs at 12 to 16 nm |
 
-None of the four reports a duty cycle or a deployed workload.
+None reports a duty cycle against a deployed workload.
+
+## Model choice dominates technique
+
+Image generation draws 2.907 kWh per 1,000 inferences against 0.002 kWh for text classification,
+a spread above 1,450x. On extractive question answering a task-specific model emits 0.3 gCO2e
+against 10 g for a multi-purpose one ([027](027-luccioni-2024-power-hungry-processing.md)). Model
+and task selection move energy further than any serving-stack technique measured here.
+
+Reconfiguring a serving cluster cut measured inference energy 42% against a fixed-configuration
+baseline, falling to 23.4% at high load because the saving harvests idle headroom
+([012](012-stojkovic-2025-dynamollm-energy-efficient-inference.md)). Most of its economic benefit
+is consolidation: $1,362.70/h from renting fewer GPUs against $4.40/h of electricity.
 
 ## The limits argument
 

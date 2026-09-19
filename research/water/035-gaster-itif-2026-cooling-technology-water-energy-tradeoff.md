@@ -63,7 +63,7 @@ Specific issues:
 
 ## Relation to existing corpus
 
-No direct overlap. Supplies the quantified cooling trade-off that `research/water/025-li-zhu-2025-data-center-liquid-cooling-review.md` and `research/water/026-kim-2025-immersion-cooling-high-density-servers.md` describe only qualitatively, and adds the supply-chain constraint on two-phase immersion (3M's PFAS exit) that excerpt 026 does not mention. Directly disputes the indirect figure in `research/water/029-shehabi-2024-lbnl-direct-vs-indirect-water.md`. Its 0.47 gal/kWh = 1.78 L/kWh thermoelectric factor independently corroborates the 1.80 L/kWh EWIF used in `research/water/027-sharma-2026-water-cost-of-intelligence-boundary.md` and confirms across three independent sources that the hydro-attribution convention, not the thermoelectric factor, is what moves the indirect-water estimate.
+No direct overlap. Supplies the quantified cooling trade-off that `research/water/034-crs-2026-data-centers-water-faq.md` states directionally without any L/kWh value or energy-penalty percentage, and adds the supply-chain constraint on two-phase immersion from 3M's PFAS exit. Directly disputes the indirect figure in `research/water/029-shehabi-2024-lbnl-direct-vs-indirect-water.md`. Its 0.47 gal/kWh = 1.78 L/kWh thermoelectric factor independently corroborates the 1.80 L/kWh EWIF used in `research/water/027-sharma-2026-water-cost-of-intelligence-boundary.md` and confirms across three independent sources that the hydro-attribution convention, not the thermoelectric factor, is what moves the indirect-water estimate.
 
 ---
 Retrieved: 2026-09-19

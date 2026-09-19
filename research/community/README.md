@@ -1,6 +1,6 @@
 # Grid and Community Impact
 
-20 excerpts on electricity prices, cost allocation, siting conflict, air quality and
+12 excerpts, every one verified against its source, on electricity prices, cost allocation, siting conflict, air quality and
 environmental justice. Files 016 onward are regulatory filings, grid-operator data and
 peer-reviewed empirics from 2026.
 

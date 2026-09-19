@@ -58,7 +58,7 @@ match. Very few published figures state all four.
 
 No direct overlap. It supplies the comparability caveat that every per-query number elsewhere in the
 corpus needs, including /research/frugal/017 (Oviedo et al.), /research/frugal/019 (Manya et al.),
-/research/frugal/021 (Delavande et al.) and /research/community/001-luccioni-2024-power-hungry-ai.md. The
+/research/frugal/021 (Delavande et al.) and /research/frugal/027-luccioni-2024-power-hungry-processing.md. The
 repo has no MLPerf Power excerpt; MLPerf Inference v6.0 (April 2026) and v6.1 (September 2026) both
 carry an optional power category, but MLCommons does not normalise energy to service units such as joules
 per generated token, which is the gap this measurement line addresses.

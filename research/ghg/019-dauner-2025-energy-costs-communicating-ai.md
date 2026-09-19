@@ -46,7 +46,7 @@ The measurement boundary is narrower than most comparable studies. Device counte
 
 ## Relation to existing corpus
 
-The derived per-question range of 0.058 to 4.26 Wh brackets the 0.31 Wh median measured in `research/ghg/026-oviedo-2026-per-query-inference-energy.md`, which is full-node and PUE-inclusive and therefore uses a wider boundary; the agreement of a device-level open-model measurement with a full-node frontier-model measurement at the same order of magnitude is the more useful result than either alone. The 3.91 Wh that file reports under test-time scaling matches this study's reasoning-mode figures closely. The finding that token output rather than parameter count sets inference energy qualifies the parameter-count framing in `research/ghg/004-raiaan-2024-llm-challenges.md`.
+The derived per-question range of 0.058 to 4.26 Wh brackets the 0.31 Wh median measured in `research/ghg/026-oviedo-2026-per-query-inference-energy.md`, which is full-node and PUE-inclusive and therefore uses a wider boundary; the agreement of a device-level open-model measurement with a full-node frontier-model measurement at the same order of magnitude is the more useful result than either alone. The 3.91 Wh that file reports under test-time scaling matches this study's reasoning-mode figures closely.
 
 ---
 Retrieved: 2026-09-19

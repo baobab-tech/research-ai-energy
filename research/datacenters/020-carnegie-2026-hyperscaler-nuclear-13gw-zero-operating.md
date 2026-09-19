@@ -48,7 +48,7 @@ A restart of an intact, recently-operating plant slipping more than a year past 
 
 ## Relation to existing corpus
 
-No direct overlap — the folder had nothing on nuclear procurement. Directly relevant to `002-trencher-2024-carbon-offsets-quality.md`: the Clinton structure is the same unbundled-attribute problem in a nuclear wrapper rather than an offset wrapper.
+No direct overlap — the folder had nothing on nuclear procurement. Directly relevant to `../washing/027-trencher-2024-offset-quality-base-rate.md`: the Clinton structure is the same unbundled-attribute problem in a nuclear wrapper rather than an offset wrapper.
 
 ---
 Retrieved: 2026-09-19

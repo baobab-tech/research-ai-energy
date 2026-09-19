@@ -63,7 +63,7 @@ The emissions table is internally inconsistent. Its "operational emissions" colu
 
 Directly countered in practice by `025-selc-earthjustice-2026-xai-memphis-unpermitted-turbines.md`. The largest off-grid AI campus actually built chose unabated gas at roughly 1.2 GW rather than a renewable hybrid, and its binding constraint was Clean Air Act permitting rather than levelised cost. That case is the missing variable in this model: the paper prices gas fuel and carbon but not air permitting, siting opposition or the possibility that a developer under interconnection pressure will pick the fastest dispatchable option rather than the cheapest lifetime one.
 
-The paper argues PPAs are a partial solution at best: the consumer must top up from the grid whenever contracted wind and solar are not generating, and the grid is carbon-intensive precisely then, so a certificate-based 100%-renewable claim does not describe the electricity consumed. This is the same gap between contracted and delivered clean power documented in `020-carnegie-2026-hyperscaler-nuclear-13gw-zero-operating.md` and `002-trencher-2024-carbon-offsets-quality.md`.
+The paper argues PPAs are a partial solution at best: the consumer must top up from the grid whenever contracted wind and solar are not generating, and the grid is carbon-intensive precisely then, so a certificate-based 100%-renewable claim does not describe the electricity consumed. This is the same gap between contracted and delivered clean power documented in `020-carnegie-2026-hyperscaler-nuclear-13gw-zero-operating.md` and `../washing/027-trencher-2024-offset-quality-base-rate.md`.
 
 ---
 Retrieved: 2026-09-19

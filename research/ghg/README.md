@@ -1,6 +1,6 @@
 # GHG Emissions
 
-30 excerpts on the greenhouse-gas footprint of AI: training, inference, embodied emissions, and
+21 excerpts, every one verified against its source, on the greenhouse-gas footprint of AI: training, inference, embodied emissions, and
 the aggregate figures published by agencies and operators.
 
 [Full index](_index.md)
@@ -60,11 +60,16 @@ software-centric work and reports nothing on water.
 ## Embodied against operational
 
 Two findings sit at different boundaries and do not conflict. Google's first-party TPU lifecycle
-data puts operational at 70-90% of a chip's lifetime emissions
+data puts operational at 70 to 90% of a chip's lifetime emissions
 ([027](027-schneider-2025-tpu-lifecycle-embodied-emissions.md)). The claim that embodied
 emissions exceed operational ([020](020-rozycki-2025-energy-aware-ml-models-review.md)) inherits
 a figure comparing manufacturing of **all computing equipment** worldwide, including 1.7 billion
 phones, against ML training alone. Only the first bears on datacentre accelerators.
+
+Fine-tuning does not rival pre-training on the evidence held here. Pre-training BERT-base cost
+368.0 kWh, equal to 392 MNLI-scale fine-tunings or 45,109 RTE-scale ones
+([017](017-wang-2023-bert-finetuning-energy-carbon.md)). The source supplies no estimate of how
+many fine-tunings occur, so it supports no aggregate claim in either direction.
 
 ## Gaps
 

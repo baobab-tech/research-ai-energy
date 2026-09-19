@@ -32,9 +32,10 @@ Evidence for each item is in the topic folder named. Claims that could not be so
   hyperscale carbon intensity 48% above the US grid average.
 - **Water**: like for like, Google's 0.26 mL scope-1 prompt against Li et al.'s 2.200 mL scope-1
   request is a factor of 8.5. The 40-100x gap quoted elsewhere compares scope 1 against scope
-  1+2. Nationally ~2% of US consumptive use; locally up to 1.34x a host utility's entire
-  delivery capacity on a peak day. The 4.2-6.6 bn m3 projection is withdrawal; consumption is
-  0.38-0.60 bn m3.
+  1+2. GPT-3 training is 5.44 million litres total, of which 0.71 million is the on-site term
+  usually quoted alone. The 4.2-6.6 bn m3 projection is withdrawal; consumption is 0.38-0.60 bn
+  m3. Nationally ~2% of US consumptive use; at one site, 134% of the host utility's peak-day
+  delivery capacity. No source establishes that liquid or immersion cooling reduces water use.
 - **Grid economics**: PJM's market monitor attributes $6.50bn of one capacity auction to
   data-centre load, 76% of it forecast load. Counter-evidence exists
   (IV study finding rates fell); the disagreement is about supply constraints.

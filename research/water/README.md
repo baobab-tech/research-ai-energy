@@ -1,58 +1,50 @@
 # Water
 
-26 excerpts on data-centre water: the per-request figures and what boundary each uses, cooling
-technology, corporate disclosure, and site-level constraint.
+16 excerpts, every one verified against its source.
 
 [Full index](_index.md)
 
-## Boundaries first
+## Boundaries decide the arguments
 
-Almost every apparent conflict in this literature is a boundary mismatch. Two distinctions decide
-the arguments:
+Almost every apparent conflict in this literature is a boundary mismatch:
 
 - **Withdrawal** is water taken from a source and may return to the basin. **Consumption** is
-  water evaporated or otherwise removed. They differ by roughly an order of magnitude for
-  electricity generation.
+  water removed from it. For electricity generation the two differ by about an order of magnitude.
 - **Scope 1** is water evaporated in the facility's own cooling. **Scope 2** is water consumed
-  generating the electricity the facility draws. Scope 2 is the larger term.
+  generating its electricity, and it is the larger term.
 
-## Per-request figures, compared like for like
+## Per-request figures, like for like
 
-| Source | Value | Scope | Note |
-|---|---|---|---|
-| [Google 2025](017-google-2025-gemini-water-measurements.md) | 0.26 mL | 1 | median Gemini text prompt; IT energy × fleet WUE 1.15 L/kWh, Category 2 |
-| [Li et al. 2023](001-li-2023-making-ai-less-thirsty.md) | 2.200 mL | 1 | per medium request, US average, Microsoft assumptions |
-| Li et al. 2023 | 14.704 mL | 2 | generation water, US average |
-| Li et al. 2023 | 16.904 mL | 1+2 | total; range 7.107 mL (Ireland) to 47.506 mL (Washington) |
-| [Sharma et al. 2026](027-sharma-2026-water-cost-of-intelligence-boundary.md) | 0.725 mL | 1+2 | Google's prompt with generation water at 1.80 L/kWh |
+| Source | Value | Scope |
+|---|---|---|
+| [Google 2025](017-google-2025-gemini-water-measurements.md) | 0.26 mL | 1 |
+| [Li et al. 2023](001-li-2023-making-ai-less-thirsty.md) | 2.200 mL | 1 |
+| Li et al. 2023 | 14.704 mL | 2 |
+| Li et al. 2023 | 16.904 mL | 1+2, US average; 7.107 (Ireland) to 47.506 (Washington) |
+| [Sharma et al. 2026](027-sharma-2026-water-cost-of-intelligence-boundary.md) | 0.725 mL | 1+2, Google's prompt |
 
-**The like-for-like comparison is 0.26 mL against 2.200 mL, a factor of about 8.5.** Comparing
-Google's scope-1 figure against Li et al.'s scope 1+2 total produces the 40x to 100x gap quoted
-elsewhere, and that comparison is not valid.
+**The like-for-like comparison is 0.26 mL against 2.200 mL, a factor of about 8.5.** The 40x to
+100x gap quoted elsewhere sets a scope-1 figure against a scope 1+2 total.
 
-The figure "10 to 25 mL per query" does not appear in Li et al. It was back-computed from the
-April 2023 preprint wording "500 mL per 20-50 queries", which the authors replaced in v5 and in
-the published CACM text with "10 to 50 medium-length responses".
+The figure "10 to 25 mL per query" appears in no version of Li et al. It was back-computed from
+April 2023 preprint wording that the authors replaced with "10 to 50 medium-length responses".
 
-Google's 2026 report derives its water number by applying a 2024 fleetwide WUE to a May 2025
-energy measurement and publishes no WUE figure anywhere in the document
-([031](031-google-2026-fy2025-water-disclosure.md)).
+Google's 0.26 mL is not metered per prompt. It is measured IT energy multiplied by a fleet-average
+WUE of 1.15 L/kWh under ISO/IEC 30134-9 Category 2, which counts on-site freshwater only and
+excludes generation water, embodied water and all training water.
 
 ## Training
 
-GPT-3 training consumed **5.439 million litres** total: 0.708 million on-site (scope 1) and 4.731
-million off-site generating the electricity (scope 2), which is 87% of the total
-([001](001-li-2023-making-ai-less-thirsty.md)). The widely-quoted "700,000 litres" is the scope-1
-term alone.
+GPT-3 training consumed **5.439 million litres**: 0.708 million on-site and 4.731 million
+generating the electricity, which is 87% of the total
+([001](001-li-2023-making-ai-less-thirsty.md)). The quoted "700,000 litres" is the scope-1 term.
 
 ## Projections
 
-The projection of **4.2 to 6.6 billion m³ of global AI water by 2027 is withdrawal, not
-consumption.** Projected consumption is **0.38 to 0.60 billion m³**, an order of magnitude
-smaller, and about 97% of the withdrawal figure is off-site power-plant cooling
-([018](018-li-2025-cacm-ai-water-projections.md)). The derivation applies US-average water
-intensity factors to a global electricity projection (de Vries 2023, 85-134 TWh) at an assumed
-PUE of 1.1, with no geographic distribution.
+Global AI is projected to **withdraw** 4.2 to 6.6 billion m³ in 2027 and to **consume** 0.38 to
+0.60 billion m³ ([018](018-li-2025-cacm-ai-water-projections.md)). About 97% of the withdrawal
+is off-site power-plant cooling. The derivation applies US-average intensity factors to a global
+electricity projection at an assumed PUE of 1.1, with no geographic distribution.
 
 ## The indirect multiplier is unsettled
 
@@ -60,43 +52,65 @@ Scope 2 water against scope 1:
 
 | Source | Ratio | Basis |
 |---|---|---|
-| [LBNL 2024](029-shehabi-2024-lbnl-direct-vs-indirect-water.md) | 12:1 | 66 GL direct, ~800 GL indirect, 4.52 L/kWh |
+| [LBNL 2024](029-shehabi-2024-lbnl-direct-vs-indirect-water.md) | 12:1 | 66 GL direct, ~800 GL indirect |
 | [Guidi & Dominici 2026](032-guidi-dominici-2026-scope1-scope2-water-geography.md) | 3:1 | 472 facilities; 1.7:1 without hydro allocation |
-| [CRS / IEA 2026](034-crs-2026-data-centers-water-faq.md) | 1.5:1 | 40% direct, 60% indirect |
+| [CRS / IEA 2026](034-crs-2026-data-centers-water-faq.md) | 1.5:1 | 40:60 direct to indirect |
 
 The spread turns on whether reservoir evaporation is allocated to hydropower. Three independent
-sources converge on 1.78 to 1.80 L/kWh for thermoelectric generation excluding hydro. The
-convention can reverse regional rankings 94-fold: Oregon spans 0.30 to 28.18 L/kWh depending on
-the choice.
+sources converge on 1.78 to 1.80 L/kWh for thermoelectric generation excluding hydro. The choice
+can reverse regional rankings 94-fold.
 
 ## Scale depends on where it is measured
 
 Direct data-centre water is about 2% of US consumptive use
-([034](034-crs-2026-data-centers-water-faq.md)). Peak-day demand at individual sites spans 0.002
-to 1.34 of the host utility's entire delivery capacity, the upper bound being Meta's Lebanon,
-Indiana facility ([033](033-akinade-2026-water-consumption-impact-utility-burden.md)). Data
-centres run consumptive ratios of 0.70 to 0.90 against a 12% public-supply average, with peaking
-factors of 6 to 30 against 1.5 to 2.5.
+([034](034-crs-2026-data-centers-water-faq.md)). Peak-day demand at one Meta campus reaches 134%
+of its host utility's entire delivery capacity, with burden across ten US sites spanning 0.002 to
+1.34 ([033](033-akinade-2026-water-consumption-impact-utility-burden.md)).
+
+Load balancing redistributes the burden without removing it. Water-minimising placement still
+leaves the worst-hit site at 1.62x the fleet average, and it is the worst strategy for carbon at
+2.18x ([019](019-li-2023-environmental-equity-regional-water.md)).
 
 Ceres reports 3.4 trillion gallons **withdrawn** across seven states in 2024, about 78% of it
-hydropower pass-through, chosen as a risk-exposure proxy
-([028](028-ceres-2026-water-behind-the-watts.md)). It is not comparable to municipal consumption.
+hydropower pass-through ([028](028-ceres-2026-water-behind-the-watts.md)).
 
-## Efficiency estimates for non-hyperscale facilities
+## Disclosure
 
-US small data centres held PUE flat at 1.82-2.28 between 2012 and 2018 while WUE fell from
-0.26-0.42 to 0.21-0.35 L/kWh. Midsize facilities improved PUE from 1.46-1.83 to 1.43-1.76 while
-WUE rose from 0.52-0.86 to 0.56-0.96 L/kWh, by adopting water-cooled chillers
-([022](022-lei-2025-us-midsize-data-centers-wue.md)). Neither figure is measured: both weight
+Microsoft reports 13,266 ML withdrawn and 8,170 ML consumed in FY25 against 14.2 million m³
+replenished, reaching "water positive" as a global aggregate. Its own site table shows
+replenishment delivered at 7 of 28 locations, concentrated where withdrawal is small
+([030](030-microsoft-2026-fy25-site-level-water.md)). Google's consumption rose 34% to 10,869
+million gallons, with replenishment covering 78% of **freshwater** consumption and 71% of total
+([031](031-google-2026-fy2025-water-disclosure.md)).
+
+Electricity-related water is 75% of operational water consumption across 472 US hyperscale
+facilities, and it lands in different basins from the facilities themselves
+([032](032-guidi-dominici-2026-scope1-scope2-water-geography.md)).
+
+## Cooling
+
+Dry cooling cuts water by more than 90% for a 1 to 1.5% output penalty; hybrid cuts evaporation
+75%; zero-liquid-discharge reverse osmosis costs under 0.1% of output
+([035](035-gaster-itif-2026-cooling-technology-water-energy-tradeoff.md)). Vendor near-zero-water
+claims in that source are announcements, not measurements, and LBNL projects national site WUE
+rising to 0.45 to 0.48 L/kWh.
+
+US midsize data centres improved PUE from 1.46-1.83 to 1.43-1.76 while WUE **rose** from
+0.52-0.86 to 0.56-0.96 L/kWh, by adopting water-cooled chillers
+([022](022-lei-2025-us-midsize-data-centers-wue.md)). Neither figure is measured; both weight
 published per-cooling-system values by modelled county server counts.
 
-Google's LLM-serving fleet WUE of 1.15 L/kWh sits above the midsize estimate, which cuts against
-the assumption that non-hyperscale facilities are uniformly more water-intensive per unit of IT
-energy.
+## Siting conflict
+
+Google's Cerrillos facility was permitted for 169 L/s in a drought-stricken Santiago district. A
+non-binding referendum returned 38% approve and 49% reject, and a 2019 environmental tribunal
+found scientific uncertainty on aquifer availability
+([002](002-lehuede-2024-elemental-ethics.md)).
 
 ## Gaps
 
 - No independent verification of Google's 0.26 mL beyond reconstruction from Google's own inputs.
 - No independent assessment of water-positive pledge delivery. Corporate self-report only.
 - Meta has published no FY2025 water data; its latest covers calendar 2024.
-- Privette, Barros & Cai (*AGU Advances* 2026) is directly on this topic and unretrieved.
+- No source establishes that liquid or immersion cooling reduces water consumption. The claim was
+  asserted in earlier secondary summaries and is absent from the primary cooling literature.

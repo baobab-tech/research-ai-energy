@@ -61,10 +61,8 @@ which have dedicated tensor-core paths and no dequantisation kernels.
 ## Relation to existing corpus
 
 No direct overlap; the corpus had no measured serving-stack energy at all. It qualifies the blanket claim
-that quantisation reduces energy, which appears without qualification in
-/research/frugal/002-capogrosso-2024-tinyml-survey.md and
-/research/narrative/012-raman-2024-green-sustainable-ai-thematic-analysis.md. Luccioni also authors
-/research/community/001-luccioni-2024-power-hungry-ai.md.
+that quantisation reduces energy, which holds only in the compute-bound part of the workload. Luccioni
+also authors /research/frugal/027-luccioni-2024-power-hungry-processing.md.
 
 ---
 Retrieved: 2026-09-19

@@ -34,7 +34,7 @@ No grant funding is recorded in OpenAlex; both authors are at the University of 
 
 ## Relation to existing corpus
 
-No direct overlap. Provides the category-level methodological basis for the critique that `narrative/001-bieser-2024-ict-ghg-enablement-critique.md` makes sector-specifically for telecom enablement factors.
+No direct overlap. Provides the category-level methodological basis for reading the specific avoided-emissions claims in `narrative/021-iea-2025-energy-and-ai-avoided-emissions-scenario.md` and `narrative/022-google-2026-enabled-emissions-41mt.md`.
 
 ---
 Retrieved: 2026-09-19

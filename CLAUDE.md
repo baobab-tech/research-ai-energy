@@ -36,10 +36,13 @@ A corporate report evidences what the company claims. It does not evidence wheth
    must come from a source retrieved in this pass, not from an existing excerpt. Excerpts have
    been wrong; propagating one without checking is how the error spreads.
 1. **Every fact carries a URL that was actually retrieved.** Confirm it resolves.
+1a. **Confirm the record before writing.** Check the DOI against Crossref: if the returned title
+   is not the paper, the DOI is wrong; if the author list does not match, the citation is wrong.
+   Both have occurred here. One call, in `skills/metadata.md`.
 2. **No abstract-only write-ups.** If the finding cannot be established from the full text, PDF, or OA copy, skip the source. Banned phrasings: "likely addresses", "presumably", "full paper needed", "implies the authors argue".
 3. **Numbers carry units, system boundary, and method.** "0.24 Wh per prompt" is incomplete until the boundary is stated as accelerator-only, full-stack, or PUE-inclusive, and the statistic as median or mean.
 4. **Name the epistemic status.** Measurement, estimate, projection, and model output are different things. Say which.
-5. **One canonical file per source.** Before writing, `grep -ril "<author>" research/`. If the source is held, extend the existing file or cross-link it from the other index. Do not write it up again.
+5. **One file per finding, not one file per topic.** Before writing, `grep -ril "<author>" research/`. If the source is already held, extend that file or cross-link it. Writing the same finding up again in a second folder is the failure mode: five copies of one paper here made five different and partly invented claims about it. A large document (an agency report, a corporate environmental report) may legitimately support separate files in separate folders when each carries a genuinely different finding. Say so in `Relation to existing corpus`, naming the other file and what it covers.
 6. **On topic.** Each excerpt bears directly on AI or data-centre energy, water, emissions, grid, siting, or the claims made about them. General ESG theory, municipal water engineering, and corporate-governance econometrics belong elsewhere.
 7. **Record funding and affiliation** on every excerpt, including when there is no apparent conflict.
 8. **The number must be in the source.** A figure derived by arithmetic on the source's prose is
@@ -156,6 +159,8 @@ Keep it to what a reader needs before opening any excerpt. It summarises; it doe
 | `skills/serper.md` | web, news and scholar search; key in `.env` (gitignored) |
 | `skills/archive.md` | Wayback Machine, for revised or removed corporate pages |
 | `skills/primary-sources.md` | agency, grid-operator and corporate documents; PDF extraction; publisher blocks |
+| `skills/metadata.md` | Crossref, Semantic Scholar, Unpaywall; identity and full-text routes |
+| `skills/exa.md` | content extraction from open pages; not for discovery |
 | `skills/verification.md` | failure modes, the check suite, shell gotchas |
 
 Use the Internet Archive for corporate sustainability pages that have been revised or removed. Superseded claims are evidence.
