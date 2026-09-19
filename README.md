@@ -3,7 +3,7 @@
 A sourced corpus on the environmental footprint of AI systems: energy, emissions, water, grid
 effects, and the distance between corporate environmental claims and the data underlying them.
 
-125 excerpts, one file per source, every one verified against the source itself. Each excerpt records one source, its numbers, the system
+126 excerpts, one file per finding, every one verified against the source itself. Each excerpt records one source, its numbers, the system
 boundary those numbers were computed on, and what the source omits.
 
 Last refresh: 2026-09-19.
@@ -16,7 +16,7 @@ Last refresh: 2026-09-19.
 | [Water](research/water/) | Per-request figures, boundaries, cooling, disclosure | 16 |
 | [Data centres](research/datacenters/) | Buildout, interconnection, power sourcing, efficiency metrics | 17 |
 | [Greenwashing](research/washing/) | Claims against underlying disclosure, by named company | 11 |
-| [Policy](research/policy/) | AI Act, EED Article 12, US state and federal instruments | 13 |
+| [Policy](research/policy/) | AI Act, EED Article 12, US state and federal instruments | 14 |
 | [Frugal AI](research/frugal/) | Energy measurements of efficiency techniques | 18 |
 | [Grid and community](research/community/) | Prices, cost allocation, siting, environmental justice | 12 |
 | [AI-for-climate narrative](research/narrative/) | Avoided-emissions claims and their counterfactuals | 17 |
@@ -181,10 +181,17 @@ with six member states reporting nothing. It yielded weighted PUE 1.36 and WUE 0
 a renewable factor of 0.87 inflated by Guarantees of Origin carrying no additionality test
 ([DG ENER 2025](research/policy/020-dg-ener-2025-first-eu-data-centre-reporting-round.md)).
 
-US instruments in 2025 and 2026 govern curtailment and cost allocation. Texas SB 6, FERC's
-large-load show-cause orders and Virginia's enacted package contain no energy, water or emissions
-term. Every state energy- and water-disclosure bill failed to pass
+US instruments in 2025 and 2026 mostly govern curtailment and cost allocation. Texas SB 6,
+FERC's large-load show-cause orders and Virginia's enacted package contain no energy, water or
+emissions term, and every state energy- and water-disclosure bill failed to pass
 ([state legislative tracking 2026](research/policy/024-us-states-2026-data-centre-legislation.md)).
+
+Oregon is the exception, and a narrow one. A large load is not energised until a plan of service
+exists that does not impede the utility's statutory emissions targets, and lower-queued loads may
+pass higher-queued ones lacking such a plan
+([Oregon PUC 2026](research/policy/026-oregon-puc-2026-power-act-large-load.md)). The condition
+binds the utility's clean-energy compliance. The Commission declined to set efficiency, storage
+or flexibility standards for the data centre, and declined to collect water-use data.
 
 ## Gaps in the evidence
 

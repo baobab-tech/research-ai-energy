@@ -1,6 +1,6 @@
 # Policy and Regulation
 
-13 excerpts, every one verified against its source. Instruments that bind AI and data-centre
+14 excerpts, every one verified against its source. Instruments that bind AI and data-centre
 environmental reporting or operation, plus two studies on how such duties perform.
 
 [Full index](_index.md)
@@ -52,9 +52,21 @@ emissions term.
 - **FERC**, 18 June 2026: show cause orders to all six RTOs, defining a large load as 50 MW above
   69 kV, covering cost allocation, flexible service and co-location
   ([022](022-ferc-2026-large-load-show-cause-orders.md)).
+- **Oregon**, Order 26-154, tariffs effective 10 June 2026: Schedule 96 at 20 MW, 10 to 30 year
+  terms, 90% minimum generation and transmission demand, exit fee, and a 1 cent/kWh surcharge on
+  customers above 100 MW funding efficiency and DER for energy-burdened customers
+  ([026](026-oregon-puc-2026-power-act-large-load.md)).
 - **States**, 2026: Virginia enacted cost allocation at 25 MW. Energy and water **disclosure**
   bills in California, Georgia, South Carolina, Kansas, Iowa and Michigan were introduced and
   failed to pass ([024](024-us-states-2026-data-centre-legislation.md)).
+
+Oregon is the one US instrument with a clean-energy condition on grid access. Under HB 3546, a
+large load on PGE's Schedule 96 is not energised until a plan of service exists that does not
+impede the utility's HB 2021 emissions targets of 80% by 2030, 95% by 2035 and 100% by 2040, and
+lower-queued loads may pass higher-queued ones lacking a compliant plan
+([026](026-oregon-puc-2026-power-act-large-load.md)). The condition binds the utility's
+compliance, not the data centre: the Commission expressly declined to set efficiency, storage or
+flexibility standards for the facility, and expressly declined to collect water-use data.
 
 US mandatory emissions reporting now rests on one state statute. The SEC voted on 29 May 2026 to
 propose full rescission of its 2024 climate rule. SB 261 was enjoined; SB 253 survived, with

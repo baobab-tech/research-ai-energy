@@ -1,6 +1,6 @@
 # Policy and Regulation Index
 
-13 excerpts, every one verified against its source. Summary in [README.md](README.md).
+14 excerpts, every one verified against its source. Summary in [README.md](README.md).
 
 | # | Source | Finding |
 |---|--------|---------|
@@ -17,3 +17,4 @@
 | 023 | [SEC / CARB, 2026](023-sec-carb-2026-climate-disclosure-status.md) | The SEC moved to rescind its climate rule in 2026 while California's emissions law survived injunction — US mandatory emissions reporting now rests on one state statute |
 | 024 | [US states, 2026](024-us-states-2026-data-centre-legislation.md) | US states legislated on data-centre cost allocation in 2026; water and energy disclosure bills were mostly introduced and not enacted |
 | 025 | [CRU Ireland, 2025](025-cru-2025-ireland-data-centre-connection-policy.md) | Ireland replaced its de facto data-centre connection moratorium with a matching-generation and 80% renewable condition |
+| 026 | [Oregon PUC, 2026](026-oregon-puc-2026-power-act-large-load.md) | Oregon conditioned data-centre energisation on clean-energy compliance, and declined to impose any efficiency, emissions or water obligation on the facility itself |

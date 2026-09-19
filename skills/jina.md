@@ -3,8 +3,10 @@
 `r.jina.ai` fetches a URL and returns clean markdown. It renders JavaScript and handles PDFs,
 which removes the two main reasons `WebFetch` fails here.
 
-Works without a key. A key (`JINA_API_KEY` in `.env`) raises rate limits and enables the options
-below.
+`JINA_API_KEY` is in `.env`. The key raises rate limits; it does not change which sites are
+reachable. Tested on ACM and MDPI: keyed and keyless requests returned byte-identical content.
+For a multi-agent pass making many calls the rate limit is the binding constraint, so use the
+key.
 
 ## Basic use
 
@@ -30,8 +32,13 @@ Tested against the publishers that blocked retrieval during the September 2026 p
 | ACM Digital Library | **works**, full text |
 | MDPI (`www.mdpi.com`) | **works**, full text |
 | IEEE Xplore | partial, abstract and metadata |
-| Wiley (`onlinelibrary.wiley.com`) | blocked, Cloudflare interstitial |
-| Elsevier (`sciencedirect.com`) | blocked, Cloudflare interstitial |
+| Oregon PUC and similar state agency PDFs | **works**, full text |
+| Wiley (`onlinelibrary.wiley.com`) | blocked, Cloudflare interstitial, keyed and keyless |
+| Elsevier (`sciencedirect.com`) | blocked, Cloudflare interstitial, keyed and keyless |
+| `ferc.gov` | blocked |
+
+State regulatory PDFs are worth trying first here: Oregon PUC Order 26-154, which previous
+retrieval attempts could not reach, came back as 184 KB of searchable text.
 
 ACM and MDPI are the significant ones. Both previously required a workaround:
 `mdpi-res.com/d_attachment/...` for MDPI, and finding an arXiv version for ACM. Neither

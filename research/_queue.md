@@ -23,15 +23,15 @@ entirely, and files whose claims inverted what the source states.
 
 Open questions are in RESEARCH_PLAN.md. Most tractable:
 
-- [ ] Privette, Barros & Cai (*AGU Advances* 2026) on water boundaries. Gold OA but Wiley blocks
-      automated retrieval; needs a manual download
-- [ ] Oregon PUC Order 26-154, the first POWER Act implementation linking interconnection to
-      emissions requirements
+- [ ] Privette, Barros & Cai (*AGU Advances* 2026) on water boundaries. Gold OA, but Wiley serves
+      a Cloudflare interstitial to every automated route including Jina Reader; needs a manual
+      download or library access
 - [ ] Meta and Amazon FY2025 disclosures when published; Meta's latest covers calendar 2024
 - [ ] Second EU Article 12 reporting round, due 15 May 2026, once assessed
-- [ ] FERC order text and the RTO compliance filings due 17 August 2026
+- [ ] FERC order text and the RTO compliance filings due 17 August 2026; ferc.gov and
+      elibrary.ferc.gov block automated retrieval
 - [ ] Wang et al. 2025 (*Energy Strategy Reviews*), held at narrative/011 from the publisher
-      abstract only; ScienceDirect blocks retrieval
+      abstract only; ScienceDirect serves a Cloudflare interstitial to every automated route
 
 Standing item: no source publishes GW energised per year.
 
