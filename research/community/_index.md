@@ -1,16 +1,14 @@
-# Community Impact Index
+# Grid and Community Impact Index
 
-| # | Source | Insight |
+20 excerpts. Summary and key figures in [README.md](README.md).
+
+| # | Source | Finding |
 |---|--------|---------|
 | 001 | [Luccioni et al., 2024](001-luccioni-2024-power-hungry-ai.md) | Generative AI uses orders of magnitude more energy than task-specific models |
 | 003 | [Markelius et al., 2024](003-markelius-2024-ai-hype-costs.md) | AI hype redistributes costs to local communities while benefits flow to tech companies |
 | 006 | [Xie et al., 2024](006-xie-2024-china-computing-transmission.md) | China's EWCRT Project shows massive infrastructure scale (8 hubs, 10 clusters) and cross-regional transmission cost distribution |
-| 007 | [Kim et al., 2024](007-kim-2024-data-center-pue-tool.md) | Data center PUE varies 1.15-1.43 by climate zone - identical loads require 24% more grid power in suboptimal locations |
 | 008 | [Dhiman et al., 2024](008-dhiman-2024-ai-sustainability-tension.md) | "Sustainability of AI" vs "AI for Sustainability" tension - economic dimension of energy costs underexplored |
-| 009 | [Gajdzik et al., 2024](009-gajdzik-2024-energy-crisis-efficiency.md) | Energy crisis pushed households into poverty while industrial demand grew - frames data center equity question |
 | 010 | [Obuseh et al., 2025](010-obuseh-2025-renewable-energy-barriers.md) | Renewable energy barriers (grid infrastructure, social acceptance, regional disparities) apply to data center community impacts |
-| 011 | [Han et al., 2025](011-han-2025-g20-tech-innovation-pollution.md) | G-20 tech innovation drives renewable adoption, but benefits require local policy alignment - addresses corporate claims vs community benefits gap |
-| 012 | [Li et al., 2025](012-li-2025-cacm-ai-water-thirsty.md) | CACM peer-reviewed AI water footprint: GPT-3 training = 700K liters; ChatGPT = 10-25 mL/query; 4.2-6.6B m3 global AI water by 2027 |
 | 013 | [Lord et al., 2025](013-lord-2025-hpc-computing-waste-growth.md) | Academic/research institutions "reinforce and embed expectations of growth and waste" in computing - generative AI multiplying demand |
 | 014 | [Achuthan et al., 2025](014-achuthan-2025-cybersecurity-sustainability-integration.md) | Cybersecurity demands resource-intensive computing, creating fundamental tension with sustainability goals for data centers |
 | 015 | [Khan et al., 2025](015-khan-2025-ai-sustainable-higher-education.md) | University AI deployment creates institutional infrastructure demands - digital divide concerns relevant to community equity |

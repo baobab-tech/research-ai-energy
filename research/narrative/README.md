@@ -1,6 +1,6 @@
 # The "AI for Climate" Narrative
 
-28 excerpts examining claims that AI reduces emissions: the figures published, the counterfactuals
+26 excerpts examining claims that AI reduces emissions: the figures published, the counterfactuals
 they rest on, and the deployment evidence behind them.
 
 [Full index](_index.md)
@@ -64,11 +64,22 @@ Microsoft–XTO Energy Permian agreement implies about 6.7 MtCO2 of added emissi
 
 ## Where benefit claims hold
 
-Several excerpts record substantiated benefits: technological innovation raising renewable
-adoption in G-20 economies ([016](016-han-2025-technological-innovation-renewable-energy-g20.md))
-and macro-level ecological footprint reductions conditioned on industrial structure
-([007](007-wang-2024-ai-ecological-footprints-67-countries.md)). The distinction that matters is
-between a measured deployment and a modelled potential.
+Two macro-panel results are held here, and both are weaker than their headline readings.
+
+Technological innovation, proxied by resident patent applications, associates with a 0.33%
+long-run rise in the renewable share of final energy across the G-20 over 1995 to 2022
+([016](016-han-2025-technological-innovation-renewable-energy-g20.md)). No AI, computing or
+data-centre variable appears in the paper.
+
+AI, proxied by per-capita operational stock of industrial robots, associates with lower ecological
+footprints across 67 countries over 1993 to 2019
+([007](007-wang-2024-ai-ecological-footprints-67-countries.md)). The coefficients are -0.0018 on
+ecological footprint and -0.0013 on carbon, against +0.1673 on the energy-use control in the same
+regression, roughly 90x larger. The panel ends before generative AI, and system-GMM with internal
+instruments is not a causal design.
+
+The distinction that decides these claims is between a measured deployment and a modelled
+association.
 
 ## Gaps
 

@@ -1,50 +1,49 @@
-# Green AI Systematic Review: Energy Savings Up to 115%
+# Green AI Systematic Review: Only 27 of 98 Studies Report an Energy Saving at All, and the Reported Range Is Undefined
 
-**Topic:** Water Consumption - Numbers Compilation
-**Source:** Verdecchia, Sallou, Cruz (2023)
+**Topic:** Energy — state of the Green AI research literature; reliability of reported efficiency savings
+**Source:** Roberto Verdecchia (University of Florence), June Sallou, Luís Cruz (Delft University of Technology), 2023
+**Type:** peer-reviewed (WIREs Data Mining and Knowledge Discovery 13(4), e1507)
 **URL:** https://doi.org/10.1002/widm.1507
+**Source note:** Wiley blocks automated requests; open preprint of the same text at https://arxiv.org/abs/2301.11047
+**Published:** 2023-06
 
-## Key Numbers
+## Finding
 
-| Metric | Value | Context |
-|--------|-------|---------|
-| Papers reviewed | 98 | Primary studies on Green AI |
-| Energy savings reported | Up to 115% | Efficiency improvements documented |
-| Common savings | Over 50% | Rather common across studies |
-| Growth period | 2020 onward | Considerable growth in research |
+Of 98 primary studies on Green AI, 27 report a concrete energy-saving percentage. Across those 27 the reported figures span 13% to 115%, and 17 report at least 50%. The 115% is a single data point from one study on neuron pruning in trained deep neural networks; the review neither defines the metric nor states the baseline any primary study measured against, so the range is a tally of incommensurable self-reported numbers rather than a synthesised effect size. A saving above 100% cannot be a fraction of a baseline consumption, so that figure uses some other denominator, which the review does not identify. The review also finds that 73 of 98 studies are laboratory experiments and 85 of 98 target academic readers, so these savings are largely not demonstrated in production.
 
-## Research Landscape
+## Key Data
 
-| Category | Finding |
-|----------|---------|
-| Focus phase | Training phase (most studies) |
-| Algorithm | Algorithm-agnostic approaches common |
-| Data type | Image data most studied |
-| Research type | Mix of position, observational, solution papers |
-| Methodology | Laboratory experiments most common |
+| Metric | Value | Boundary / method |
+|--------|-------|-------------------|
+| Primary studies reviewed | 98 | Systematic review; snowballing and database search, published through 2022 |
+| Studies reporting a concrete saving percentage | 27 of 98 | Self-reported by each primary study; no common definition imposed |
+| Range of reported savings | 13% to 115% | Each figure uses its own baseline, workload, hardware and measurement boundary |
+| Studies reporting ≥50% saving | 17 of 27 | Same caveat |
+| Source of the 115% figure | Zhang, Davoodi and Hu (2018), structure simplification of trained deep neural networks | Single study; metric definition not given in the review |
+| Studies using laboratory experiments | 73 of 98 | Research-strategy classification |
+| Field experiments | 6 of 98 | " |
+| Computer simulations | 5 of 98 | " |
+| Position papers with no research strategy | 12 of 98 | " |
+| Studies with academic authors only | 75 of 98 | Authorship classification |
+| Academic and industrial mix | 20 of 98 | " |
+| Industrial authors only | 3 of 98 | " |
+| Studies targeting academic readers | 85 of 98 | Intended-readership classification |
+| Studies targeting general public | 5 of 98 | " |
 
-## Key Findings
+Water consumption is not a category in this review. The 98 studies are classified on energy and carbon.
 
-- AI carbon footprint is "no longer negligible"
-- Researchers and practitioners urged to "hold themselves accountable"
-- Most studies target academic readers; industrial adoption lagging
-- Tool provisioning for measuring carbon footprint is "scarce"
-- Field has reached considerable level of maturity
+## Methodology
 
-## Gap Identification
+Systematic literature review following established guidelines: database search plus snowballing, explicit inclusion and exclusion criteria, then classification of each primary study along axes including topic, AI lifecycle phase, algorithm class, data type, research strategy, industry involvement, intended readership and reported energy saving. Energy-saving percentages are extracted as each primary study reports them; the review performs no re-measurement, no normalisation and no meta-analysis of effect size.
 
-- Inference phase under-studied compared to training
-- Industrial implementation behind academic research
-- Water consumption not explicitly covered in 98 papers
-- Need to port research results to industrial practice
+## Limitations and conflicts
 
-## Implication for Water
+No funding statement and no conflicts declared; all three authors are academic. The review's own limitations apply to the saving figures: extraction is from what each paper states, with no verification of the measurement instrument, the baseline configuration or the workload. Savings drawn from pruning and quantisation studies typically measure inference energy on a single model and device, and generalise poorly to fleet-level consumption. The coverage ends in 2022, so it predates the transformer-scale inference workloads that dominate current AI energy questions. The 115% figure could not be traced to a stated definition in the accessible version of the primary study (the openly available artefact for Zhang et al. 2018 is the conference slide deck, which does not contain the figure; the IEEE journal article is paywalled).
 
-- Energy efficiency gains directly reduce cooling water needs
-- 50-115% energy savings translate to proportional water savings
-- Most Green AI research focuses on carbon, not water explicitly
-- Water consumption reduction is co-benefit of energy efficiency
+## Relation to existing corpus
+
+No direct overlap with the water-footprint sources in this folder. The review establishes that efficiency savings quoted in the Green AI literature carry no common boundary, which is the same defect that `research/water/017-google-2025-gemini-water-measurements.md` identifies in per-prompt energy estimates and that `research/water/027-sharma-2026-water-cost-of-intelligence-boundary.md` quantifies for per-prompt water.
 
 ---
-Retrieved: 2026-01-16
-Search: OpenAlex
+Retrieved: 2026-09-19
+Search: OpenAlex for DOI 10.1002/widm.1507; full text via arXiv 2301.11047 PDF (Wiley 403s automated requests)

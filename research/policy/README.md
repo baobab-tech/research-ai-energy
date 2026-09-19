@@ -1,6 +1,6 @@
 # Policy and Regulation
 
-23 excerpts on instruments that bind AI and data-centre environmental reporting or operation.
+21 excerpts on instruments that bind AI and data-centre environmental reporting or operation.
 Files 015 onward are primary legal texts and official guidance. Files 001 to 014 are general
 ESG and governance literature retained as background.
 

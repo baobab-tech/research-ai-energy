@@ -48,7 +48,11 @@ Water source is not distinguished: reclaimed, non-potable and potable makeup wat
 
 ## Relation to existing corpus
 
-**Not superseded by the 2026 LBNL update.** The successor report (Smith et al., LBNL-2001758, 2026-06-18, captured at `research/datacenters/016-lbnl-2026-us-dc-energy-2025-update.md`) revises electricity and PUE but contains no water estimates at all — the word "water" appears twice, neither time as a quantity. The 2024 report remains LBNL's only water assessment, so its 2023 figures stand as the current national baseline even though the electricity figures behind them (176 TWh) have since been revised to 192 TWh for 2024.
+LBNL's June 2026 update (`../datacenters/016-lbnl-2026-us-dc-energy-2025-update.md`) revises
+electricity and PUE but contains no water estimates; the word "water" appears twice in it, neither
+time as a quantity. The 2023 figures here are LBNL's only water assessment and stand as the
+national baseline, although the electricity figures underlying them (176 TWh) are revised to
+192 TWh for 2024 in the newer report.
 
 Otherwise no direct overlap — the corpus lacked this report's water content entirely. It supplies the consumption-basis counterpart to `research/water/028-ceres-2026-water-behind-the-watts.md`, whose 3.4-trillion-gallon headline is a withdrawal figure dominated by hydropower pass-through; LBNL's 12:1 indirect:direct ratio is the defensible version of the same claim. Ceres cites LBNL's 176 TWh and reports the 211-billion-gallon (≈800 billion L) indirect figure. It is the source of the WUE baseline that `research/water/022-lei-2025-us-midsize-data-centers-wue.md` (same LBNL group) extends to small and midsize facilities, and it contradicts the waterless-cooling optimism in `research/water/026-kim-2025-immersion-cooling-high-density-servers.md`: LBNL's national WUE trajectory goes up, not down, as liquid cooling arrives.
 

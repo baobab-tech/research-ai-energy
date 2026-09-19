@@ -1,6 +1,6 @@
 # Frugal AI
 
-26 excerpts on efficiency: what reduces energy in deployed systems, what does not, and the limits
+25 excerpts on efficiency: what reduces energy in deployed systems, what does not, and the limits
 of efficiency as a strategy.
 
 [Full index](_index.md)
@@ -44,22 +44,29 @@ range is wide enough to contain both sides of most published disputes without ei
 miscounting. Any per-query figure requires the model, hardware, precision, batch regime and task
 type to be interpretable.
 
-Specialised accelerators idle at 30 to 80% of TDP against about 20% for NVIDIA and AMD parts.
+## Accelerator efficiency claims
+
+Specialised accelerators idle at 30 to 80% of TDP against about 20% for NVIDIA and AMD parts, and
 Cerebras reaches H100 energy-per-token parity only above a 34% duty cycle
-([024](024-golden-2026-accelerator-competition-idle-power.md)). This is the test to apply to any
-claim that a part is "Nx more efficient than a GPU", including the claims in
-[003](003-zeng-2024-flightllm-fpga.md), [013](013-hua-2025-photonic-accelerator-ultralow-latency.md)
-and [016](016-kachris-2025-hardware-accelerators-llm-survey.md).
+([024](024-golden-2026-accelerator-competition-idle-power.md)). Applying that test to the
+claims held in this folder:
 
-## Correction held in this folder
+| Claim | What it rests on |
+|---|---|
+| FPGA at 6x a V100S ([003](003-zeng-2024-flightllm-fpga.md)) | batch size 1, against a naive PyTorch baseline; 5.5x against vLLM, 3.8x against an A100, 2.9x against gpt-fast. Advantage falls monotonically to batch 64. Runs a sparsified 3.5-bit model at worse perplexity |
+| Photonic accelerator ([013](013-hua-2025-photonic-accelerator-ultralow-latency.md)) | 4.21 TOPS/W excluding lasers, 2.38 including them, comparable to or below a contemporary GPU. Minimum working latency 5 ns, not 3. Workload is Ising max-cut, not inference |
+| Silicon neuron ([014](014-pazos-2025-silicon-transistor-neuromorphic.md)) | 415 pJ per micrometre of channel width on 180 and 500 nm nodes, two decades behind current logic. Efficiency is comparative against other neuron-mimicking devices |
+| Survey range 3.1x to 10,000x ([016](016-kachris-2025-hardware-accelerators-llm-survey.md)) | 27 accelerators, each against a different baseline; none of the ASIC schemes was fabricated, all are simulation at 40 to 55 nm against GPUs at 12 to 16 nm |
 
-[026](026-wright-2025-efficiency-not-enough-corrected.md) is a corrected excerpt of Wright, Igel,
-Samuel & Selvan, written from the full text. It supersedes
-[ghg/018](../ghg/018-wright-2025-efficiency-not-enough.md) and
-[water/023](../water/023-wright-2025-efficiency-not-enough-sustainable-ai.md), which were written
-from the abstract, omit an author, and misstate the thesis. The paper's lead argument is that
-compute efficiency, energy efficiency and carbon efficiency are distinct and non-substitutable.
-Rebound is its third point and is argued, not measured.
+None of the four reports a duty cycle or a deployed workload.
+
+## The limits argument
+
+Compute efficiency does not imply energy efficiency, and neither implies carbon efficiency
+([026](026-wright-2025-compute-energy-carbon-efficiency.md)). The measured sign reversals above
+are the empirical form of the first gap; the Scope 2 accounting divergence in
+[`../washing/`](../washing/) is the second. The paper asserts its rebound argument without
+measurement, consistent with the state of that literature.
 
 ## Gaps
 

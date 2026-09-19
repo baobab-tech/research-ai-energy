@@ -44,7 +44,19 @@ Both sources are litigants or allied advocacy organisations arguing the case; ev
 
 ## Relation to existing corpus
 
-**Overlaps `../community/022-naacp-xai-2026-memphis-turbines-clean-air-act.md`, which is the better-sourced file on the same dispute** — it cites the actual complaint (N.D. Miss. 3:26-cv-00074-MPM-JMV) and the preliminary-injunction brief, and gives plaintiffs' potential-to-emit figure as 2,508 tons/year NOx across 33 turbines as of the May 2026 emergency motion. **For any emissions or air-quality claim, cite that file, not this one** — its numbers come from the filings and supersede the NGO case-page figures tabulated above (>1,700 t/yr NOx, 27 turbines), which are an earlier snapshot. This file is retained for the infrastructure question the community file does not cover: total on-site generating capacity (~1.2 GW), the Colossus 1 sequence in which 35 unpermitted temporary turbines were replaced by 15 permitted permanent ones, the 300 MW versus 1,200 MW split between planned grid connection and on-site generation, and the June 2026 DOJ intervention. The point for this folder is that building unabated gas on site was a deliberate route around interconnection delay. Concrete counter-case to `013-rollinson-2025-offgrid-hyperscale-feasibility.md`, which models off-grid hybrid renewables as beating the grid on cost and emissions: the largest real off-grid AI campus built to date chose unabated gas, sited in a community with pre-existing air-quality burden, and the binding constraint proved to be permitting rather than economics.
+On-site generating capacity at the Memphis campus is about 1.2 GW. The sequence at Colossus 1 ran
+35 unpermitted temporary turbines, later replaced by 15 permitted permanent units. Planned grid
+connection covers 300 MW against 1,200 MW of on-site generation. The DOJ intervened on xAI's side
+in June 2026 on national-security grounds.
+
+Emissions and air-quality figures for this dispute are in
+`../community/022-naacp-xai-2026-memphis-turbines-clean-air-act.md`, which draws on the complaint
+(N.D. Miss. 3:26-cv-00074-MPM-JMV) and the preliminary-injunction brief.
+
+This is the concrete counter-case to `013-rollinson-2025-offgrid-hyperscale-feasibility.md`, which
+models off-grid hybrid renewables as beating the grid on cost and emissions. The largest off-grid
+AI campus built to date chose unabated gas, sited in a community with pre-existing air-quality
+burden, and the binding constraint proved to be permitting rather than economics.
 
 ---
 Retrieved: 2026-09-19

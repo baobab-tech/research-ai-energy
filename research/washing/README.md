@@ -1,8 +1,7 @@
 # Greenwashing and Bluewashing
 
-25 excerpts. Tier 1 holds documented discrepancies between a named company's environmental claim
-and its own underlying data. Tier 2 holds the general greenwashing literature, retained as
-theoretical framing; none of it concerns technology companies or AI.
+12 excerpts. Documented discrepancies between a named company's environmental claim and its own
+underlying data, plus academic work on AI sustainability claims.
 
 [Full index](_index.md)
 

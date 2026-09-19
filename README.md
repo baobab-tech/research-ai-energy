@@ -3,7 +3,7 @@
 A sourced corpus on the environmental footprint of AI systems: energy, emissions, water, grid
 effects, and the distance between corporate environmental claims and the data underlying them.
 
-218 excerpts, 170 unique sources. Each excerpt records one source, its numbers, the system
+182 excerpts, one file per source. Each excerpt records one source, its numbers, the system
 boundary those numbers were computed on, and what the source omits.
 
 Last refresh: 2026-09-19.
@@ -12,14 +12,14 @@ Last refresh: 2026-09-19.
 
 | Topic | Focus | Excerpts |
 |-------|-------|---------:|
-| [GHG emissions](research/ghg/) | Training, inference, embodied, and aggregate figures | 32 |
-| [Water](research/water/) | Cooling, per-query estimates, on-site and off-site boundaries | 35 |
-| [Data centres](research/datacenters/) | Buildout, interconnection, power sourcing, efficiency metrics | 25 |
-| [Greenwashing](research/washing/) | Claims against underlying disclosure, by named company | 25 |
-| [Policy](research/policy/) | AI Act, EED Article 12, US state and federal instruments | 23 |
-| [Frugal AI](research/frugal/) | Energy measurements of efficiency techniques | 26 |
-| [Grid and community](research/community/) | Prices, cost allocation, siting, environmental justice | 24 |
-| [AI-for-climate narrative](research/narrative/) | Avoided-emissions claims and their counterfactuals | 28 |
+| [GHG emissions](research/ghg/) | Training, inference, embodied, and aggregate figures | 30 |
+| [Water](research/water/) | Per-request figures, boundaries, cooling, disclosure | 26 |
+| [Data centres](research/datacenters/) | Buildout, interconnection, power sourcing, efficiency metrics | 22 |
+| [Greenwashing](research/washing/) | Claims against underlying disclosure, by named company | 12 |
+| [Policy](research/policy/) | AI Act, EED Article 12, US state and federal instruments | 21 |
+| [Frugal AI](research/frugal/) | Energy measurements of efficiency techniques | 25 |
+| [Grid and community](research/community/) | Prices, cost allocation, siting, environmental justice | 20 |
+| [AI-for-climate narrative](research/narrative/) | Avoided-emissions claims and their counterfactuals | 26 |
 
 ## Findings
 
@@ -65,25 +65,34 @@ Independent attribution of 403 US hyperscale sites to the generating plants supp
 
 ### Water
 
-Google reports 0.26 mL per median Gemini text prompt. Li et al. estimated 10 to 25 mL per query.
-[Sharma et al. 2026](research/water/027-sharma-2026-water-cost-of-intelligence-boundary.md)
-reconstruct Google's figure to within 2.3% from Google's own inputs and identify it as Category 2
-water under ISO/IEC 30134-9, covering on-site cooling and excluding the water consumed generating
-the electricity. Two components account for the range between the estimates:
+Comparisons in this literature usually mismatch boundaries. Scope 1 is water evaporated in the
+facility's own cooling; scope 2 is water consumed generating its electricity, and it is the
+larger term.
 
-- **Boundary**, about 2.8x. Adding generation water at 1.80 L/kWh gives 0.725 mL, an increase
-  of 179%.
-- **Prompt length**, the remainder. A long prompt at 9.2 Wh reaches 28 mL on the full boundary,
-  inside Li et al.'s range. Google reports the median.
+| Source | Value | Scope |
+|---|---|---|
+| [Google 2025](research/water/017-google-2025-gemini-water-measurements.md) | 0.26 mL | 1 |
+| [Li et al. 2023](research/water/001-li-2023-making-ai-less-thirsty.md) | 2.200 mL | 1 |
+| Li et al. 2023 | 16.904 mL | 1+2, US average |
+| [Sharma et al. 2026](research/water/027-sharma-2026-water-cost-of-intelligence-boundary.md) | 0.725 mL | 1+2, Google's prompt |
 
-The two figures measure different quantities. Google's 2026 report derives its water number by
-applying its 2024 fleetwide WUE to a May 2025 energy measurement, and publishes no WUE figure
-anywhere in the document.
+The like-for-like comparison is 0.26 mL against 2.200 mL, a factor of about 8.5. The 40x to 100x
+gap quoted elsewhere sets Google's scope-1 figure against a scope 1+2 total. The figure "10 to
+25 mL per query" appears nowhere in Li et al.; it was back-computed from preprint wording the
+authors later replaced.
 
-Water use is about 2% of US consumptive use nationally
-([CRS 2026](research/water/034-crs-2026-data-centers-water-faq.md)). At individual sites the constraint is
-tighter: peak-day demand at Meta's Lebanon, Indiana facility reaches 1.34x the host utility's
-entire delivery capacity
+GPT-3 training consumed 5.439 million litres in total, of which 0.708 million is the on-site
+cooling term usually quoted as "700,000 litres". The projection of 4.2 to 6.6 billion m³ of
+global AI water by 2027 is withdrawal; projected consumption is 0.38 to 0.60 billion m³
+([Li et al. 2025](research/water/018-li-2025-cacm-ai-water-projections.md)).
+
+Google's 2026 report derives its water figure by applying a 2024 fleetwide WUE to a May 2025
+energy measurement, and publishes no WUE anywhere in the document.
+
+Direct data-centre water is about 2% of US consumptive use
+([CRS 2026](research/water/034-crs-2026-data-centers-water-faq.md)). At individual sites the
+constraint is tighter: peak-day demand at Meta's Lebanon, Indiana facility reaches 1.34x the host
+utility's entire delivery capacity
 ([Akinade et al. 2026](research/water/033-akinade-2026-water-consumption-impact-utility-burden.md)).
 
 ### Grid and prices
@@ -125,6 +134,9 @@ Test-time scaling multiplies per-query energy roughly 13x
 Published per-query figures are not comparable across studies. Task type alone swings energy 25x
 and utilisation another 3 to 5x
 ([Chung et al. 2026](research/frugal/025-chung-2026-inference-energy-diagnosis-variance.md)).
+Reported savings are not normalised either: the Green AI review's 13% to 115% range covers 27 of
+98 studies, each self-reported against its own baseline with no common definition, median 53%
+([Verdecchia et al. 2023](research/ghg/016-verdecchia-2023-green-ai-systematic-review-savings.md)).
 
 ### Avoided-emissions claims
 
@@ -208,12 +220,20 @@ Each topic folder opens on its own summary. Start there:
 ## Stance
 
 Claims are checked against the documents underlying them, including claims whose conclusions
-support the corpus's critical framing. Two examples. The assertion that embodied emissions exceed
-operational does not survive first-party accelerator data
-([Schneider et al. 2025](research/ghg/027-schneider-2025-tpu-lifecycle-embodied-emissions.md)).
-The widely-repeated "data-centre cancellations quadrupled in 2025" traces to an unpublished
-equity-research note with no stated methodology
-([Data Center Watch 2026](research/community/021-data-center-watch-2026-opposition-tracking.md)).
+support the corpus's critical framing. Four examples, all from sources held here:
+
+- The "10 to 25 mL per ChatGPT query" figure appears in no version of Li et al. The paper's
+  scope-1 figure is 2.200 mL, and the comparison against Google's 0.26 mL is a factor of 8.5.
+- "Data-centre cancellations quadrupled in 2025" traces to an unpublished equity-research note
+  with no stated methodology
+  ([file](research/community/021-data-center-watch-2026-opposition-tracking.md)).
+- The claim that embodied emissions exceed operational inherits a figure comparing manufacturing
+  of all computing equipment worldwide against ML training alone. Google's first-party TPU data
+  puts operational at 70 to 90% of lifetime
+  ([Schneider et al. 2025](research/ghg/027-schneider-2025-tpu-lifecycle-embodied-emissions.md)).
+- Ratios of AI against human emissions charge the human a pro-rata share of their entire annual
+  national footprint across all 8,760 hours of the year
+  ([Tomlinson et al. 2024](research/ghg/013-tomlinson-2024-ai-vs-human-emissions-comparison.md)).
 
 Where a company's position has merit, the excerpt records it beside the critique.
 

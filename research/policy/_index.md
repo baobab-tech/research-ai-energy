@@ -1,16 +1,16 @@
-# Policy & Regulation Index
+# Policy and Regulation Index
 
-| # | Source | Insight |
+21 excerpts. Summary and key figures in [README.md](README.md).
+
+| # | Source | Finding |
 |---|--------|---------|
 | 001 | [Capraro et al., 2024](001-capraro-2024-genai-policy-inequalities.md) | EU/US/UK AI policy frameworks focus on safety, bias, privacy - environmental sustainability not central |
 | 002 | [Comunale et al., 2024](002-comunale-2024-imf-ai-regulation-review.md) | IMF review: AI regulations differ across countries; environmental concerns absent from major focus areas |
 | 003 | [Oliver et al., 2024](003-oliver-2024-esg-climate-regulation.md) | EU CSRD pushes mandatory ESG disclosure - applies to tech but not AI-specific |
 | 004 | [Chopra et al., 2024](004-chopra-2024-esg-reporting-challenges.md) | Quality gaps in ESG reporting; lack of standardized sustainability metrics |
 | 005 | [Martinsson et al., 2024](005-martinsson-2024-carbon-pricing-effects.md) | Sweden's carbon tax reduced manufacturing emissions ~30% - proves pricing works, but not applied to AI |
-| 006 | [Hristov & Searcy, 2024](006-hristov-2024-csrd-balanced-scorecard.md) | CSRD implementation framework through Sustainability Balanced Scorecard |
-| 007 | [Dragomir et al., 2024](007-dragomir-2024-double-materiality-csrd.md) | Double materiality disclosure under CSRD 2022/2464 |
 | 008 | [Walter, 2024](008-walter-2024-dynamic-laws-ai-governance.md) | Proposes "dynamic laws" regulatory model for adaptive AI governance |
-| 011 | [Jiang, Kim & Lu, 2025](011-jiang-2025-emissions-target-accountability.md) | Corporate emissions targets: 9% fail, 31% disappear, only 3 get media coverage - no accountability |
+| 011 | [Jiang et al., 2025](011-jiang-2025-emissions-target-accountability.md) | Of 1,041 firms with emissions targets expiring in 2020, 88 failed and 320 stopped reporting the target; three failures were covered by the media and none drew a market reaction |
 | 012 | [Batool et al., 2025](012-batool-2025-ai-governance-systematic-review.md) | AI governance systematic review: environmental sustainability absent from formal frameworks |
 | 013 | [Cui et al., 2025](013-cui-2025-mandatory-vs-voluntary-esg.md) | Mandatory ESG disclosure has measurably different effects vs voluntary disclosure |
 | 014 | [Wang & Shen, 2025](014-wang-shen-2025-green-procurement-esg.md) | Green public procurement improves corporate ESG performance - policy mechanism for AI |
@@ -25,9 +25,3 @@
 | 023 | [SEC / CARB, 2026](023-sec-carb-2026-climate-disclosure-status.md) | SEC proposed full rescission of its climate rule on 29 May 2026; SB 261 enjoined, SB 253 survived - US mandatory emissions reporting rests on one state law |
 | 024 | [US states, 2026](024-us-states-2026-data-centre-legislation.md) | Enacted 2026 state laws allocate electricity cost (VA HB 1393, 25 MW threshold); the water and energy disclosure bills in 7+ states were introduced, not passed |
 | 025 | [CRU Ireland, 2025](025-cru-2025-ireland-data-centre-connection-policy.md) | Dec 2025 decision ends the de facto Dublin moratorium, conditioning connection on matching on-site generation/storage and 80% additional Irish renewables in 6 years |
-
-**Key Gap**: No dedicated AI environmental regulations exist. Current frameworks ignore energy, carbon, and water impacts.
-
-**2025 Update**: New research confirms the accountability gap - corporate emissions targets face no consequences for failure. AI governance frameworks systematically exclude environmental concerns. Mandatory disclosure and green procurement emerge as most promising policy mechanisms.
-
-**2026 Update (retrieved 2026-09-19)**: The premise that no AI-specific environmental regulation exists is out of date. Three regimes are now in force. (1) EU AI Act Annex XI point 2(e) obliges GPAI providers to document model energy consumption from 2 August 2025 - but only to the AI Office on request, under trade-secret protection, with no unit, boundary or methodology defined, no harmonised standard delivered, and inference energy operationalised as a FLOPs count. (2) EED Article 12 and Delegated Regulation (EU) 2024/1364 give the EU the world's only mandatory data-centre disclosure regime; its first round reached 36% of facilities and its facility-level results are legally confidential. (3) US action is grid-economic, not environmental: Texas SB 6, Oregon HB 3546, Virginia HB 1393 and FERC's June 2026 show cause orders all allocate interconnection cost and curtailment risk, and none requires disclosure of energy, water or emissions. Meanwhile the SEC proposed rescinding its climate rule in May 2026, leaving California SB 253 as the only mandatory US emissions-reporting hook. The accountability gap identified in 011 and 013 is therefore not closing at entity level in the US, and the EU regimes that do bind produce data nobody outside a regulator can see.

@@ -1,13 +1,13 @@
-# AI for Climate Narrative Index
+# The "AI for Climate" Narrative Index
 
-| # | Source | Insight |
+26 excerpts. Summary and key figures in [README.md](README.md).
+
+| # | Source | Finding |
 |---|--------|---------|
-| 001 | [Bieser et al., 2024](001-bieser-2024-ict-ghg-enablement-critique.md) | Telecom "enablement factor" claims are flawed - industry cherry-picks beneficial services while ignoring GHG-increasing ones |
 | 002 | [Markelius et al., 2024](002-markelius-2024-ai-hype-planetary-costs.md) | AI hype is "historically unmatched" in planetary costs; driven by FOMO and anthropomorphism |
-| 004 | [Gregg et al., 2024](004-gregg-2024-net-zero-dashboards.md) | Net Zero dashboards create false sense of progress while avoiding structural changes |
 | 005 | [Samuel et al., 2024](005-samuel-2024-carbon-accounting-uncertainty.md) | Calls for "more data" in carbon accounting can delay action; argues for decision-making under uncertainty |
 | 006 | [Moyano et al., 2024](006-moyano-2024-ai-health-sustainability-honeymoon.md) | Need to move beyond AI-sustainability "honeymoon" to lasting environmental justice commitment |
-| 007 | [Wang et al., 2024](007-wang-2024-ai-ecological-footprints-67-countries.md) | AI reduces ecological footprints across 67 countries, but benefits are context-dependent |
+| 007 | [Wang et al., 2024](007-wang-2024-ai-ecological-footprints-67-countries.md) | Across 67 countries, 1993-2019, a 1% rise in industrial robot stock associates with a 0.0018% fall in ecological footprint per capita |
 | 008 | [Tomlinson et al., 2024](008-tomlinson-2024-ai-vs-human-emissions-comparison.md) | AI 130-2900x less CO2 than humans per task, with explicit rebound effect caveat |
 | 009 | [Dhiman et al., 2024](009-dhiman-2024-sustainability-of-ai-vs-ai-for-sustainability.md) | "Sustainability OF AI" vs "AI FOR Sustainability" framework - net impact depends on balance |
 | 010 | [Alzoubi & Mishra, 2024](010-alzoubi-2024-green-ai-initiatives-validation-gap.md) | 55 green AI initiatives identified, but most lack empirical validation |
@@ -16,7 +16,7 @@
 | 013 | [Li et al., 2025](013-li-2025-making-ai-less-thirsty-cacm.md) | AI water footprint: GPT-3 training = 700K liters; 10-25mL per ChatGPT query |
 | 014 | [Wang et al., 2025](014-wang-2025-ai-green-economy-fisheries.md) | AI enhances green economy efficiency in fisheries, but only with green finance & R&D |
 | 015 | [Schwaeke et al., 2025](015-schwaeke-2025-ai-for-good-organizational-change.md) | AI for sustainability faces implementation barriers; benefits not automatic |
-| 016 | [Han et al., 2025](016-han-2025-technological-innovation-renewable-energy-g20.md) | Tech innovation boosts renewable energy (0.33% per 1% innovation); G-20 evidence |
+| 016 | [Han et al., 2025](016-han-2025-technological-innovation-renewable-energy-g20.md) | In a G-20 panel 1995-2022, a 1% rise in resident patent applications associates with a 0.33% rise in the renewable share of energy; the variable is patents, not AI |
 | 017 | [Frontiers, 2025](017-energy-costs-communicating-ai-2025.md) | LLM accuracy-emissions trade-off: larger models achieve better accuracy but substantially higher emissions |
 | 018 | [Frontiers Climate, 2025](018-ai-climate-resilience-systematic-review-2025.md) | AI climate research focuses on adaptation (64.4%) not mitigation (16%); regional disparities |
 | 019 | [Electronics, 2025](019-ai-iot-environmental-monitoring-2025.md) | AI+IoT enables environmental monitoring, but faces data quality, security, ethical obstacles |

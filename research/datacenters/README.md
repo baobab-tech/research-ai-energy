@@ -1,6 +1,6 @@
 # Data Centres
 
-25 excerpts on infrastructure: buildout and interconnection, power sourcing, cooling, and
+22 excerpts on infrastructure: buildout and interconnection, power sourcing, cooling, and
 efficiency metrics.
 
 [Full index](_index.md)
@@ -19,6 +19,11 @@ projects reaches operation ([021](021-granderson-2026-dc-demand-flexibility-tari
 LBNL converts its 2030 electricity projection to 148 GW of interconnection capacity by assuming
 50% interconnection utilisation, an assumption the authors state is "not well documented." That
 single figure drives the GW result linearly ([016](016-lbnl-2026-us-dc-energy-2025-update.md)).
+
+Climate siting moves PUE by about 1.23x across ASHRAE zones, from 1.16 to 1.43 in a 10 MW
+air-cooled model ([004](004-kim-2024-data-center-pue-economizers.md)). That model is validated
+against another model, not against metered data, and one co-author is employed by a data-centre
+construction firm that also funded the work.
 
 ## Metered figures
 
@@ -46,11 +51,30 @@ idle power and low utilisation while leaving PUE unchanged
 ([016](016-lbnl-2026-us-dc-energy-2025-update.md)). Fleet PUE falls from 1.45 to 1.36 by 2030
 through mix shift toward liquid-cooled sites.
 
-Reported averages diverge widely by source: 2.23 in one review of the general population
-([015](015-setyo-2025-dc-energy-efficiency-thermal-review.md)) against hyperscaler claims of 1.1
-to 1.4, and 1.36 weighted in the first mandatory EU reporting round
-([policy/020](../policy/020-dg-ener-2025-first-eu-data-centre-reporting-round.md)). PUE's
-originator has endorsed replacing it ([023](023-verrus-2026-pue-critique-pux.md)).
+Published averages diverge by source and by method:
+
+| Figure | Population | Method |
+|---|---|---|
+| 1.09 to 1.4 | hyperscaler self-reported | operator disclosure |
+| 1.36 weighted | 681 EU facilities ([policy/020](../policy/020-dg-ener-2025-first-eu-data-centre-reporting-round.md)) | mandatory reporting |
+| 1.45 US fleet, 1.145 AI-serving | national ([016](016-lbnl-2026-us-dc-energy-2025-update.md)) | modelled from stock |
+| 1.82 to 2.28 small, 1.43 to 1.76 midsize | US non-hyperscale ([012](012-lei-2025-us-small-midsize-dc-cbecs.md)) | survey-weighted estimate |
+| 2.23 | six undated published breakdowns ([015](015-setyo-2025-dc-energy-efficiency-thermal-review.md)) | inverse of the mean IT share |
+
+The 2.23 is the reciprocal of an unweighted mean of six IT-share figures (1 / 0.448), four of
+them illustrative diagrams, with no facility type, size or year attached. Lei's 1.82 to 2.28 band
+for small facilities is the defensible non-hyperscale comparator. PUE's originator has endorsed
+replacing the metric ([023](023-verrus-2026-pue-critique-pux.md)).
+
+## Off-grid proposals
+
+Modelled off-grid hybrid systems beat the grid on cost and emissions for a 50 MW flat load
+([013](013-rollinson-2025-offgrid-hyperscale-feasibility.md)), on three conditions worth stating:
+every site carries 50 MW of gas supplying 8 to 19.6% of annual energy, costs are compared against
+2023 peak retail industrial prices, and grid carbon intensity is held flat at its 2023 annual
+average for 35 years. The largest off-grid AI campus actually built chose about 1.2 GW of
+unabated gas, and its binding constraint was air permitting
+([025](025-selc-earthjustice-2026-xai-memphis-unpermitted-turbines.md)).
 
 ## Counter-evidence on overbuild
 

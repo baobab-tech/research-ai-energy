@@ -30,9 +30,11 @@ Evidence for each item is in the topic folder named. Claims that could not be so
 - **Accounting gap**: market-based vs location-based Scope 2 diverges by 4.4x (Microsoft) to
   4,394x (Meta). Amazon publishes no location-based figure. Independent plant attribution puts
   hyperscale carbon intensity 48% above the US grid average.
-- **Water**: the 0.26 mL vs 10-25 mL dispute decomposes into system boundary (~2.8x) and prompt
-  length (the remainder). Nationally ~2% of US consumptive use; locally up to 1.34x a host
-  utility's entire delivery capacity on a peak day.
+- **Water**: like for like, Google's 0.26 mL scope-1 prompt against Li et al.'s 2.200 mL scope-1
+  request is a factor of 8.5. The 40-100x gap quoted elsewhere compares scope 1 against scope
+  1+2. Nationally ~2% of US consumptive use; locally up to 1.34x a host utility's entire
+  delivery capacity on a peak day. The 4.2-6.6 bn m3 projection is withdrawal; consumption is
+  0.38-0.60 bn m3.
 - **Grid economics**: PJM's market monitor attributes $6.50bn of one capacity auction to
   data-centre load, 76% of it forecast load. Counter-evidence exists
   (IV study finding rates fell); the disagreement is about supply constraints.
