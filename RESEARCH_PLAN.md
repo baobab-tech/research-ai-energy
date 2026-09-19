@@ -12,20 +12,41 @@
 
 **Time Period:** 2024-2026 (prioritize 2025-2026)
 
-**Priority Sources:**
-1. Academic papers via OpenAlex (primary)
-2. arXiv preprints
-3. Web/news via Serper (secondary)
+**Priority Sources** (revised 2026-09-19 — see CLAUDE.md for the full hierarchy):
+1. Measurement from instrumented production systems
+2. Agency and statutory data: IEA, LBNL, EIA, EPRI, grid operators, PUC and FERC filings
+3. Peer-reviewed papers and preprints via OpenAlex and arXiv
+4. Corporate disclosures, as primary evidence of what is claimed, never as neutral fact
+5. Journalism only to reach a document otherwise unavailable
 
-## Current Landscape (Jan 2026)
+## Current Landscape (September 2026)
 
-- **Data center backlash**: Project cancellations quadrupled in 2025 as communities push back
-- **Grid strain**: States examining whether AI data centers are increasing electricity bills
-- **Water uncertainty**: Wildly conflicting estimates ("depends on whom you ask")
-- **Scale**: 2025 AI GHG footprint estimated at ~80M tonnes CO2e (comparable to NYC)
-- **Greenwashing**: "100% renewable" claims vs actual grid mix reality
-- **Bluewashing**: "Water positive" pledges vs local aquifer depletion
-- **Transparency gaps**: Providers refuse to disclose per-query costs
+Evidence for each item is in the topic folder named. Claims that could not be sourced are marked.
+
+- **Aggregate load**: data centres 415 TWh globally in 2024 (1.5%), ~945 TWh by 2030 (IEA);
+  US 192 TWh in 2024 (4.7%), 649 TWh reference case for 2030 (LBNL 2026).
+- **AI emissions**: 32.6-79.7 MtCO2 for 2025, operational only (de Vries-Gao). No operator
+  discloses AI-specific emissions; every aggregate is inferred.
+- **Accounting gap**: market-based vs location-based Scope 2 diverges by 4.4x (Microsoft) to
+  4,394x (Meta). Amazon publishes no location-based figure. Independent plant attribution puts
+  hyperscale carbon intensity 48% above the US grid average.
+- **Water**: the 0.26 mL vs 10-25 mL dispute decomposes into system boundary (~2.8x) and prompt
+  length (the remainder). Nationally ~2% of US consumptive use; locally up to 1.34x a host
+  utility's entire delivery capacity on a peak day.
+- **Grid economics**: PJM's market monitor attributes $6.50bn of one capacity auction to
+  data-centre load, 76% of which is forecast rather than existing. Counter-evidence exists
+  (IV study finding rates fell); the disagreement is about supply constraints.
+- **Interconnection**: ERCOT holds ~474 GW of large-load requests, roughly 5x its system peak.
+  No source publishes GW actually energised per year.
+- **Regulation**: the EU AI Act energy duty is applicable but has no measurement standard; the
+  GPAI form records inference as FLOPs, not energy. US instruments are grid-economic, not
+  environmental. Every US state energy/water disclosure bill was introduced, not passed.
+- **Avoided-emissions claims**: Google's 41 Mt figure is 68% Google Earth, computed without an
+  attribution fraction or additionality test. The IEA's 1,400 Mt scenario is qualified by the
+  IEA's own text.
+- **Community opposition**: the widely-cited "cancellations quadrupled in 2025" traces to an
+  unpublished equity-research note with no stated methodology or definition. **Unsupported.**
+  The main opposition tracker has no denominator and is run by a vendor to AI companies.
 
 ## Research Areas
 
@@ -127,9 +148,9 @@
 ### 6. Community & Grid Impact (`/research/community/`)
 
 #### 6.1 Local Opposition
-- Data center project cancellations (2025 surge)
-- Environmental justice concerns
-- Community organizing tactics
+- Project cancellations: needs a source with a stated methodology and a denominator
+- Environmental justice: siting against income, race, existing pollution burden
+- Community organizing tactics and outcomes (moratoria, rezoning denials, referenda)
 
 #### 6.2 Electricity Prices & Grid
 - Impact on residential electricity rates
@@ -233,44 +254,33 @@
 19. **narrative-claims** - Scrutinize "AI for climate" claims
 20. **narrative-net** - Net impact analysis
 
-## Progress Tracking
+## Open Questions
 
-### GHG Emissions
-- [ ] Training emissions
-- [ ] Inference emissions
-- [ ] Lifecycle/embodied
-- [ ] Numbers compilation
+Answered questions have moved to the topic indexes. These remain.
 
-### Water
-- [ ] Direct consumption
-- [ ] Reuse/recycling
-- [ ] "Water positive" scrutiny
-- [ ] Numbers compilation
+### Unevidenced in either direction
+- GW actually energised per year. Every source reports requests, forecasts, or leases.
+- AI rebound effects. Position papers only; no 2026 empirical work.
+- Opportunity cost: whether clean generation or interconnection allocated to AI displaces
+  electrification of heat, transport, industry.
+- Data-centre effects on property values.
+- Delivery against "water positive" pledges, assessed independently.
 
-### Data Centers
-- [ ] Infrastructure growth
-- [ ] Power sources
-- [ ] Efficiency metrics
+### Blocked on disclosure
+- AI-specific energy and emissions. No operator publishes them.
+- Foundry-level emission factors per wafer. No primary disclosure at that granularity.
+- NVIDIA accelerator lifecycle assessment. No equivalent to Google's TPU LCA exists.
+- Facility-level EU data under Article 12, legally confidential.
 
-### Greenwashing/Bluewashing
-- [ ] Corporate claims audit
-- [ ] Reporting gaps
-- [ ] Verification analysis
+### Retrievable but not yet retrieved
+- Privette, Barros & Cai, *AGU Advances* 2026 — Wiley blocks automated access.
+- FERC order text and RTO compliance filings due 17 Aug 2026 — ferc.gov blocks retrieval.
+- Oregon PUC Order 26-154 (UM 2377) — first implementation of the 2025 POWER Act.
+- E3 May 2026 rate-decomposition report; EDGI July 2026 air-pollution analysis.
+- MLPerf Power v6.0/v6.1 raw submission tables, unnormalised to joules per token.
 
-### Policy
-- [ ] Current regulation
-- [ ] Proposed policies
-- [ ] Self-regulation review
-
-### Community
-- [ ] Local opposition
-- [ ] Grid/ratepayer impact
-
-### Frugal AI
-- [ ] Efficient architectures
-- [ ] Optimization techniques
-- [ ] When NOT to use AI
-
-### Narrative
-- [ ] "AI for climate" claims scrutiny
-- [ ] Net impact debate
+### Methodological
+- Whether reservoir evaporation should be allocated to hydropower. This single convention moves
+  the indirect:direct water multiplier from 1.7:1 to 12:1 and can reverse regional rankings 94-fold.
+- Marginal versus average emissions for added data-centre load. Current attribution is average only.
+- Agentic and multi-turn workloads. Unmeasured; existing studies exclude tool calling.

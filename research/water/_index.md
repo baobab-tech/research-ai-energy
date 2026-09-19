@@ -67,3 +67,65 @@
 3. **Technical necessity**: High-power AI chips physically require liquid cooling - water consumption is structural, not optional (Li & Zhu)
 4. **Emerging solutions**: Immersion cooling offers waterless alternative but limited deployment (Kim et al.)
 5. **Hidden burden**: 40% of servers in small/midsize DCs with worse WUE than hyperscale (Lei et al.)
+
+## 2026 Refresh: Boundary, Disclosure and Siting (027-035)
+
+Retrieved 2026-09-19. These nine excerpts were added to resolve the 0.26 mL vs 10-25 mL dispute recorded above, and to fill the on-site/off-site and corporate-disclosure gaps.
+
+| # | Source | Insight | Link |
+|---|--------|---------|------|
+| 027 | Sharma et al., 2026 (MDPI *Green*) | Google's 0.26 mL is on-site cooling only (WUE Category 2); reconstructed to 2.3% from Google's own inputs; adding generation water gives 0.725 mL, +179%. A long Gemini prompt reaches 28 mL | [file](027-sharma-2026-water-cost-of-intelligence-boundary.md) |
+| 028 | Ceres, 2026 | 3.4 trillion gallons **withdrawn** in 2024 to generate data-centre electricity across 7 states; 4.1-7.6 trillion by 2030; 66% of that generation in medium-high to extremely high water stress. Withdrawal, ~78% hydro pass-through | [file](028-ceres-2026-water-behind-the-watts.md) |
+| 029 | Shehabi et al., LBNL 2024 | US data centres 2023: 66 billion L consumed on-site, ~800 billion L consumed off-site generating their power — 12:1 on a common **consumption** basis. National site WUE projected to **rise** to 0.45-0.48 L/kWh as liquid cooling arrives | [file](029-shehabi-2024-lbnl-direct-vs-indirect-water.md) |
+| 030 | Microsoft, 2026 (FY25) | 13,266 ML withdrawn, 8,170 ML consumed (+22% YoY), 14.2 million m3 replenished — "water positive" in aggregate. Site table shows replenishment is 59x withdrawal at Querétaro and zero at Boydton, Ashburn, Chicago and Dublin | [file](030-microsoft-2026-fy25-site-level-water.md) |
+| 031 | Google, 2026 (CY2025) | Consumption up 34% to 10,869 Mgal, 97% from data centres; replenishment covers 78% of **freshwater** consumption, a denominator that excludes reclaimed water; 0.26 mL reprinted unchanged and derived from a 2024 fleetwide WUE the report never states | [file](031-google-2026-fy2025-water-disclosure.md) |
+| 032 | Guidi & Dominici, 2026 (Harvard, preprint) | 472 US hyperscale facilities: 74 GL/yr scope 1, 226 GL/yr scope 2 (75% of total). Different geographies — scope 1 in stressed western basins, scope 2 in eastern fossil-heavy grids; top 3 of 24 BAs carry 59% of scope 2 | [file](032-guidi-dominici-2026-scope1-scope2-water-geography.md) |
+| 033 | Akinade, Amanambu, Frame & Ren, 2026 (preprint) | Water Consumption Impact index across 10 US sites spans 0.002 to 1.34 of host-utility peak-day capacity; Meta's Lebanon IN campus alone exceeds its host system. Peak day, not annual volume, is the binding constraint | [file](033-akinade-2026-water-consumption-impact-utility-burden.md) |
+| 034 | CRS R49057, 2026 | Direct DC water ≈2% of US water consumption; IEA splits total 40% direct / 60% indirect; a 100 MW DC ≈ 6,500 households total, 2,600 direct. No federal agency has ever measured it — USGS dropped commercial-sector estimates in 1995 | [file](034-crs-2026-data-centers-water-faq.md) |
+| 035 | Gaster, ITIF 2026 | Dry cooling cuts water >90% for 1-1.5% of plant output (vs 0.5% wet); hybrid cuts evaporation 75%; ZLD reverse osmosis <0.1% of output. Disputes LBNL's indirect figure on hydro inclusion and PPA exclusion | [file](035-gaster-itif-2026-cooling-technology-water-energy-tradeoff.md) |
+
+### Resolution of the 0.26 mL vs 10-25 mL dispute
+
+The gap is not one error. It decomposes:
+
+1. **Accounting boundary — factor ~2.8.** Google reports Category 2 water (on-site cooling only, ISO/IEC 30134-9). Adding generation water at 1.80 L/kWh takes 0.26 mL to 0.725 mL (Sharma et al. 2026).
+2. **Prompt length — factor up to ~40.** Google reports the *median* text prompt at 0.24 Wh. A long prompt is 9.2 Wh and 28 mL on a full boundary — inside Li et al.'s range.
+3. **Vintage and infrastructure.** Li et al.'s 10-25 mL is a 2023 estimate for ChatGPT on Microsoft infrastructure, derived from disclosed PUE/WUE, not a measurement of the same system.
+
+Google's figure is internally consistent and externally unverified: the reconstruction uses Google's own energy, WUE and overhead-exclusion values, and no independently measured facility water attributable to a known query volume exists for any commercial LLM deployment.
+
+### The unresolved quantitative question
+
+The indirect-to-direct water multiplier is not settled, and the disagreement is almost entirely about whether hydropower reservoir evaporation is allocated to generation:
+
+| Source | Indirect : direct | Indirect intensity | Hydro |
+|---|---|---|---|
+| LBNL 2024 (all US DCs) | 12 : 1 | 4.52 L/kWh | included |
+| IEA *Energy and AI* 2025 (via CRS) | 1.5 : 1 | — | unstated |
+| Guidi & Dominici 2026 (hyperscale) | 3 : 1 | ~1.95 L/kWh | included at 8.0 L/kWh |
+| Guidi & Dominici 2026, no-hydro | 1.7 : 1 | ~1.11 L/kWh | excluded |
+| Sharma et al. 2026 (per query) | 1.9 : 1 | 1.80 L/kWh | excluded |
+| ITIF 2026 (citing USGS) | — | 1.78 L/kWh (0.47 gal/kWh) | excluded |
+
+Three independent sources converge on ~1.78-1.80 L/kWh for thermoelectric generation excluding hydro. Everything above that is the hydro convention.
+
+### Withdrawal vs consumption — read the units
+
+- Ceres 3.4 trillion gallons = **withdrawal**, ~78% hydro pass-through. Not comparable to municipal *use*.
+- LBNL 66 GL / 800 GL = **consumption** both sides. The defensible version of the same claim.
+- Microsoft FY25: 13,266 ML withdrawn but 8,170 ML consumed. Its water-positive claim is measured against withdrawal.
+- Google 2025: 14,689 Mgal withdrawn, 10,869 Mgal consumed, but the replenishment target is set against 9,947 Mgal of *freshwater* consumption.
+- CRS: consumption = withdrawn and no longer available for reuse.
+
+### Cross-folder notes
+
+- `research/datacenters/016-lbnl-2026-us-dc-energy-2025-update.md` (LBNL-2001758, June 2026) supersedes the 2024 LBNL report on electricity and PUE but contains **no water estimates**. The 2024 figures in 029 remain LBNL's only water assessment.
+- `research/community/026-crs-2026-data-centers-water-municipal-supply.md` is the same CRS report as 034, read for institutional findings (97% municipal supply, non-public service agreements, Marana AZ refusal ordinance). No conflicting numbers.
+- `research/washing/023-water-positive-pledge-accounting-2026.md` covers Google and Amazon pledge accounting; 031 adds Google's full withdrawal/discharge/consumption series and per-site table, and 030 adds Microsoft.
+
+### Standing gaps after this pass
+
+- No independently measured facility water tied to a known query volume, for any provider.
+- Meta's most recent public water data is 2024; no FY2025 disclosure located.
+- Privette, Barros & Cai, "Data Centers Water Footprint: The Need for More Transparency," *AGU Advances*, 2026-02-27 (doi 10.1029/2025AV002140) is peer-reviewed, open access and directly on topic, but Wiley blocks automated retrieval — not captured.
+- No 2026 independent (non-corporate) assessment of water-positive pledge delivery was found.

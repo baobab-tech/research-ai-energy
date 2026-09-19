@@ -1,8 +1,482 @@
 # Search Log
 
-Records all searches performed, results found, and excerpts created.
+Records searches performed, results found, and excerpts created.
+Negative results are recorded deliberately: they mark where evidence does not yet exist.
 
 ---
+
+## 2026-09-19 — Eight-area refresh
+
+First update since 2026-01-16. Scope widened beyond academic databases to agency reports,
+grid-operator data, regulatory filings and corporate disclosures. Eight parallel searches.
+
+---
+
+### GHG research log — 2026-09-19
+
+Area: greenhouse gas emissions, hard numbers. Files 022-032 written to research/ghg/.
+
+## Duplicate checks run first
+`grep -ril` across research/ for: IEA, Shehabi, LBNL, Berkeley Lab, EIA, Short-Term Energy Outlook,
+guidi, "de vries", devries, digiconomist, hyperscale, eGRID, 2502.01671,
+"life-cycle emissions of ai hardware", "compute carbon intensity", Ironwood, "test-time scaling",
+"energy use of AI inference".
+Result: IEA appeared only as a search-log line in research/_log.md. LBNL/Shehabi appeared only as a
+citation inside two Lei 2025 excerpts, never as a source. EIA, de Vries-Gao, Guidi, Epoch, the TPU LCA
+and the Joule inference paper appeared nowhere. No duplicates created.
+
+## Searches that produced excerpts
+1. WebSearch "origin of 80 million tonnes CO2e AI 2025 emissions New York City comparison"
+   -> de Vries-Gao 2025, Patterns, DOI 10.1016/j.patter.2025.101430. Full text via PMC12827721. -> 022
+2. WebFetch iea.org/reports/energy-and-ai/energy-demand-from-ai -> 023
+3. WebSearch "IEA Energy and AI Observatory 2026 update" -> Key Questions on Energy and AI,
+   published 2026-04-16; executive summary fetched -> 024
+4. WebSearch "LBNL 2024 United States Data Center Energy Usage Report Shehabi"
+   -> PDF downloaded, pdftotext extracted locally (WebFetch could not parse the 3.8 MB PDF) -> 025
+5. WebSearch "2026 measured energy per token LLM inference Wh full-stack PUE production"
+   -> Oviedo et al., Joule 2026; cell.com returned 403, used arXiv 2509.20241 PDF -> 026
+6. WebSearch "semiconductor fab carbon footprint per wafer GPU manufacturing embodied emissions TSMC"
+   -> led to Google TPU LCA arXiv 2502.01671, PDF extracted -> 027
+7. WebSearch "Google 2026 Environmental Report Scope 1 2 3 FY2025"
+   -> sustainability.google/files/google-2026-environmental-report PDF extracted -> 028
+8. WebSearch "Microsoft 2026 Environmental Sustainability Report FY2025 Scope 3"
+   -> Environmental Data Fact Sheet PDF extracted (Table 1A) -> 029
+9. WebSearch surfaced arXiv 2606.05420 (Guidi et al., Harvard) -> PDF extracted -> 030
+10. WebSearch "EIA Short-Term Energy Outlook September 2026 data centers"
+    -> eia.gov Today in Energy 67704 (AEO2026) + press release 592 (Sep 2026 STEO) -> 031
+11. WebSearch "2026 training compute carbon emissions frontier model tCO2e Epoch AI"
+    -> epoch.ai grok-4-training-resources + Stanford AI Index 2026 via IEEE Spectrum -> 032
+
+## Came up empty / not used
+- TSMC and Samsung wafer-level CO2e per wafer: no primary disclosure at wafer granularity found.
+  Secondary sources (TechInsights, imec, Devera) give industry aggregates (e.g. ~185 MtCO2e/yr for all
+  integrated-circuit production) without a traceable method. Not written up — would have violated the
+  no-abstract-only-speculation rule. Google's TPU LCA (027) is the only first-party accelerator
+  manufacturing disclosure that exists.
+- NVIDIA accelerator LCA: nothing equivalent to Google's TPU disclosure published.
+- Meta and Amazon FY2025 environmental reports: not pursued after Google and Microsoft gave the same
+  structural finding (market-based vs location-based gap). Remaining gap.
+- AI-specific emissions from any operator: none disclosed by anyone. This is the binding constraint on
+  the whole field, noted in 022, 023, 028 and 029.
+- OpenAlex queries were not needed; the material gaps were all agency and corporate primary sources.
+
+## Verdict requested on the README claim
+Sourced, but misstated. See 022 and the note appended to research/ghg/_index.md.
+
+## Remaining gaps
+- Meta, Amazon, NVIDIA FY2025 disclosures.
+- Wafer- or fab-level emission factors from a foundry primary source.
+- Any operator disclosing AI workload emissions separately from total data-centre emissions.
+- Consequential (marginal) emissions of added data-centre load; 030 is attributional only.
+
+## Cross-folder overlap discovered late (parallel agents)
+Three sources I captured were independently captured by agents working other folders, from different
+angles. Cross-references added in both directions from my files:
+- Oviedo et al. 2026 -> research/frugal/017 (efficiency pathways angle); my 026 records the per-query
+  number and its boundary.
+- Google 2026 Environmental Report -> research/washing/018 and /019 (disclosure-practice angle);
+  my 028 is the emissions-inventory reading.
+- Microsoft 2026 report -> research/washing/017 (REC withdrawal); my 029 is the inventory reading.
+- LBNL: research/datacenters/016 captures the June 2026 LBNL *2025 Update* (LBNL-2001758), which revises
+  2024 down to 192 TWh and projects 649 TWh in 2030. My 025 is the foundational 2024 report the brief
+  asked for and remains the source of the 176 TWh (2023) historical figure. Cross-reference added.
+
+---
+
+### Water research log — 2026-09-19
+
+Area: water consumption, hard numbers and contested estimates. Files 027-035 in research/water/.
+
+## Searches run
+
+### Productive
+| Query / route | Tool | Result |
+|---|---|---|
+| Ceres "Water Behind the Watts" (named in brief) | WebFetch + curl PDF + pdftotext | → 028. PDF at ceres.org/download/6489292d-... |
+| "2026 paper replication critique Google Gemini per-prompt water energy estimate excludes water embedded in electricity generation" | WebSearch | → Sharma et al. 2026, DOI 10.3390/green1020008 → 027. **The key hit.** |
+| DOI 10.3390/green1020008 full text | www.mdpi.com 403; mdpi-res.com/d_attachment/green/green-01-00008/article_deploy/green-01-00008.pdf works | full 25-page text |
+| "LBNL 2024 US Data Center Energy Usage Report water" | WebSearch → eta-publications.lbl.gov PDF | → 029. escholarship.org PDF link returns HTML; eta-publications works |
+| "Microsoft 2026 environmental sustainability report FY2025 water" | WebSearch → cdn-dynmedia-1.microsoft.com both PDFs | → 030. Table 15 site-level is new in this report |
+| "Google 2026 Environmental Report water" | WebSearch → sustainability.google/reports/... → PDF path from page | → 031. 98-page PDF |
+| "2026 study data center siting water stressed basins groundwater aquifer" | WebSearch | → arXiv 2607.02531 (Guidi & Dominici) → 032; arXiv 2606.21760 (Akinade et al.) → 033 |
+| "AGU Advances 2026 data center water use fraction national" | WebSearch | → CRS R49057 → 034; ITIF Gaster → 035 |
+| CRS R49057 | crsreports.congress.gov 403; congress.gov/crs_external_products/R/PDF/R49057/R49057.1.pdf works | full text |
+| ITIF report | curl page + HTML strip | full report is on the page, not a separate PDF |
+
+### Empty or blocked
+| Query / route | Outcome |
+|---|---|
+| OpenAlex `search=` free-text, 2026 filter, several phrasings | Useless. Returns nanoparticle synthesis, MXene films, apricot production. OpenAlex full-text relevance ranking is not usable for this topic. |
+| OpenAlex `filter=title_and_abstract.search:` for "data center water", "water usage effectiveness" | Better but dominated by Zenodo duplicate grey literature. Two plausible hits not pursued: Maynooth "How we all pay for Big Tech: costs of data centres in Ireland" (doi 10.48460/mu.mural.00021841), "What Georgia Is Spending, What Georgia Is Getting: A Statewide Data Center Report" (Zenodo). |
+| arXiv API `abs:"water" AND abs:"data center"` | Returned nothing — the query form failed silently. arXiv papers were found via WebSearch instead. |
+| arXiv API `id_list=2508.15734` (Elsworth/Google) | Returned nothing; not needed, the 2026 Google report reprints the figure with its footnote. |
+| Privette, Barros & Cai, *AGU Advances* 2026, doi 10.1029/2025AV002140 | **Blocked.** agupubs.onlinelibrary.wiley.com returns 403 on /doi/, /doi/full/, /doi/pdfdirect/, /doi/epdf/ with and without browser UA. Semantic Scholar returns abstract only; OpenAlex reports no repository full text. Gold OA, CC-BY-NC-ND, and still unreachable. Not written up — abstract-only would violate the brief. **Worth a manual retrieval.** |
+| Meta FY2025 water disclosure | Not found. Latest is the 2025 Sustainability Report with 2024 data (1.6 billion gallons restored; targets 200% restoration in high-stress and 100% in medium-stress watersheds — the strictest watershed-matching rule of the three hyperscalers). datacenters.atmeta.com has an April 2026 blog post but no 2026 report with FY2025 figures. |
+| "2026 assessment of water positive pledge progress" (several phrasings) | Nothing independent. All results are corporate self-reports or trade press restating them. Genuine gap. |
+| "2026 direct-to-chip liquid cooling water energy tradeoff" | Almost entirely vendor blogs (Schneider, Introl, Alliance Chemical, Adam Silva Consulting, HydropureWater). Excluded per brief rule 4 on source quality. ITIF and CRS were used instead. |
+
+## Retrieval notes worth reusing
+- `pdftotext -layout` handles all of these cleanly. Ceres, LBNL, Microsoft, Google, CRS and both arXiv PDFs all extracted fully.
+- MDPI: `www.mdpi.com` 403s everything including with a browser UA; `mdpi-res.com/d_attachment/<journal>/<journal>-<vol>-<art>/article_deploy/<file>.pdf` is open.
+- CRS: `crsreports.congress.gov` 403s; `congress.gov/crs_external_products/R/PDF/<id>/<id>.1.pdf` is open.
+- Wiley (AGU): no route found.
+- HEAD requests 403 on doi.org/MDPI and congress.gov even where GET succeeds — don't use `curl -I` to validate these.
+
+## Arithmetic done here, not in the sources
+- Microsoft per-site withdrawal intensity (L/kWh) computed from Table 15 electricity and withdrawal columns. Fleet total 15.91 TWh / 4,717 ML = 0.296 L/kWh, consistent with Microsoft's reported 0.27 L/kWh WUE. Site range 0.014 (Dublin) to 1.028 (Phoenix), ~70x. Sum of disclosed site replenishment = 6,247 ML of the 14,200 ML global total, so >half the replenishment is at locations not in the datacenter table.
+- Google replenishment as share of *total* consumption: 7,717 / 10,869 = 71% (against the 78% Google reports on a freshwater-only denominator).
+- Unit conversions for the index comparison table (gal/kWh ↔ L/kWh, Mgal ↔ ML ↔ m3).
+
+## Duplicate check
+`grep -ril` across research/ for: mistral, ceres, hidden thirst, water cost of intelligence, shehabi, drained by data, elsworth. Only hits were the existing 017, 022, _index.md, _log.md and datacenters/012. No source written up here was already in the tree.
+
+---
+
+### Search log — data-centre infrastructure (files 016-025)
+Date: 2026-09-19
+
+## Queries run
+**Serper /search**
+- "data center interconnection queue 2026 GW large load ERCOT" → ERCOT Senate deck (used, 017), ERCOT April 2026 hearing deck, ercotqueue.com, Utility Dive 438 GW story
+- "PJM 2026 data center load forecast GW interconnection" → PJM 2026 Load Forecast Report PDF (used, 022); Utility Dive "PJM trims near-term forecast on stricter DC screening" (noted, not captured — gap)
+- "LBNL 2024 United States Data Center Energy Usage Report PUE" → LBNL 2025 Update PDF (used, 016)
+- "Verrus Beyond PUE 2026..." → verrusdata.com/news/beyond-pue (used, 023); DCD opinion piece 403
+- "Crane Clean Energy Center Three Mile Island restart 2026..." → ANS, Utility Dive, DOE EDF (used in 020)
+- "Palisades nuclear plant restart 2025 2026 Holtec..." → ANS 2026-07-08 no-restart-date piece (used, 020)
+- "small modular reactor data center PPA 2026 in service date none operating" → Carnegie (used, 020); Bulletin of the Atomic Scientists 2026-07 (not captured — candidate)
+- "xAI Memphis gas turbines permit Title V emissions 2026 Shelby County" + "SELC xAI Memphis turbines Clean Air Act appeal 2026" → Earthjustice/SELC/techpolicy.press (used, 025)
+- "data center flexible load curtailment 2026 study Norris Duke Nicholas Institute" → LBNL Granderson et al. (used, 021); Duke Nicholas "Rethinking Load Growth" (not captured — 2025, likely already the Norris et al. 2025 cited inside 021)
+- "IEA Energy and AI Observatory 2026 ... by country" → IEA Energy and AI (used, 018)
+- "EirGrid Ireland data centre electricity 2026 CRU moratorium" → led to CSO (used, 019)
+- "AI accelerator depreciation schedule 2026 hyperscaler useful life GPU six years overbuild" → only commentary/substack, no primary filing (EMPTY — see gaps)
+- "data center vacancy cancelled leases 2026 ... CBRE absorption" → CBRE H1 2026 (used, 024)
+
+**WebSearch**
+- "US 40% of world data center electricity 2026 dataset IEA Ember"
+- "CSO Ireland data centres metered electricity consumption 2025 2026"
+
+## Technique note
+WebFetch returns raw binary for PDFs and cannot parse them. Every PDF here was downloaded by WebFetch to the tool-results cache, then text-extracted locally with `pdftotext -layout`. Without that step the ERCOT, LBNL, PJM and LBNL-flexibility sources would all have been unusable.
+
+## Came up empty / blocked
+- **Forbes article (the 40% claim itself)**: HTTP 403 to automated retrieval. Verified the claim against the underlying datasets instead (018) rather than citing the article's framing.
+- **Reuters xAI piece, SELC page, NRC reactor record, epw.senate.gov letter, escholarship, CBRE**: all 403 to plain curl; CBRE, SELC and escholarship content was obtainable via WebFetch or is mirrored, NRC and the Senate letter were not read at all and are flagged as such in 020 and 025.
+- **xAI permits themselves**: Shelby County Health Department permit numbers and conditions are not published in machine-readable form. 025 rests entirely on litigant characterisations and says so.
+- **Accelerator depreciation**: no primary filing found. Only secondary commentary (CNBC, substacks, Burry posts). Would need 10-K/10-Q property-and-equipment notes read directly.
+- **Nordics**: no 2026 grid-operator or agency source located (Svenska kraftnät / Statnett / Fingrid not searched thoroughly).
+- **Georgia**: Georgia Power IRP not searched.
+- **24/7 CFE progress**: no 2026 hourly-matching progress report found. Google's own 24/7 CFE report and the UN 24/7 Carbon-Free Energy Compact were not located in a 2026 edition. The unbundled-REC-vs-hourly-matching question is therefore addressed only obliquely, via the Meta/Clinton credits structure in 020.
+
+## Remaining gaps for a follow-up pass
+1. Energised-capacity data. Every source here reports requests, forecasts or leases. Nobody publishes GW actually energised by year. This is the single biggest hole.
+2. Utility 10-K / rate-case filings quantifying data-centre revenue and cost allocation to other ratepayers.
+3. Hourly carbon-free energy: Google/Microsoft 2026 CFE percentages by region, and any independent audit of them.
+4. Accelerator depreciation from primary filings.
+5. Georgia Power IRP, Dominion Virginia IRP, and Nordic TSO data-centre load figures.
+6. Whether any hyperscaler has signed a mandatory-curtailment tariff (021 shows the tariffs exist; no evidence found that AI campuses take them).
+
+## Cross-folder overlaps found at write-time (parallel agents)
+Three files appeared in other folders during this session and were reconciled rather than duplicated:
+- `ghg/025-shehabi-2024-lbnl-us-data-center-energy.md` is the **2024** LBNL report. My `datacenters/016` is its official 2026 successor and supersedes it on every overlapping number (2023: 176 TWh → 2024: 192 TWh with history revised down; 2028 range 325-580 TWh → 464 TWh point). Noted in both directions in 016.
+- `ghg/023-iea-2025-energy-and-ai-datacentre-electricity.md` captures the same IEA source as my `datacenters/018`. Kept 018 for the materially different finding (the US-share arithmetic, which needs a second dataset and which neither file states alone) and pointed all IEA-baseline claims at the ghg file.
+- `community/022-naacp-xai-2026-memphis-turbines-clean-air-act.md` cites the actual court filings (N.D. Miss. 3:26-cv-00074) and gives 2,508 t/yr NOx across 33 turbines — better sourced than my `datacenters/025`, whose figures come from NGO case pages and are an earlier snapshot. 025 explicitly defers all emissions claims to community/022 and is retained only for the infrastructure angle (~1.2 GW on-site gas, the 35→15 turbine permitting sequence, 300 MW grid vs 1,200 MW on-site, DOJ intervention).
+
+---
+
+### Community folder research log — 2026-09-19
+
+Area: grid impact, electricity prices, ratepayers, community/siting conflict.
+Files created: research/community/016 through 027 (12 excerpts). Existing 001-015 untouched.
+
+## Searches run
+
+| Query | Tool | Outcome |
+|---|---|---|
+| PJM capacity auction 2026 results data center load electricity price increase ratepayers | WebSearch | Led to Utility Dive -> Monitoring Analytics IMM report (primary) -> file 016 |
+| PJM 2028/2029 Base Residual Auction results 2026 clearing price data center | WebSearch | PJM auction results PDF (primary) -> file 017 |
+| "data centers" electricity bills econometric study 2026 retail rates causal estimate counties peer reviewed | WebSearch | arXiv 2606.19777 (EPRI) -> file 018; also surfaced E3 May 2026 report (PDF extraction failed, not used) |
+| 2026 state public utility commission order large load tariff data center minimum take contract stranded cost | WebSearch | PA PUC press releases, Oregon PUC order 26-154, CoBank/DELTa -> files 019, 020 |
+| Pennsylvania PUC M-2025-3054271 large load final order PDF | WebSearch | Located docket; retrieved EAP Petition for Reconsideration (puc.pa.gov/pcdocs/1932400.pdf) -> file 019 |
+| SEPA NCCETC DELTa Database Emerging Large-Load Tariffs 2026 report | WebSearch | DSIRE Insight Sep 2026 analysis -> file 020 |
+| data center project cancellations quadrupled 2025 opposition moratorium count Data Center Watch | WebSearch | Traced claim to Baird note via Utility Dive -> file 021 |
+| Data Center Watch report 2026 "$64 billion" blocked delayed 10a Labs methodology | WebSearch | Base report PDF + Q1 2026 page + NBC News -> file 021 |
+| xAI Memphis gas turbines permit 2026 NAACP lawsuit Shelby County air quality environmental justice Boxtown | WebSearch | SELC + Earthjustice press releases, case 3:26-cv-00074 -> file 022 |
+| peer-reviewed 2026 study data center siting environmental justice income race pollution burden US census | WebSearch | WRI Feb 2026 insight; EDGI (403) ; led onward |
+| 2026 study data center backup generators air pollution health costs mortality quantitative peer reviewed | WebSearch | EPN "Hidden Health Costs" report -> its ref 14 -> arXiv 2412.06288v4 (Han et al., CACM accepted) -> file 023; ref 13 -> EIP -> file 024 |
+| Environmental Integrity Project "The Power Behind AI" gas power plants data centers 2026 | WebSearch | -> file 024 |
+| 2026 coal plant retirement delayed data center load growth utility named plant postponed retirement date | WebSearch | EIA Today in Energy x2 -> file 025 |
+| 2026 utility IRP filing cites data center load delay coal retirement | WebSearch | RMI State of Utility Planning 2026 H1; Latitude Media on Evergy -> file 025 |
+| 2026 municipality water utility restricted denied data center water supply agreement renegotiated drought moratorium | WebSearch | CRS R49057 -> file 026 |
+| 2026 study data center proximity home property values decline hedonic noise measured decibels | WebSearch | GMU CRA and Integra Realty Resources analyses -> file 027 |
+
+## Dead ends / came up empty
+
+- **E3, "Understanding the Drivers of Rising Electricity Rates and the Role of Data Centers"** (May 2026, ethree.com). PDF text extraction failed twice; did not write it up rather than speculate. Worth a manual read — it is likely the utility-side rate-decomposition counterpart to file 018.
+- **Environmental Data and Governance Initiative** (July 2026) analysis of air pollution near EPA-regulated data centers: envirodatagov.org returns HTTP 403. Promising quantitative EJ source, unretrieved.
+- **SEPA DELTa database landing page**: HTTP 403 to automated requests. Used the two published analyses of the database instead; noted in file 020.
+- **Oregon PUC Order 26-154** (UM 2377, PGE large-load tariff, 7 May 2026): PDF exceeds the fetch size limit. Would be the second strong state order after Pennsylvania.
+- **Baird research note** (Justin Hauke) behind the "cancellations quadrupled" claim: not public, no title, no date, no methodology in any secondary coverage. Flagged as unverified in file 021.
+- **MIT CEEPR WP 2026-06** turned out to be about airplane noise, not data centres. Discarded as off-topic.
+- **Frontiers in Climate 2026 Virginia health paper** (Gour, Ortiz, Maibach, 10.3389/fclim.2026.1648912): self-described exploratory literature review with no quantified health outcomes. Its $14-33/month bill and 267% wholesale price figures are second-hand. Not written up; superseded by Han et al. (file 023).
+- **Frontier Group / Environment America "Energy Transition at Risk"**: 403 on fetch. Used EIA and RMI primaries instead.
+- Searched for a peer-reviewed quantitative study of data-centre siting against race/income at census-tract level; the recurring "nearly half of ~700 data centers in above-median EJI tracts" figure is cited by WRI without naming the underlying study. Not written up.
+
+## Judgement calls
+
+1. **Files 016 and 018 directly contradict each other** and both are included deliberately. The contradiction is the finding: PJM's monitor measures the capacity component under binding scarcity in 2025-2027; EPRI measures all-in average retail rates nationally through 2024 when capacity was slack. Each file cross-references the other and states the reconciling condition.
+2. **Conflicts flagged in every file**: EPRI (utility-funded) in 018; Monitoring Analytics' own policy position in 016; PJM's institutional interest in 017; EAP as an adversarial filer in 019; 10a Labs as an AI-industry vendor in 021; EIP and RMI as advocacy organisations in 024 and 025; developer commissioning in 027.
+3. **Potential-to-emit is never reported as measured emissions** (files 022, 024). Flagged explicitly in both.
+4. **The RESEARCH_PLAN's "cancellations quadrupled in 2025" line (line 22) should be amended or dropped.** It rests on a paywalled sell-side equity note with no stated method.
+
+---
+
+### Policy & regulation research log — 2026-09-19
+
+Area: AI / data-centre environmental regulation. Files 015-025 created in /research/policy/.
+
+## Duplicate checks run first
+- `grep -ril "AI Act" research/` → only 001, 009 (generic policy comparison), _log.md
+- `grep -ril "Energy Efficiency Directive\|1791" research/` → only _log.md
+- `grep -ril "SB 253\|SB253\|SB 6\|FERC" research/` → nothing
+No overlap with existing 001-014, which are ESG/CSRD/carbon-pricing academic work.
+
+## Searches that produced excerpts
+| Query | Tool | Outcome |
+|---|---|---|
+| AI Act Annex XI / Art 40 / Art 53 text | WebFetch artificialintelligenceact.eu + EUR-Lex ELI | 015, 017 |
+| "Model Documentation Form" GPAI "energy consumption" | Serper → PDF, pdftotext | 016 (the strongest single find) |
+| CEN-CENELEC JTC 21 standards delay / digital omnibus | WebSearch → bundesnetzagentur.de | 017 |
+| Targeted consultation measuring energy consumption AI | WebFetch EC digital-strategy | 018 |
+| EED Art 12 delegated regulation 2024/1364 | WebFetch EUR-Lex OJ | 019 |
+| European database data centres first reporting round | WebSearch → op.europa.eu PDF, pdftotext | 020 |
+| Texas SB 6 large load ERCOT | WebSearch + capitol.texas.gov + gtlaw | 021 |
+| FERC large load co-location 2026 | WebSearch + bracewell.com | 022 |
+| SEC rescind climate rule 2026; CA SB 253/261 | WebSearch + federalregister.gov API | 023 |
+| 2026 state data centre legislation water/ratepayer | WebFetch multistate.us x2, afslaw.com | 024 |
+| CRU Ireland data centre connection policy | WebFetch cru.ie | 025 |
+
+## Retrieval failures (sources named but not read directly)
+- ferc.gov — HTTP 403 to both WebFetch and curl on every path tried (/rm26-4, news releases). Federal Register API has no RM26-4 or show-cause document. Used Bracewell client alert as the retrievable source; docket numbers cross-checked against a second firm's summary. **Gap: the six show cause orders (195 FERC ¶ 61,211-61,216) have not been read in the original.**
+- sec.gov — 403 to curl; substituted federalregister.gov/documents/2026/06/03/2026-11091 (200).
+- lis.virginia.gov — React SPA, no server-rendered bill text; legacylis 404s for the 2026 session; legiscan 403. **Gap: Virginia HB 1393 / HB 496 / SB 553 enrolled text and chapter numbers unverified.**
+- virginiamercury.com, whitecase.com, akingump.com, gtlaw.com (second attempt) — 403.
+- EUR-Lex HTML for the full AI Act truncates in the recitals; article text taken from artificialintelligenceact.eu, EUR-Lex ELI cited as the authority.
+- Official EC copy of the Model Documentation Form is a DOCX behind digital-strategy.ec.europa.eu/en/policies/contents-code-gpai; the text was read from a mirrored PDF (lawgitech.eu). Content matches the Commission's description.
+
+## Searched, nothing worth writing up
+- Amsterdam/Haarlemmermeer, Singapore and Chile moratoria: only tertiary aggregator pages (electricchoice.com, ailawsbystate.com) with no linkable instrument. Singapore's 2019-2022 moratorium and its 2024 Green Data Centre Roadmap replacement were not confirmed against IMDA/EMA primary sources. **Open gap.**
+- EPA permitting for on-site data-centre generation: nothing specific surfaced beyond Virginia DEQ's Tier 4 generator rule (effective 1 July 2026), which I did not verify against the Virginia Register.
+- US federal executive action on AI infrastructure in 2026 beyond the Secretary of Energy's 23 Oct 2025 directive to FERC: not pursued to a primary source.
+- Ohio: executive pause on tax-credit exemptions (27 May 2026) is not a statute; noted in 024's table, not given its own excerpt.
+- Georgia SB 476 (tax credit repeal) passed the Senate 12 Feb 2026; final disposition not established.
+
+## Open gaps for a follow-up pass
+1. FERC show cause order text and the RTO compliance filings due 17 Aug 2026 — what the RTOs actually proposed.
+2. Whether the Ninth Circuit ruled on SB 253/261 after January 2026, and whether the 10 Aug 2026 SB 253 filings happened.
+3. Second EU reporting round (returns due 15 May 2026, covering 2025) — was coverage above 36%? No published assessment found.
+4. Virginia enrolled bill text and chapter numbers.
+5. Non-EU/US moratoria (Singapore, Netherlands, Chile) against primary instruments.
+6. Whether any GPAI provider's Annex XI energy figure has become public through any route.
+
+---
+
+### Search log — Greenwashing (evidence, not theory) — 2026-09-19
+
+Area: documented, quantified discrepancies between AI/cloud company environmental claims and underlying data.
+Folder: research/washing/ — files 017-026 created. Existing 001-016 untouched.
+
+## Primary documents retrieved and text-extracted
+
+| Document | URL | Status |
+|---|---|---|
+| Microsoft 2026 Environmental Data Fact Sheet (FY2025) | https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf | full text via pdftotext; complete FY20-FY25 scope tables |
+| Google 2026 Environmental Report | https://sustainability.google/files/google-2026-environmental-report.pdf | full text (8,088 lines); data tables, methodology, endnotes |
+| Meta 2025 Environmental Data Index | https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf | full text; market vs location-based table 2020-2024 |
+| Amazon 2025 Sustainability Report | https://sustainability.aboutamazon.com/2025-amazon-sustainability-report.pdf | full text; 2019-2025 scope series, water sections |
+| Amazon Carbon Methodology (July 2026) | https://sustainability.aboutamazon.com/carbon-methodology.pdf | full text; confirms market-based-only, EACs on Scope 1/3 |
+| WattTime Meta emissions accounting case study | https://watttime.org/wp-content/uploads/2025/06/WattTime-Meta-Emissions-Accounting-Case-Study-vFinal-202505b.pdf | full text; three-methodology comparison |
+| Bjørn, Lund & Brander, ERL 20(2) | https://iopscience.iop.org/article/10.1088/1748-9326/ada45a | fetched via WebFetch |
+| InfluenceMap, GHGP Scope 2 consultation | https://influencemap.org/insight/Corporate-Engagement-on-the-GHG-Protocol-Scope-2-Consultation-39494 | fetched 2026-08-28 publication |
+| PracticalESG, 66-signatory letter | https://practicalesg.com/2026/04/66-signatories-send-letter-opposing-ghg-protocol-scope-2-changes/ | fetched |
+
+## Searches run
+
+- WebSearch "Google 2026 Environmental Report location-based emissions market-based Scope 2 2025" — hit, led to full PDF
+- WebSearch "Microsoft 2026 Environmental Sustainability Report Scope 2 market-based location-based emissions FY2025" — hit, surfaced the unbundled REC discontinuation
+- WebSearch "Meta 2026 sustainability report Scope 2 market-based location-based emissions 2025 data centers" — partial; Meta's latest published index is the 2025 one covering FY2024
+- WebSearch "Meta sustainability report 2026 net zero scope 3 emissions 2025 renewable energy certificates" — led to WattTime case study
+- WebSearch "Meta 'environmental data index' 2025 scope 2 location-based market-based metric tons" — located the primary PDF
+- WebSearch "Amazon sustainability report 2025 carbon footprint scope 2 market-based location-based renewable energy matched 100%" — hit
+- WebSearch "'Amazon' 2025 sustainability report scope 2 'location-based' tonnes CO2e emissions table 2025" — confirmed no location-based series is published
+- WebSearch "2026 study market-based scope 2 accounting overstates emissions reductions hourly matching additionality RECs peer-reviewed" — surfaced Bjørn et al. and the June 2026 academic letter to GHGP
+- WebSearch "GHG Protocol Scope 2 market-based method 2026 decision draft standard hyperscalers opposition Google Microsoft Amazon" — surfaced InfluenceMap and the 66-signatory letter
+- WebSearch "2026 greenwashing complaint data center technology company environmental claims regulator advertising authority" — see gaps below
+
+## Came up empty
+
+- **No 2026 regulatory or advertising-standards action against a named technology company over AI/data-centre environmental claims.** Searches returned general greenwashing enforcement statistics (400+ actions globally in 2026, CMA Jan 2026 supply-chain guidance, ASA Active Ad Monitoring) but nothing sector-specific to cloud or AI. Either none exists or it is not indexed. This remains an open gap.
+- **No 2026 assessment of the specific carbon credit types retired by hyperscalers.** Microsoft reports contributing to 45+ Mt of carbon removal across 29 projects and 10 pathways in FY2025, but no independent 2026 quality assessment of those specific retirements was found. The folder's Trencher 2024 file remains the only offset-quality source.
+- **Meta's FY2025 data.** Meta's most recent published Environmental Data Index covers calendar 2024. No 2026 Meta report was located, so file 020 reports 2024 figures and says so.
+- **Amazon location-based Scope 2.** Confirmed absent from both the report and the methodology document, not merely missed.
+- Computing.co.uk "Meta's sustainability surprise" returned HTTP 403; its claims were independently verified against Meta's own data index instead.
+
+## Notes on method
+
+- Every figure in files 017-023 and 026 is read from the company's own PDF, not from press coverage. Secondary sources were used only to locate documents.
+- Where a company's stated justification exists it is quoted in the Limitations section, per brief.
+- File 025 (Bjørn et al.) is January 2025, outside the primary window. Included because the task prompt named these authors and the folder had no quantitative Scope 2 literature at all.
+- File 021 (WattTime, May 2025) likewise predates the window; it is the only consequential emissions estimate for a named hyperscaler that was locatable.
+
+---
+
+### Frugal / efficient AI — search log, 2026-09-19
+
+Area: measured efficiency, and the limits of efficiency. Folder /research/frugal/, files 017-026.
+
+## Searches run
+
+### arXiv (export API)
+- `all:"reasoning models" AND all:"energy"`, submittedDate desc, 30 results
+  → hits: 2605.01158 (Olmo 3 / Strubell), 2608.12350 (Manya), 2601.00823 (energy-aware routing to LRMs),
+    2605.23926 (redundancy), 2603.00068 (env AI regulation — policy folder's territory), 2609.05512
+    (reasoning-aware compression)
+- `all:"tokens per joule" OR all:"energy per token"`, 30 results
+  → 2608.28667 GreenBench (Apple Silicon), 2608.01891 (disaggregated attention-FFN), 2608.11226 (RL power
+    control of training, Curcio), 2605.11733 (position: energy-to-token), 2603.20224 (Wilhelm/Kao,
+    energy-per-token for test-time compute), 2609.11940 (edge battery), 2606.21428 (MoE edge)
+- `abs:"quantization" AND abs:"energy" AND abs:"LLM inference"`, 25 results
+  → 2601.22362 (Delavande/Luccioni), 2512.03024 (TokenPowerBench), plus ~15 edge/NPU/accelerator papers
+- `abs:"speculative decoding" AND abs:"energy"`, 20 results → 2602.09113 (Dutta, EACL Findings 2026)
+- `abs:"rebound effect" AND abs:"AI"`, 25 results → only 2501.16548 (Jan 2025) and 2510.09022; nothing 2026
+- `all:"MLPerf"`, 25 results → nothing 2026 on MLPerf Power; the benchmark paper is 2410.12032 (Oct 2024)
+- `abs:"H100" AND abs:"energy" AND (abs:"B200" OR abs:"Blackwell" OR abs:"A100")`, 25 results
+  → 2604.10852 (xPU-athalon), 2601.22076 (Where do the joules go), 2603.17280 (1/W law), 2605.23918
+    (model parking tax), 2609.10550 (deployment stack)
+- `abs:"energy reporting" AND abs:"AI"` — thin, 5 results
+- `abs:"energy measurement" AND abs:"large language model"` → 2603.15699 (time as energy proxy),
+  2601.22357 (energy cost of thanking AI)
+- `abs:"LLM" AND abs:"energy" AND (abs:"logistic regression" OR abs:"classical machine learning" OR
+  abs:"smaller models")` → 2601.08844 (SLM vs LLM emissions), 2504.13217 (LLM right-sizing)
+- `abs:"carbon" AND abs:"task-specific" AND abs:"language model"` → 2506.00200 (radiology, lightweight)
+
+### OpenAlex
+- `reasoning models inference energy consumption`, from_publication_date 2025-09-01, cited_by desc
+  → almost entirely off-topic surveys. OpenAlex is not useful for this area; arXiv is where the work is.
+
+### WebSearch / WebFetch
+- "Wright Igel Samuel Efficiency Is Not Enough sustainable AI arXiv full text" → found arXiv 2309.02065,
+  full PDF retrieved and read (879 lines of text). Also surfaced 2511.15259 (Wiesner et al.) and
+  2509.20241 (Oviedo et al., Joule).
+- "MLPerf Inference v6.0 2026 power results energy per query results" → MLCommons v6.0 (2026-04) and
+  v6.1 (2026-09) results pages exist; fetched v6.1 page — no power/energy figures published in the
+  announcement, only a general statement about energy efficiency as a goal.
+- "2026 data center rack power density AI accelerator performance per watt" → secondary sources only
+  (DataCenterKnowledge, vendor blogs, AFCOM report quoted at second hand). Not usable under the brief's
+  journalism rule without the underlying AFCOM document.
+- Full PDFs downloaded and text-extracted: 2509.20241, 2605.01158, 2601.22362, 2604.10852, 2309.02065;
+  first pages of 2605.23926, 2606.21428, 2601.22076 for affiliations.
+
+## Duplicate checks (grep -ril over /research/)
+Strubell (2 hits, different papers), Morrison (0), Olmo (0), Vandenbergh (0), MLPerf (0), Oviedo (0),
+Kazhamiaka (0), Bianchini (0), Wiesner (0), "test-time" (0), "reasoning model" (0), "speculative" (0),
+TokenPowerBench (0), Blackwell (0), GB200 (0), "performance per watt" (0), "small language model" (0).
+Jevons/rebound: ghg/018, water/023 (Wright), narrative/003, ghg/002, ghg/013 (Tomlinson).
+Choukse: frugal/012 (DynamoLLM — same Microsoft group as 017, different paper).
+Zhai: frugal/009 is a *different* Zhai (AI overreliance, 2024), not the 2026 reasoning-redundancy author.
+No duplicates written.
+
+## Reviewed and rejected
+- **2511.15259** Wiesner, O'Neill, Larosa & Kao, "Efficiency Will Not Lead to Sustainable Reasoning AI".
+  Fetched the PDF. Assertion with no new data — the exact failure mode the brief's rule 1 bans and that
+  the Wright correction is fixing. Mentioned inside 026 rather than given its own file.
+- **2601.00823** "Energy-Aware Routing to Large Reasoning Models" (Ellis-Mohr, Hartman, Varshney) —
+  theoretical, no measurements.
+- **2603.17280** "The 1/W Law" — good framing (tok/W halves per context doubling; H100→B200 = 1.7x vs
+  routing = 2.5x) but explicitly states "no new hardware experiments were conducted"; B200/H200 figures
+  are ±20% analytical projections. Cited inside 023 rather than written up.
+- **2608.28667** GreenBench (Apple M4 Pro) and **2609.11940** (mobile battery) — edge single-user, not
+  production fleets.
+- **2512.03024** TokenPowerBench — a tool paper; 025 (Chung et al.) covers the same territory with far
+  more measured configurations and includes B200.
+- **2608.11226** Curcio, RL power control of training — measured and interesting (26.2% tokens/MWh gain
+  at 7B, null result at 72B), single-author preprint, and the fleet claims are simulated from a composed
+  16-GPU set. Borderline; dropped for space.
+- **2605.23918** "Model Parking Tax" — real production telemetry (335k samples, 14 H100s), but the finding
+  (idle power is set by CUDA context, not VRAM) is narrow. Next in line if the folder wants an 11th.
+- **2601.08844** Garg et al., SLM vs LLM emissions — SLMs matched LLMs on 4 of 6 tasks. Would have been
+  the priority-3 file; dropped because 019 and 017 both already carry the right-sizing argument with
+  better-specified energy accounting.
+
+## Came up empty
+- **2026 empirical rebound/Jevons work on AI.** Nothing. The literature is all 2024-2025 position papers
+  (2501.16548, 2510.09022) or assertion (2511.15259). This remains the corpus's weakest claim.
+- **MLPerf Power 2026 results.** v6.0 and v6.1 shipped in 2026 with a power category, but MLCommons
+  publishes no summary energy figures in its announcements and does not normalise to joules per token.
+  Extracting comparable numbers would require parsing the raw submission tables.
+- **A 2026 energy-reporting standard.** Nothing found. The EU AI Act transparency work (2409.07471) is
+  2024 and belongs in /policy/.
+- **Documented cases where a classical method matched an LLM at a fraction of the energy** (priority 7).
+  The closest hits are 2506.00200 (radiology report structuring with lightweight models, May 2025) and
+  /research/frugal/010 (TabPFN / gradient-boosted trees, already in the folder). Neither reports energy.
+  This priority is genuinely unserved by the 2026 literature.
+- **Absolute rack power rising alongside per-token efficiency**, from a primary source. Vendor and trade
+  press only. Needs an AFCOM State of the Data Center 2026 copy or an OCP specification.
+
+## Remaining gaps for whoever picks this up
+1. Rebound with data, not assertion. Candidate approach: token-volume disclosures (Google/OpenAI public
+   statements) against per-token efficiency improvements over the same window.
+2. MLPerf Power v6.0/v6.1 raw submission tables — the only standardised, audited AI energy figures that
+   exist, and the repo has none of them.
+3. FP4 on Blackwell. Everything measured here is FP8/INT8 on Hopper or older. 021's INT8 penalty
+   explicitly should not be generalised to hardware-native FP4.
+4. Agentic workloads. 017 excludes tool calling and orchestration by construction; 020 tests maths only.
+   Multi-turn agent energy is unmeasured anywhere in this corpus.
+
+---
+
+### Narrative research log — 2026-09-19
+
+Area: "AI will help the climate" narrative, scrutinised. Files 021–029 written to research/narrative/.
+
+## Searches run
+
+### arXiv (API, phrase-quoted, filtered to submissions >= 2025-09)
+- `all:"avoided emissions"` — 5 hits in window. Yielded 2609.18029 (Xu, time-aware framework → 029) and 2604.26539 (Roussilhe, ICT/O&G → 027).
+- `abs:"rebound effect" AND abs:"artificial intelligence"` — 0 hits in window.
+- `all:"interconnection queue"` — 3 hits: 2609.10455 (Heidari, queue cascade vulnerability), 2608.08170 (on-site power), 2605.14714 (siting). All grid/policy-folder territory, none quantifies AI displacing electrification. Not used.
+- `abs:"AI for sustainability" OR abs:"AI for climate"` — 16 hits. Yielded 2606.23192 (Kunkel, "AI against sustainability", cited inside 027), 2606.04214 (Gujral et al., efficiency claims as greenwashing — left for the washing folder), 2606.09006, 2605.26076 (not used).
+- `ti:"systematic review" AND abs:"environmental impact of AI"` — 0 hits.
+- `abs:"reinforcement learning" AND abs:"HVAC" AND abs:"deployment"` — 6 hits. Yielded 2609.05314 (Neubauer/LBNL, LLM-HVAC deployment readiness → 025).
+- Direct id_list lookups: 2602.24091 (Carmeno → 028), 2607.04016 (He → 026), 2603.01198 (Jadhav digital twin — simulation only, not used), 2501.15085 (Zhan, ICLR 2025, production DC offline RL, 14–21% cooling savings over 2000 h — real deployment but Jan 2025, outside the recency window; cited as context only), 2606.23452 (Lee, ERCOT bilevel allocation — conclusion is about congestion, not displacement; not used).
+
+### OpenAlex
+- `search=avoided emissions accounting consequential life cycle`, `from_publication_date:2025-09-01` — full-text search too noisy, no usable hits.
+- `search=artificial intelligence climate mitigation net impact review` — same, noise.
+- Title search `comparison of methodologies for avoided emissions quantification` — found O'Keeffe & Brander 2026, DOI 10.1016/j.jclepro.2026.147672, OA hybrid → 023. (Note: the sciencedirect PII from web search resolved to a different, wrong DOI; OpenAlex gave the correct one.)
+
+### WebSearch
+- "IEA Energy and AI report avoided emissions scenario 1.4 Gt widespread adoption" → IEA chapter, retrieved directly by curl and text-extracted → 021.
+- "Google 2026 environmental report AI avoided emissions claim methodology counterfactual" → PDF (18 MB) downloaded, pdftotext, endnotes 100–153 read → 022, 024.
+- "Microsoft 2026 sustainability report AI avoided emissions customers carbon" → PDF (14 MB) downloaded and extracted. Only one mention of "avoided" in the whole report, and it covers four internal initiatives (Xbox efficiency, CFE, sustainable fuels, Surface supply chain), not AI-for-climate. Used as contrast inside 022.
+- "DeepMind data centre cooling 40% claim never independently verified 2026" and "Google data center AI cooling energy savings verified replication 2026" → no independent verification found; DeepMind 2016 blog retrieved directly → 024.
+- "data centers displace electrification grid capacity opportunity cost 2026" → nothing quantitative on displacement.
+- "2026 systematic review environmental impact artificial intelligence meta-analysis" → Carmeno et al. → 028.
+
+### Serper (Google Scholar, qdr:y)
+- "AI climate solutions evidence gap deployment verified savings 2026" — all IGI-Global/MDPI review chapters, no primary evidence. Empty.
+- "data center load growth crowding out electrification decarbonization clean energy opportunity cost" — empty for the specific question.
+- "DeepMind data center cooling 40% claim critique evidence" — only theses and SSRN preprints; nothing citable.
+
+## Duplicate checks run before writing
+`grep -ril` across the whole research/ tree for: Roussilhe, "own goals", "divergent net energy", Xu, "time-aware", Akinci, Neubauer, Carmeno, O'Neill, Gujral, Kunkel, Brander, "avoided emissions", "Energy and AI", DeepMind, "environmental report", "offline reinforcement", "cooling system optimization", arXiv ids. All clear. Note: the repo had **no** IEA *Energy and AI*, no Google or Microsoft environmental report, and no DeepMind material at all before this pass.
+
+## Came up empty
+- **Independent verification of the DeepMind 40% cooling claim.** Does not exist, ten years on. Recorded as a negative finding in 024.
+- **Priority 5, opportunity cost / allocation.** No 2026 source quantifies clean generation or interconnection capacity allocated to AI displacing electrification of heating, transport or industry. The nearest candidates are Lee et al. 2026 (arXiv 2606.23452, ERCOT bilevel siting — competition for electricity is stated but the result is about congestion cost, not displacement) and Heidari 2026 (arXiv 2609.10455, LBNL queue data: 8 200 projects, 2 061 GW queued, only 13% of 2000–2020 capacity reaching operation — real data, but not disaggregated by load type or by what the data-centre share displaces). Neither supports the claim. Recommend the policy or datacenters researcher take the queue data on its own terms.
+- **Measured at-scale AI deployments with before/after data and AI energy cost included, 2026.** None found. The closest real-world result is Zhan et al. ICLR 2025 (14–21% cooling savings, 2 000 h, production DC) which is out of window and does not net the training/inference cost of the controller.
+
+---
+
 
 ## 2026-01-16 (Continued)
 
