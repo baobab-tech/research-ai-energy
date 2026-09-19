@@ -12,7 +12,7 @@
 
 **Time Period:** 2024-2026 (prioritize 2025-2026)
 
-**Priority Sources** (revised 2026-09-19 — see CLAUDE.md for the full hierarchy):
+**Priority Sources** (revised 2026-09-19; full hierarchy in CLAUDE.md):
 1. Measurement from instrumented production systems
 2. Agency and statutory data: IEA, LBNL, EIA, EPRI, grid operators, PUC and FERC filings
 3. Peer-reviewed papers and preprints via OpenAlex and arXiv
@@ -34,19 +34,20 @@ Evidence for each item is in the topic folder named. Claims that could not be so
   length (the remainder). Nationally ~2% of US consumptive use; locally up to 1.34x a host
   utility's entire delivery capacity on a peak day.
 - **Grid economics**: PJM's market monitor attributes $6.50bn of one capacity auction to
-  data-centre load, 76% of which is forecast rather than existing. Counter-evidence exists
+  data-centre load, 76% of it forecast load. Counter-evidence exists
   (IV study finding rates fell); the disagreement is about supply constraints.
 - **Interconnection**: ERCOT holds ~474 GW of large-load requests, roughly 5x its system peak.
   No source publishes GW actually energised per year.
-- **Regulation**: the EU AI Act energy duty is applicable but has no measurement standard; the
-  GPAI form records inference as FLOPs, not energy. US instruments are grid-economic, not
-  environmental. Every US state energy/water disclosure bill was introduced, not passed.
+- **Regulation**: the EU AI Act energy duty is applicable and has no measurement standard behind
+  it; the GPAI form records inference as a FLOPs count. US instruments govern curtailment and cost
+  allocation. Every US state energy and water disclosure bill failed to pass.
 - **Avoided-emissions claims**: Google's 41 Mt figure is 68% Google Earth, computed without an
   attribution fraction or additionality test. The IEA's 1,400 Mt scenario is qualified by the
   IEA's own text.
 - **Community opposition**: the widely-cited "cancellations quadrupled in 2025" traces to an
-  unpublished equity-research note with no stated methodology or definition. **Unsupported.**
-  The main opposition tracker has no denominator and is run by a vendor to AI companies.
+  unpublished equity-research note with no stated methodology or definition, and is marked
+  unsupported. The main opposition tracker has no denominator and is run by a vendor to AI
+  companies.
 
 ## Research Areas
 
@@ -273,9 +274,9 @@ Answered questions have moved to the topic indexes. These remain.
 - Facility-level EU data under Article 12, legally confidential.
 
 ### Retrievable but not yet retrieved
-- Privette, Barros & Cai, *AGU Advances* 2026 — Wiley blocks automated access.
-- FERC order text and RTO compliance filings due 17 Aug 2026 — ferc.gov blocks retrieval.
-- Oregon PUC Order 26-154 (UM 2377) — first implementation of the 2025 POWER Act.
+- Privette, Barros & Cai, *AGU Advances* 2026. Wiley blocks automated access.
+- FERC order text and RTO compliance filings due 17 Aug 2026. ferc.gov blocks retrieval.
+- Oregon PUC Order 26-154 (UM 2377), the first implementation of the 2025 POWER Act.
 - E3 May 2026 rate-decomposition report; EDGI July 2026 air-pollution analysis.
 - MLPerf Power v6.0/v6.1 raw submission tables, unnormalised to joules per token.
 

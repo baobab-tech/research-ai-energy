@@ -1,6 +1,6 @@
 # Claude Instructions
 
-This is a research repository, not a coding project. Output is markdown files under `/research/`.
+A research repository. Output is markdown files under `/research/`.
 
 ## What happens here
 
@@ -18,41 +18,41 @@ This is a research repository, not a coding project. Output is markdown files un
 
 Ranked by evidentiary weight for a question about numbers:
 
-1. **Measurement** — instrumented production systems, metered data, grid-operator telemetry
-2. **Agency and statutory data** — IEA, LBNL/Berkeley Lab, EIA, EPRI, JRC, EU data-centre database, PUC and FERC filings
-3. **Peer-reviewed papers and preprints** — OpenAlex, arXiv
-4. **Corporate disclosures** — sustainability reports, 10-K climate sections, model cards. Primary evidence about what a company claims and how it accounts. Never a neutral fact.
-5. **Journalism** — only to reach a document or dataset otherwise unavailable. Cite and characterise the underlying document, not the article's framing.
+1. **Measurement.** Instrumented production systems, metered data, grid-operator telemetry.
+2. **Agency and statutory data.** IEA, LBNL/Berkeley Lab, EIA, EPRI, JRC, EU data-centre database, PUC and FERC filings.
+3. **Peer-reviewed papers and preprints.** OpenAlex, arXiv.
+4. **Corporate disclosures.** Sustainability reports, 10-K climate sections, model cards. Primary evidence of what a company claims and how it accounts.
+5. **Journalism**, used only to reach a document or dataset otherwise unavailable. Cite and characterise the underlying document; the article's framing carries no weight.
 
-A corporate report is a primary source about the company's own claims. It is not a source for whether the claim is true.
+A corporate report evidences what the company claims. It does not evidence whether the claim holds.
 
 ## Hard rules
 
 1. **Every fact carries a URL that was actually retrieved.** Confirm it resolves.
-2. **No abstract-only write-ups.** If the finding cannot be established from the full text, PDF, or OA copy, skip the source. Banned: "likely addresses", "presumably", "full paper needed", "implies the authors argue".
-3. **Numbers carry units, system boundary, and method.** "0.24 Wh per prompt" is incomplete without knowing accelerator-only versus full-stack versus PUE-inclusive, and median versus mean.
+2. **No abstract-only write-ups.** If the finding cannot be established from the full text, PDF, or OA copy, skip the source. Banned phrasings: "likely addresses", "presumably", "full paper needed", "implies the authors argue".
+3. **Numbers carry units, system boundary, and method.** "0.24 Wh per prompt" is incomplete until the boundary is stated as accelerator-only, full-stack, or PUE-inclusive, and the statistic as median or mean.
 4. **Name the epistemic status.** Measurement, estimate, projection, and model output are different things. Say which.
 5. **One canonical file per source.** Before writing, `grep -ril "<author>" research/`. If the source is held, extend the existing file or cross-link it from the other index. Do not write it up again.
-6. **On topic.** Must bear directly on AI or data-centre energy, water, emissions, grid, siting, or the claims made about them. General ESG theory, municipal water engineering, and corporate-governance econometrics do not belong here.
+6. **On topic.** Each excerpt bears directly on AI or data-centre energy, water, emissions, grid, siting, or the claims made about them. General ESG theory, municipal water engineering, and corporate-governance econometrics belong elsewhere.
 7. **Record funding and affiliation** on every excerpt, including when there is no apparent conflict.
 
-## Distinctions that decide arguments
+## Distinctions
 
-Getting these wrong is how this literature goes astray:
+Conflating either side of these pairs is the most common error in this literature:
 
-- **Water withdrawal vs water consumption** — withdrawn water may return to the basin; consumed water does not
-- **On-site vs off-site water** — cooling evaporation versus water embedded in the electricity generated elsewhere
-- **Market-based vs location-based Scope 2** — the gap between them is where "carbon neutral" claims live
-- **Announced vs under construction vs energised** capacity — usually reported interchangeably, differ by years and by gigawatts
-- **Contracted vs delivering** generation — a signed nuclear PPA is not electrons on the grid
-- **Efficiency per token vs absolute consumption** — both can move in opposite directions at once
+- **Water withdrawal against water consumption.** Withdrawn water may return to the basin; consumed water does not.
+- **On-site against off-site water.** Cooling evaporation, against water embedded in electricity generated elsewhere.
+- **Market-based against location-based Scope 2.** The gap between them carries the "carbon neutral" claim.
+- **Announced, under construction, and energised capacity.** Reported interchangeably; they differ by years and by gigawatts.
+- **Contracted against delivering generation.** A signed nuclear PPA supplies no electrons.
+- **Efficiency per token against absolute consumption.** Both move in opposite directions at once.
 
 ## Excerpt format
 
 Path: `/research/<topic>/NNN-author-year-topic.md`
 
 ```markdown
-# [Title stating the finding, not the subject]
+# [Title stating the finding]
 
 **Topic:** [area + sub-question]
 **Source:** [Author(s)/Organisation, Year]
@@ -62,7 +62,7 @@ Path: `/research/<topic>/NNN-author-year-topic.md`
 
 ## Finding
 
-[2-4 sentences on what this source establishes. Not an abstract summary.]
+[2-4 sentences on what this source establishes.]
 
 ## Key Data
 
@@ -93,7 +93,7 @@ Search: [exact query and source]
 - No sentences about the document: "this section covers", "as noted above".
 - Report uncertainty as ranges with the assumptions that produce them.
 - Attribute contested claims to whoever made them. Do not adopt their framing.
-- Where a claim is well-evidenced, record that it is. The aim is to separate substantiated from unsubstantiated, not to reach a predetermined verdict.
+- Where a claim is well-evidenced, record that it is. The aim is to separate substantiated claims from unsubstantiated ones.
 
 ## Critical stance
 
@@ -106,16 +106,29 @@ Applied to every source, including ones whose conclusions are congenial:
 
 Apply the same scrutiny to critical research as to industry research. A study finding large AI impacts deserves the same methodological interrogation as one finding small impacts.
 
-## Index and log
+## Files that describe a folder
 
-Each `/research/<topic>/_index.md` holds a scannable table of that folder's excerpts. Update it when adding files; do not renumber existing rows.
+Each `/research/<topic>/` carries two of these, and both need updating when excerpts are added.
 
-`/research/_log.md` records searches performed, including those that returned nothing — negative results mark where evidence does not yet exist.
+**`README.md`** is the folder's summary, and GitHub renders it on the folder landing page. It holds:
+
+- One or two lines naming what the folder covers and how many excerpts it holds
+- A link to `_index.md`
+- The established figures as a table, each with its system boundary and a link to the excerpt
+- How to read those numbers: what the boundary excludes, which figures are inferred, where two sources disagree and why
+- Corrections held in the folder, naming the superseded file
+- Gaps, stated as what no source establishes
+
+Keep it to what a reader needs before opening any excerpt. It summarises; it does not restate the index table.
+
+**`_index.md`** is the scannable table of every excerpt, one row each, with the source name linked to its file. Do not renumber existing rows.
+
+`/research/_log.md` records searches performed, including those that returned nothing. Negative results mark where evidence does not yet exist.
 
 ## Tools
 
-Query templates in `/skills/`: `openalex.md`, `arxiv.md`, `serper.md`, `archive.md`. Serper key in `.env` (gitignored). OpenAlex and arXiv need no key.
+Query templates in `/skills/`: `openalex.md`, `arxiv.md`, `serper.md`, `archive.md`, `primary-sources.md`. Serper key in `.env` (gitignored). OpenAlex and arXiv need no key.
 
-Use the Internet Archive for corporate sustainability pages that have been revised or removed — superseded claims are evidence.
+Use the Internet Archive for corporate sustainability pages that have been revised or removed. Superseded claims are evidence.
 
 See `RESEARCH_PLAN.md` for research areas and open questions.
