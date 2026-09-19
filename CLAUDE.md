@@ -2,6 +2,10 @@
 
 A research repository. Output is markdown files under `/research/`.
 
+**Updating this repository:** read [METHOD.md](METHOD.md) first. An update is audit, search,
+verify, prune, rebuild. A pass that only adds new sources leaves the existing material wrong and
+every summary built on it wrong; that has happened here and is documented in METHOD.md.
+
 ## What happens here
 
 - Search for papers, agency reports, regulatory filings, and corporate disclosures
@@ -28,6 +32,9 @@ A corporate report evidences what the company claims. It does not evidence wheth
 
 ## Hard rules
 
+0. **Verify before citing.** A figure entering a README, a folder summary, or a reply to the user
+   must come from a source retrieved in this pass, not from an existing excerpt. Excerpts have
+   been wrong; propagating one without checking is how the error spreads.
 1. **Every fact carries a URL that was actually retrieved.** Confirm it resolves.
 2. **No abstract-only write-ups.** If the finding cannot be established from the full text, PDF, or OA copy, skip the source. Banned phrasings: "likely addresses", "presumably", "full paper needed", "implies the authors argue".
 3. **Numbers carry units, system boundary, and method.** "0.24 Wh per prompt" is incomplete until the boundary is stated as accelerator-only, full-stack, or PUE-inclusive, and the statistic as median or mean.
@@ -35,10 +42,17 @@ A corporate report evidences what the company claims. It does not evidence wheth
 5. **One canonical file per source.** Before writing, `grep -ril "<author>" research/`. If the source is held, extend the existing file or cross-link it from the other index. Do not write it up again.
 6. **On topic.** Each excerpt bears directly on AI or data-centre energy, water, emissions, grid, siting, or the claims made about them. General ESG theory, municipal water engineering, and corporate-governance econometrics belong elsewhere.
 7. **Record funding and affiliation** on every excerpt, including when there is no apparent conflict.
+8. **The number must be in the source.** A figure derived by arithmetic on the source's prose is
+   an estimate and is labelled as one. See `skills/verification.md` for the failure modes this
+   rule exists to prevent.
+9. **`DELETE` is a valid outcome.** An excerpt that misdescribes its source is worse than no
+   excerpt. Relevance the source does not claim is not relevance.
 
 ## Distinctions
 
-Conflating either side of these pairs is the most common error in this literature:
+Conflating either side of these pairs is the most common error in this literature, and the most
+common cause of an apparent disagreement that is not one. Before reporting two figures as in
+conflict, establish that they share a boundary:
 
 - **Water withdrawal against water consumption.** Withdrawn water may return to the basin; consumed water does not.
 - **On-site against off-site water.** Cooling evaporation, against water embedded in electricity generated elsewhere.
@@ -86,6 +100,15 @@ Retrieved: YYYY-MM-DD
 Search: [exact query and source]
 ```
 
+## State, not changelog
+
+Files describe the current state of the evidence. No `supersedes`, `corrected`,
+`previously stated`, or `correction needed` annotations anywhere in `/research/`. When an excerpt
+is wrong, write the right thing: git history records the change and the commit message names it.
+
+`Relation to existing corpus` is for relationships between different sources, not for narrating
+edits. Report corrections to the user in conversation.
+
 ## Writing style
 
 - Lead with the finding. State it once.
@@ -127,8 +150,24 @@ Keep it to what a reader needs before opening any excerpt. It summarises; it doe
 
 ## Tools
 
-Query templates in `/skills/`: `openalex.md`, `arxiv.md`, `serper.md`, `archive.md`, `primary-sources.md`. Serper key in `.env` (gitignored). OpenAlex and arXiv need no key.
+| File | Holds |
+|------|-------|
+| `skills/openalex.md`, `skills/arxiv.md` | academic search, no key needed |
+| `skills/serper.md` | web, news and scholar search; key in `.env` (gitignored) |
+| `skills/archive.md` | Wayback Machine, for revised or removed corporate pages |
+| `skills/primary-sources.md` | agency, grid-operator and corporate documents; PDF extraction; publisher blocks |
+| `skills/verification.md` | failure modes, the check suite, shell gotchas |
 
 Use the Internet Archive for corporate sustainability pages that have been revised or removed. Superseded claims are evidence.
 
-See `RESEARCH_PLAN.md` for research areas and open questions.
+## Where things are
+
+| File | Purpose |
+|------|---------|
+| `METHOD.md` | how to run an update, phase by phase |
+| `RESEARCH_PLAN.md` | research areas and open questions |
+| `skills/verification.md` | failure modes and the pre-commit check suite |
+| `research/<topic>/README.md` | folder summary: figures, boundaries, gaps |
+| `research/<topic>/_index.md` | one row per excerpt |
+| `research/_log.md` | searches run, including those that found nothing |
+| `research/_queue.md` | current state and what is next |
