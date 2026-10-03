@@ -7,6 +7,9 @@ effects, and the distance between corporate environmental claims and the data un
 one source, its numbers, the system boundary those numbers were computed on, and what the
 source omits.
 
+A hyper-focused agent runs every two to three weeks to keep this current, drawing on work
+already published by others so the corpus stays frugal to maintain.
+
 Last refresh: 2026-09-19.
 
 ## Scope
