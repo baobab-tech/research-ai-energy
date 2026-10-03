@@ -7,18 +7,42 @@ International licence ([LICENSE](LICENSE)). Original material means the excerpt 
 analysis, tables, folder summaries and indexes, the method and planning documents, and the
 command snippets in `skills/`.
 
-The licence is granted to the extent the licensor holds rights in the material. The text was
-drafted with AI assistance and checked against the cited sources. Where no rights exist in an
-element, there is nothing to license and the element is free to use.
+The licence is granted to the extent the licensor holds rights in the material. Much of the text
+was produced by AI (see AI use below). Where no rights exist in an element, there is nothing to
+license and the element is free to use.
 
 ## Attribution
 
 Credit as:
 
-> baobab-tech, *AI Environmental Impact Research*, https://github.com/baobab-tech/research-ai-energy
+> Baobab Tech, *AI Environmental Impact Research*, https://github.com/baobab-tech/research-ai-energy
 
 Link to the licence, and indicate whether the material was changed. To cite a single figure, cite
 the excerpt it comes from and the original source named in that excerpt.
+
+## AI use
+
+AI performed most of the work in this repository, at every stage:
+
+- **Research.** AI agents searched academic databases, agency sites and corporate disclosures,
+  selected candidate sources, and retrieved their text.
+- **Extraction.** AI agents read each source, pulled out figures with their units and system
+  boundaries, and recorded funding and affiliation.
+- **Synthesis.** AI agents wrote the excerpts, folder summaries, indexes and README, and drew the
+  comparisons across sources.
+- **Verification.** AI agents re-read the sources to check the excerpts against them, and removed
+  those that failed.
+
+The models are Anthropic's Claude family, run through Claude Code as coordinated agents. Baobab
+Tech sets the scope, the rules and the source hierarchy, and directs the work. The procedure is in
+[METHOD.md](METHOD.md).
+
+AI systems make mistakes, including misreading a source and attributing a statement to the wrong
+paper. Several such errors were found and removed in this corpus's own checking, and others may
+remain. No human expert has reviewed the corpus line by line.
+
+**Verify all claims yourself.** Check any figure you rely on against the original source named in
+its excerpt.
 
 ## Third-party material
 
@@ -45,4 +69,5 @@ passage.
 
 CC BY 4.0 section 5 disclaims warranties and limits liability. In addition, nothing here is
 legal, financial, investment or engineering advice. Each excerpt states the date its source was
-retrieved. Sources are revised, so check the original before relying on a figure for a decision.
+retrieved. Sources are revised, so verify every claim against the original before relying on it
+for a decision.

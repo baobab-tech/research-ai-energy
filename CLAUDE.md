@@ -83,6 +83,10 @@ A corporate report evidences what the company claims. It does not evidence wheth
    Paraphrase, and record the figure with its boundary. Do not paste passages, tables or figures
    from a source wholesale. The repository is published under CC BY 4.0 and the third-party terms
    in `NOTICE.md` depend on this.
+11. **Describe AI involvement accurately.** `README.md` and `NOTICE.md` disclose that AI performed
+   the research, extraction, synthesis and verification, and tell readers to verify all claims
+   themselves. Keep that true. Do not describe any check as human-reviewed unless a human did it,
+   and do not remove the disclosure.
 
 ## Distinctions
 

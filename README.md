@@ -3,20 +3,33 @@
 ![Last commit](https://img.shields.io/github/last-commit/baobab-tech/research-ai-energy?color=2ea44f)
 ![Excerpts](https://img.shields.io/badge/excerpts-verified%20against%20source-2ea44f)
 ![Updated](https://img.shields.io/badge/updated-every%202--3%20weeks-0969da)
+![AI-assisted](https://img.shields.io/badge/AI--assisted-research%2C%20extraction%2C%20synthesis-d97706)
 ![Format](https://img.shields.io/badge/format-markdown-6e7781)
 ![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)
 
 A sourced corpus on the environmental footprint of AI systems: energy, emissions, water, grid
 effects, and the distance between corporate environmental claims and the data underlying them.
 
-126 excerpts, one file per finding, every one verified against the source itself. Each records
-one source, its numbers, the system boundary those numbers were computed on, and what the
-source omits.
+126 excerpts, one file per finding, each checked against its source by an AI verification pass
+(see AI use below). Each records one source, its numbers, the system boundary those numbers were
+computed on, and what the source omits.
 
 A hyper-focused agent runs every two to three weeks to keep this current, drawing on work
 already published by others so the corpus stays frugal to maintain.
 
 Last refresh: 2026-09-19.
+
+## AI use
+
+AI did most of the work here. AI agents searched for sources, extracted the figures, wrote the
+excerpts and summaries, and ran the checks of each excerpt against its source. The models are
+Anthropic's Claude family, run through Claude Code. Baobab Tech sets the scope and rules and
+directs the work. AI systems misread sources and misattribute statements, and this corpus's own
+checking found and removed several such errors, so others may remain. No human expert has
+reviewed it line by line.
+
+**Verify all claims yourself.** Check any figure you rely on against the original source named
+in its excerpt. Details are in [NOTICE.md](NOTICE.md).
 
 ## Start here
 
@@ -275,7 +288,7 @@ merit, the excerpt records it beside the critique.
 ## Licence
 
 Original text, analysis and tables are licensed under [CC BY 4.0](LICENSE). Credit
-"baobab-tech, AI Environmental Impact Research" with a link to this repository. The papers,
+"Baobab Tech, AI Environmental Impact Research" with a link to this repository. The papers,
 reports and filings cited here stay under their own terms; [NOTICE.md](NOTICE.md) covers
 third-party material, quotation, and how rights holders can reach us.
 
