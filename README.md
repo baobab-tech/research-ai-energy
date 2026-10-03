@@ -4,6 +4,7 @@
 ![Excerpts](https://img.shields.io/badge/excerpts-verified%20against%20source-2ea44f)
 ![Updated](https://img.shields.io/badge/updated-every%202--3%20weeks-0969da)
 ![Format](https://img.shields.io/badge/format-markdown-6e7781)
+![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)
 
 A sourced corpus on the environmental footprint of AI systems: energy, emissions, water, grid
 effects, and the distance between corporate environmental claims and the data underlying them.
@@ -270,6 +271,13 @@ September 2026. What that found:
 
 Sources whose claims did not survive that check were removed. Where a company's position has
 merit, the excerpt records it beside the critique.
+
+## Licence
+
+Original text, analysis and tables are licensed under [CC BY 4.0](LICENSE). Credit
+"baobab-tech, AI Environmental Impact Research" with a link to this repository. The papers,
+reports and filings cited here stay under their own terms; [NOTICE.md](NOTICE.md) covers
+third-party material, quotation, and how rights holders can reach us.
 
 See [RESEARCH_PLAN.md](RESEARCH_PLAN.md) for open questions and [CLAUDE.md](CLAUDE.md) for the
 rules excerpts are written under.

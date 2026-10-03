@@ -79,6 +79,10 @@ A corporate report evidences what the company claims. It does not evidence wheth
    rule exists to prevent.
 9. **`DELETE` is a valid outcome.** An excerpt that misdescribes its source is worse than no
    excerpt. Relevance the source does not claim is not relevance.
+10. **Quote briefly and attribute.** Excerpts carry short quotations, each linked to its source.
+   Paraphrase, and record the figure with its boundary. Do not paste passages, tables or figures
+   from a source wholesale. The repository is published under CC BY 4.0 and the third-party terms
+   in `NOTICE.md` depend on this.
 
 ## Distinctions
 
@@ -207,3 +211,4 @@ Use the Internet Archive for corporate sustainability pages that have been revis
 | `research/<topic>/_index.md` | one row per excerpt |
 | `research/_log.md` | searches run, including those that found nothing |
 | `research/_queue.md` | current state and what is next |
+| `LICENSE`, `NOTICE.md` | CC BY 4.0 text; attribution, third-party material, rights-holder contact |
