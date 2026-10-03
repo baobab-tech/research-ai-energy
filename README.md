@@ -1,5 +1,10 @@
 # AI Environmental Impact Research
 
+![Last commit](https://img.shields.io/github/last-commit/baobab-tech/research-ai-energy?color=2ea44f)
+![Excerpts](https://img.shields.io/badge/excerpts-verified%20against%20source-2ea44f)
+![Updated](https://img.shields.io/badge/updated-every%202--3%20weeks-0969da)
+![Format](https://img.shields.io/badge/format-markdown-6e7781)
+
 A sourced corpus on the environmental footprint of AI systems: energy, emissions, water, grid
 effects, and the distance between corporate environmental claims and the data underlying them.
 
@@ -11,6 +16,16 @@ A hyper-focused agent runs every two to three weeks to keep this current, drawin
 already published by others so the corpus stays frugal to maintain.
 
 Last refresh: 2026-09-19.
+
+## Start here
+
+- **A topic.** Open its folder in the table below. Each folder opens on a summary of the
+  established figures, how to read them, and what no source establishes.
+- **A specific number.** Figures in the summaries link to the excerpt they came from, and each
+  excerpt links to the original source.
+- **A question.** Point an AI assistant at this repository and ask. It answers from the excerpts
+  and reports the gaps.
+- **How it is maintained.** [METHOD.md](METHOD.md) sets out how the corpus is updated and checked.
 
 ## Scope
 

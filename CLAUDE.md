@@ -2,9 +2,38 @@
 
 A research repository. Output is markdown files under `/research/`.
 
-**Updating this repository:** read [METHOD.md](METHOD.md) first. An update is audit, search,
-verify, prune, rebuild. A pass that only adds new sources leaves the existing material wrong and
-every summary built on it wrong; that has happened here and is documented in METHOD.md.
+It is used in two ways:
+
+- **Updating it.** Read [METHOD.md](METHOD.md) first. An update is audit, search, verify, prune,
+  rebuild. A pass that only adds new sources leaves the existing material wrong and every summary
+  built on it wrong; that has happened here and is documented in METHOD.md.
+- **Querying it read-only.** Users also open the repository to ask questions of the research.
+  That is expected and fine. See the next section.
+
+## Querying the research (read-only)
+
+A user may ask what the corpus says about a topic, whether a claim holds, or where a number comes
+from. No files change. Answer from what is held here.
+
+- **Start where a reader would.** The folder `README.md` for the topic, then `_index.md`, then
+  the excerpts. `grep -ril` across `research/` finds a source or a figure in any folder.
+- **Lead with the answer.** Then the evidence: the excerpt path, the original source URL, the
+  number with its system boundary, and whether it is a measurement, estimate or projection.
+- **Cite the excerpt as held.** Excerpts were verified against their sources when written, and
+  each carries a `Retrieved` date. Quote the figure as the excerpt gives it and state the date
+  where the figure could have moved. Policy, grid and corporate disclosures move fastest. Do not
+  re-pull sources to answer a question unless the user asks for a fresh check.
+- **Say when the corpus is silent.** Each folder `README.md` ends with the gaps: what no source
+  establishes. Report that plainly. Do not fill a gap from memory or the open web and present it
+  as part of the corpus. Label anything from outside the repository as outside it.
+- **Check other people's claims against the boundaries.** When a user brings a claim, compare it
+  with the excerpts and say which parts hold and which need qualifying. The pairs under
+  Distinctions below explain most apparent conflicts.
+- **Change nothing.** If a question exposes an error, a stale figure or a gap, say so and offer to
+  run the update procedure. Do not edit, commit or push.
+
+The rules below govern writing and updating. Rule 0 applies when updating; a read-only answer
+quotes the excerpts and their dates.
 
 ## What happens here
 
@@ -32,9 +61,9 @@ A corporate report evidences what the company claims. It does not evidence wheth
 
 ## Hard rules
 
-0. **Verify before citing.** A figure entering a README, a folder summary, or a reply to the user
-   must come from a source retrieved in this pass, not from an existing excerpt. Excerpts have
-   been wrong; propagating one without checking is how the error spreads.
+0. **Verify before citing.** When writing or updating, a figure entering an excerpt, a README or
+   a folder summary must come from a source retrieved in this pass, not from an existing
+   excerpt. Excerpts have been wrong; propagating one without checking is how the error spreads.
 1. **Every fact carries a URL that was actually retrieved.** Confirm it resolves.
 1a. **Confirm the record before writing.** Check the DOI against Crossref: if the returned title
    is not the paper, the DOI is wrong; if the author list does not match, the citation is wrong.
